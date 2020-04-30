@@ -1,47 +1,53 @@
 // courses.js
-/* eslint-disable indent */
-/* eslint-disable comma-dangle */
-/* eslint-disable linebreak-style */
-/* eslint-disable import/newline-after-import */
 
-// courses.js
-const { Router } = require('express')
-const Course = require('../models/course')
-const router = Router()
+const { Router } = require('express');
+const Course = require('../models/course');
+const router = Router();
 
 router.get('/', async (req, res) => {
-    const courses = await Course.getAll()// создаю объект курсов и вытаскиваю их все
-    res.render('courses', {
-        title: 'Курсы',
-        isCourses: true,
-        courses // добавляю данный объект на страницу
-    })
-})
+  const courses = await Course.find(); // создаю объект курсов и вытаскиваю их все
+  res.render('courses', {
+    title: 'Курсы',
+    isCourses: true,
+    courses, // добавляю данный объект на страницу
+  });
+});
 
-
-router.get('/:id/edit', async (req, res) => { // редактирование курса
-    if (!req.query.allow) {
-        return res.redirect('/')
-    }
-    const course = await Course.getById(req.params.id)
-    res.render('course-edit', {
-        title: `Редактировать ${course.title}`,
-        course
-    })
-})
+router.get('/:id/edit', async (req, res) => {
+  // редактирование курса
+  if (!req.query.allow) {
+    return res.redirect('/');
+  }
+  const course = await Course.findById(req.params.id);
+  res.render('course-edit', {
+    title: `Редактировать ${course.title}`,
+    course,
+  });
+});
 
 router.post('/edit', async (req, res) => {
-    await Course.update(req.body)
-    res.redirect('/courses')
-})
+  const { id } = req.body; // выношу id в отдельную переменную.
+  delete req.body.id; // удаляю id потому что mongoose по умол  ниж под id
+  await Course.findOneAndUpdate(id, req.body);
+  res.redirect('/courses');
+});
+
+router.post('/remove', async (req, res) => {
+  try {
+    await Course.deleteOne({ _id: req.body.id });
+    res.redirect('/courses');
+  } catch (e) {
+    console.log(e);
+  }
+});
 
 router.get('/:id', async (req, res) => {
-    const course = await Course.getById(req.params.id)
-    res.render('course', {
-        layout: 'empty',
-        title: `Курс ${course.title}`,
-        course
-    })
-})
+  const course = await Course.findById(req.params.id);
+  res.render('course', {
+    layout: 'empty',
+    title: `Курс ${course.title}`,
+    course,
+  });
+});
 
-module.exports = router
+module.exports = router;
