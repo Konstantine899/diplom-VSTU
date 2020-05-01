@@ -5,7 +5,10 @@ const Course = require('../models/course');
 const router = Router();
 
 router.get('/', async (req, res) => {
-  const courses = await Course.find(); // создаю объект курсов и вытаскиваю их все
+  const courses = await Course.find().populate('userId'); // создаю объект курсов и вытаскиваю их все
+
+  console.log(courses);
+
   res.render('courses', {
     title: 'Курсы',
     isCourses: true,
