@@ -6,6 +6,7 @@ const router = Router();
 function mapCartItems(cart) {
   return cart.items.map((c) => ({
     ...c.courseId._doc,
+    id: c.courseId.id,
     count: c.count,
   }));
 }
