@@ -7,8 +7,6 @@ const router = Router();
 router.get('/', async (req, res) => {
   const courses = await Course.find(); // создаю объект курсов и вытаскиваю их все
 
-  console.log(courses);
-
   res.render('courses', {
     title: 'Курсы',
     isCourses: true,
