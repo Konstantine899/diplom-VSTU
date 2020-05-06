@@ -1,52 +1,47 @@
 {{!  views card.hbs }}
-<h1>
-  Корзина
-</h1>
+<h1>Корзина</h1>
 <div id="card">
   {{#if courses.length}}
-    <table>
-      <thead>
-        <tr>
-          <th>
-            Название курса
-          </th>
-          <th>
-            Количество
-          </th>
-          <th>
-            Действия
-          </th>
-        </tr>
-      </thead>
-      <body>
-        {{#each courses}}
-          <tr>
-            <td>
-              {{title}}
-            </td>
-            <td>
-              {{count}}
-            </td>
-            <td>
-              <button class="btn btn-small js-remove" data-id="{{id}}">
-                Удалить
-              </button>
-            </td>
-          </tr>
-        {{/each}}
-      </body>
-    </table>
-    <p>
-      <strong>Цена:</strong><span class="price">{{price}}</span>
-    </p>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Название курса
+        </th>
+        <th>
+          Количество
+        </th>
+        <th>
+          Действия
+        </th>
+      </tr>
+    </thead>
 
-    <form action="/orders" method="POST">
+    <body>
+      {{#each courses}}
+      <tr>
+        <td>
+          {{title}}
+        </td>
+        <td>
+          {{count}}
+        </td>
+        <td>
+          <button class="btn btn-small js-remove" data-id="{{id}}">Удалить</button>
+        </td>
+      </tr>
+      {{/each}}
+    </body>
+  </table>
+  <p>
+    <strong>Цена:</strong><span class="price">{{price}}</span>
+  </p>
+
+  <form action="/orders" method="POST">
     <button type="submit" class="btn">Сделать заказ</button>
-    </form>
-    
+  </form>
+
   {{else}}
-    <p>
-      Корзина пуста
-    </p>
+  <p>Корзина пуста</p>
   {{/if}}
 </div>

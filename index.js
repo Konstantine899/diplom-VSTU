@@ -8,6 +8,7 @@ const exphbs = require('express-handlebars');
 const {
   allowInsecurePrototypeAccess,
 } = require('@handlebars/allow-prototype-access');
+const session = require('express-session');
 
 const homeRoutes = require('./routes/home');
 const cardRoutes = require('./routes/card');
@@ -16,6 +17,7 @@ const ordersRoutes = require('./routes/orders');
 const coursesRotes = require('./routes/courses');
 const authRoutes = require('./routes/auth');
 const User = require('./models/user');
+const warMiddleware = require('./middleware/variables');
 
 const app = express();
 
@@ -41,6 +43,14 @@ app.use(async (req, res, next) => {
 
 app.use(express.static(path.join(__dirname, 'public'))); // делаю папку public публичной а не динамической для того что бы express ее не обрабатывал
 app.use(express.urlencoded({ extended: true })); // данный метод использую при обработке POST запроса формы добавления курса
+app.use(
+  session({
+    secret: 'some secret value',
+    resave: false,
+    saveUninitialized: false,
+  })
+);
+app.use(warMiddleware);
 
 app.use('/', homeRoutes); // использую импортированный роут
 app.use('/add', addRouters); // использую импортированный роут
