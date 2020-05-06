@@ -14,6 +14,7 @@ const cardRoutes = require('./routes/card');
 const addRouters = require('./routes/add');
 const ordersRoutes = require('./routes/orders');
 const coursesRotes = require('./routes/courses');
+const authRoutes = require('./routes/auth');
 const User = require('./models/user');
 
 const app = express();
@@ -46,6 +47,7 @@ app.use('/add', addRouters); // использую импортированны�
 app.use('/courses', coursesRotes); // использую импортированный роут
 app.use('/card', cardRoutes); // регистрирую корзину
 app.use('/orders', ordersRoutes);
+app.use('/auth', authRoutes);
 
 const PORT = process.env.PORT || 3000;
 
