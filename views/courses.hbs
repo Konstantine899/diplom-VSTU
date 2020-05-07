@@ -1,7 +1,5 @@
 {{! courses.hbs }}
 
-<h1>Курсы</h1>
-
 {{#if courses.length}}
 {{#each courses}}
 <div class="row">
@@ -19,13 +17,15 @@
 
       <div class="card-action actions">
         <a href="/courses/{{id}}" target="_blank" target="_blank">Открыть курс</a>
+        {{#if @root.isAuth}}
         <a href="/courses/{{id}}/edit?allow=true">Редактировать</a>
         <form action="/card/add" method="POST">
           <input type="hidden" name="id" value="{{id}}" />
           <button type="submit" class="btn btn-primary">Купить</button>
         </form>
+        {{/if}}
       </div>
-
+      
     </div>
   </div>
 </div>
