@@ -19,6 +19,7 @@ const coursesRotes = require('./routes/courses');
 const authRoutes = require('./routes/auth');
 const User = require('./models/user');
 const warMiddleware = require('./middleware/variables');
+const userMiddleware = require('./middleware/user');
 
 const MONGODB_URI = `mongodb+srv://konstantine899:M0HmjAaCApHdkHCl@cluster0-nijcz.mongodb.net/shop`;
 
@@ -50,6 +51,7 @@ app.use(
   })
 );
 app.use(warMiddleware);
+app.use(userMiddleware);
 
 app.use('/', homeRoutes); // использую импортированный роут
 app.use('/add', addRouters); // использую импортированный роут
