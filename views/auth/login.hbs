@@ -5,7 +5,7 @@
         <div class="col s12">
             <ul class="tabs">
                 <li class="tab col s6"><a class="active" href="#login">Войти в магазин</a></li>
-                <li class="tab col s6"><a href="#register">Регистрация</a></li>
+                <li class="tab col s6"><a href="#register">Регистрация пользователя</a></li>
 
             </ul>
         </div>
@@ -29,8 +29,14 @@
 
         </div>
         <div id="register" class="col s6 offset-s3">
-            <h1>Регистрация пользователя</h1>
+            {{!-- <h1>Регистрация пользователя</h1> --}}
             <form class="form" action="/auth/register" method="POST">
+
+                <div class="input-field"><input id="name" name="name" type="text" class="validate" required />
+                    <label for="name">Ваше имя:</label>
+                    <span class="helper-text" data-error="Введите имя"></span>
+                </div>
+
                 <div class="input-field">
                     <input id="remail" name="email" type="email" class="validate" required />
                     {{!-- Для того что бы небыло конфликтов прописываю remail меняю только id и for --}}
@@ -49,6 +55,8 @@
                     <label for="confirm">Пароль еще раз:</label>
                     <span class="helper-text" data-error="Введите пароль"></span>
                 </div>
+
+
 
                 <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
             </form>
