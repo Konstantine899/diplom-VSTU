@@ -1,5 +1,5 @@
-// routes outh.js
 const { Router } = require('express');
+const bcrypt = require('bcryptjs');
 const User = require('../models/user');
 const router = Router();
 
@@ -22,16 +22,16 @@ router.post('/login', async (req, res) => {
     const candidate = await User.findOne({ email });
 
     if (candidate) {
-      const areSame = password === candidate.password;
+      const areSame = await bcrypt.compare(password, candidate.password);
+
       if (areSame) {
         req.session.user = candidate;
         req.session.isAuthenticated = true;
         req.session.save((err) => {
           if (err) {
             throw err;
-          } else {
-            res.redirect('/');
           }
+          res.redirect('/');
         });
       } else {
         res.redirect('/auth/login#login');
@@ -46,15 +46,17 @@ router.post('/login', async (req, res) => {
 
 router.post('/register', async (req, res) => {
   try {
-    const { email, password, repead, name } = req.body;
+    const { email, password, repeat, name } = req.body;
     const candidate = await User.findOne({ email });
+
     if (candidate) {
       res.redirect('/auth/login#register');
     } else {
+      const hashPassword = await bcrypt.hash(password, 10);
       const user = new User({
         email,
         name,
-        password,
+        password: hashPassword,
         cart: { items: [] },
       });
       await user.save();
