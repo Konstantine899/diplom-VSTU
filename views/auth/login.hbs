@@ -24,6 +24,8 @@
                     <span class="helper-text" data-error="Введите пароль"></span>
                 </div>
 
+                <input type="hidden" name="_csrf" value="{{csrf}}">
+
                 <button class="btn btn-primary" type="submit">Войти</button>
             </form>
 
@@ -36,6 +38,7 @@
                     <label for="name">Ваше имя:</label>
                     <span class="helper-text" data-error="Введите имя"></span>
                 </div>
+
 
                 <div class="input-field">
                     <input id="remail" name="email" type="email" class="validate" required />
@@ -56,7 +59,7 @@
                     <span class="helper-text" data-error="Введите пароль"></span>
                 </div>
 
-
+                <input type="hidden" name="_csrf" value="{{csrf}}">
 
                 <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
             </form>

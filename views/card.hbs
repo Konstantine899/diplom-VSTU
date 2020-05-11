@@ -1,33 +1,22 @@
 {{!  views card.hbs }}
-<h1>Корзина</h1>
 <div id="card">
   {{#if courses.length}}
   <table>
     <thead>
       <tr>
-        <th>
-          Название курса
-        </th>
-        <th>
-          Количество
-        </th>
-        <th>
-          Действия
-        </th>
+        <th>Название курса</th>
+        <th>Количество</th>
+        <th>Действия</th>
       </tr>
     </thead>
 
     <body>
       {{#each courses}}
       <tr>
+        <td>{{title}}</td>
+        <td>{{count}}</td>
         <td>
-          {{title}}
-        </td>
-        <td>
-          {{count}}
-        </td>
-        <td>
-          <button class="btn btn-small js-remove" data-id="{{id}}">Удалить</button>
+          <button class="btn btn-small js-remove" data-id="{{id}}" data-csrf="{{@root.csrf}}">Удалить</button>
         </td>
       </tr>
       {{/each}}
@@ -38,6 +27,7 @@
   </p>
 
   <form action="/orders" method="POST">
+  <input type="hidden" name="_csrf" value="{{csrf}}">
     <button type="submit" class="btn">Сделать заказ</button>
   </form>
 
