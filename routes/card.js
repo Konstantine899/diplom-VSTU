@@ -1,4 +1,5 @@
 // routes card.js
+// в 011 корзина работает. Ищи проблему в CSRF защите херня какая -то!!!
 const { Router } = require('express');
 
 const Course = require('../models/course');
