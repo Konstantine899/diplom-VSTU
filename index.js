@@ -4,6 +4,7 @@ const express = require('express');
 const Handlebars = require('handlebars');
 const path = require('path');
 const csrf = require('csurf');
+const flash = require('connect-flash');
 const mongoose = require('mongoose');
 const exphbs = require('express-handlebars');
 const {
@@ -18,7 +19,6 @@ const addRouters = require('./routes/add');
 const ordersRoutes = require('./routes/orders');
 const coursesRotes = require('./routes/courses');
 const authRoutes = require('./routes/auth');
-const User = require('./models/user');
 const warMiddleware = require('./middleware/variables');
 const userMiddleware = require('./middleware/user');
 
@@ -52,6 +52,7 @@ app.use(
   })
 );
 app.use(csrf());
+app.use(flash());
 app.use(warMiddleware);
 app.use(userMiddleware);
 

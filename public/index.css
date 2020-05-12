@@ -2,10 +2,10 @@
   margin: 0 50px;
 }
 #login {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #register {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .conteiner {
   display: flex;
@@ -19,13 +19,33 @@ h1 {
   line-height: 110%;
   margin: 0;
 }
-
-.nav-wrapper {
+nav .nav-wrapper {
+  position: relative;
+  height: 100%;
   padding: 0 50px;
+  background-image: linear-gradient(-60deg, #8b67b1 0%, #027b7d 100%);
+}
+.tabs .tab a {
+  color: #027b7d;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-transition: color 0.28s ease, background-color 0.28s ease;
+  transition: color 0.28s ease, background-color 0.28s ease;
+}
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  background-color: transparent;
+  color: #8b67b1;
+  font-weight: 600;
 }
 
 .row {
-  width: 700px;
+  width: 750px;
 }
 
 .price {
@@ -64,4 +84,15 @@ h1 {
 
 .auth {
   padding-top: 1rem;
+}
+
+.alert {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 5rem;
+  /* background: rgba(255,0,0, .3); */
+  background: #8b67b1;
+  /* color: red; */
+  color: white;
 }
