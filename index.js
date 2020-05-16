@@ -21,8 +21,7 @@ const coursesRotes = require('./routes/courses');
 const authRoutes = require('./routes/auth');
 const warMiddleware = require('./middleware/variables');
 const userMiddleware = require('./middleware/user');
-
-const MONGODB_URI = `mongodb+srv://konstantine899:M0HmjAaCApHdkHCl@cluster0-nijcz.mongodb.net/shop`;
+const keys = require('./keys');
 
 const app = express();
 
@@ -34,7 +33,7 @@ const hbs = exphbs.create({
 
 const store = new MongoStore({
   collection: 'sessions',
-  uri: MONGODB_URI,
+  uri: keys.MONGODB_URI,
 });
 
 app.engine('hbs', hbs.engine); // регистрирую движок
@@ -45,7 +44,7 @@ app.use(express.static(path.join(__dirname, 'public'))); // делаю папк�
 app.use(express.urlencoded({ extended: true })); // данный метод использую при обработке POST запроса формы добавления курса
 app.use(
   session({
-    secret: 'some secret value',
+    secret: keys.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
     store,
@@ -67,7 +66,7 @@ const PORT = process.env.PORT || 3000;
 
 async function start() {
   try {
-    await mongoose.connect(MONGODB_URI, {
+    await mongoose.connect(keys.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
