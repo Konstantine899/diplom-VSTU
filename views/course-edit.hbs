@@ -17,6 +17,12 @@
       <label for="img">URL картинки</label>
       <span class="helper-text" data-error="Введите url картинки"></span>
     </div>
+     <div class="input-field">
+      <textarea id="description" name="description" class="materialize-textarea"></textarea>
+      <label for="description">Введите описание курса</label>
+      <span class="helper-text" data-error="Введите описание курса"></span>
+    </div>
+
     <input type="hidden" name="id" value="{{course.id}}" />
     <input type="hidden" name="_csrf" value="{{csrf}}">
     <button type="submit" class="btn btn-primary">Редактировать курс</button>
@@ -27,3 +33,4 @@
     <button class="btn red">Удалить курс</button>
   </form>
 </div>
+

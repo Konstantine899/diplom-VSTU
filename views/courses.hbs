@@ -3,7 +3,8 @@
 {{#if courses.length}}
 {{#each courses}}
 <div class="row">
-  <div class="col s12 m7">
+  {{!-- <div class="col s12 m7"> --}}
+  <div class="row__column">
     <div class="card">
 
       <div class="card-image">
@@ -14,6 +15,11 @@
         <span class="card-title">{{title}}</span>
         <p class="price">{{price}}</p>
       </div>
+
+       {{!-- <div class="card-content"> --}}
+        {{!-- <span class="card-title">{{description}}</span> --}}
+        {{!-- <p class="description">{{description}}</p> --}}
+      {{!-- </div> --}}
 
       <div class="card-action actions">
         <a href="/courses/{{id}}" target="_blank" target="_blank">Открыть курс</a>
