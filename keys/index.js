@@ -5,5 +5,7 @@ module.exports = {
     'mongodb+srv://konstantine899:M0HmjAaCApHdkHCl@cluster0-nijcz.mongodb.net/shop',
   SESSION_SECRET: 'some secret value',
   SENDGRID_API_KEY:
-    'SG.md4XQ6FSQmSH8KB7wHri4g.cjpsl - APUR7 - G3wWnWvoFbd1SxcAx3c9LZXp0Oqqrdc',
+    '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',
+  EMAIL_FROM: '375298918971@mail.ru',
+  BASE_URL: 'http://localhost:3000',
 };
