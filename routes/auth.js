@@ -49,7 +49,7 @@ router.post('/login', async (req, res) => {
           res.redirect('/');
         });
       } else {
-        req.flash('loginError', 'Введите верный пароль');
+        req.flash('loginError', 'Неверный пароль');
         res.redirect('/auth/login#login');
       }
     } else {
@@ -67,7 +67,7 @@ router.post('/register', async (req, res) => {
     const candidate = await User.findOne({ email });
 
     if (candidate) {
-      req.flash('registerError', 'Пользователь с данным email уже существует');
+      req.flash('registerError', 'Пользователь с таким email уже существует');
       res.redirect('/auth/login#register');
     } else {
       const hashPassword = await bcrypt.hash(password, 10);
@@ -78,8 +78,8 @@ router.post('/register', async (req, res) => {
         cart: { items: [] },
       });
       await user.save();
-      res.redirect('/auth/login#login');
       await transporter.sendMail(regEmail(email));
+      res.redirect('/auth/login#login');
     }
   } catch (e) {
     console.log(e);
@@ -88,24 +88,26 @@ router.post('/register', async (req, res) => {
 
 router.get('/reset', (req, res) => {
   res.render('auth/reset', {
-    title: 'забыли пароль?',
+    title: 'Забыли пароль?',
     error: req.flash('error'),
   });
 });
 
 router.get('/password/:token', async (req, res) => {
   if (!req.params.token) {
-    res.redirect('/auth/login');
+    return res.redirect('/auth/login');
   }
+
   try {
     const user = await User.findOne({
       resetToken: req.params.token,
       resetTokenExp: { $gt: Date.now() },
     });
+
     if (!user) {
       return res.redirect('/auth/login');
     } else {
-      res.render('/auth/password', {
+      res.render('auth/password', {
         title: 'Восстановить доступ',
         error: req.flash('error'),
         userId: user._id.toString(),
@@ -119,11 +121,12 @@ router.get('/password/:token', async (req, res) => {
 
 router.post('/reset', (req, res) => {
   try {
-    crypto.randomBytes(32, async (error, buffer) => {
-      if (error) {
-        req.flash('error', 'Что-то пошло не так, повторите попытку');
+    crypto.randomBytes(32, async (err, buffer) => {
+      if (err) {
+        req.flash('error', 'Что-то пошло не так, повторите попытку позже');
         return res.redirect('/auth/reset');
       }
+
       const token = buffer.toString('hex');
       const candidate = await User.findOne({ email: req.body.email });
 
@@ -134,10 +137,33 @@ router.post('/reset', (req, res) => {
         await transporter.sendMail(resetEmail(candidate.email, token));
         res.redirect('/auth/login');
       } else {
-        req.flash('error', 'Данный email не найден');
+        req.flash('error', 'Такого email нет');
         res.redirect('/auth/reset');
       }
     });
+  } catch (e) {
+    console.log(e);
+  }
+});
+
+router.post('/password', async (req, res) => {
+  try {
+    const user = await User.findOne({
+      _id: req.body.userId,
+      resetToken: req.body.token,
+      resetTokenExp: { $gt: Date.now() },
+    });
+
+    if (user) {
+      user.password = await bcrypt.hash(req.body.password, 10);
+      user.resetToken = undefined;
+      user.resetTokenExp = undefined;
+      await user.save();
+      res.redirect('/auth/login');
+    } else {
+      req.flash('loginError', 'Время жизни токена истекло');
+      res.redirect('/auth/login');
+    }
   } catch (e) {
     console.log(e);
   }

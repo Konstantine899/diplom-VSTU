@@ -5,33 +5,60 @@ const Course = require('../models/course');
 const auth = require('../middleware/auth');
 const router = Router();
 
-router.get('/', async (req, res) => {
-  const courses = await Course.find(); // создаю объект курсов и вытаскиваю их все
+function isOwner(course, req) {
+  course.userId.toString() !== req.user._id.toString();
+}
 
-  res.render('courses', {
-    title: 'Курсы',
-    isCourses: true,
-    courses, // добавляю данный объект на страницу
-  });
+router.get('/', async (req, res) => {
+  try {
+    const courses = await Course.find()
+      .populate('userId', 'email name')
+      .select('price title img');
+
+    res.render('courses', {
+      title: 'Курсы',
+      isCourses: true,
+      userId: req.user ? req.user._id.toString() : null,
+      courses,
+    });
+  } catch (e) {
+    console.log(e);
+  }
 });
 
 router.get('/:id/edit', auth, async (req, res) => {
-  // редактирование курса
   if (!req.query.allow) {
     return res.redirect('/');
   }
-  const course = await Course.findById(req.params.id);
-  res.render('course-edit', {
-    title: `Редактировать ${course.title}`,
-    course,
-  });
+  try {
+    const course = await Course.findById(req.params.id);
+    if (!isOwner(course, req)) {
+      return res.redirect('/courses');
+    }
+
+    res.render('course-edit', {
+      title: `Редактировать ${course.title}`,
+      course,
+    });
+  } catch (e) {
+    console.log(e);
+  }
 });
 
 router.post('/edit', auth, async (req, res) => {
-  const { id } = req.body; // выношу id в отдельную переменную.
-  delete req.body.id; // удаляю id потому что mongoose по умол  ниж под id
-  await Course.findOneAndUpdate(id, req.body);
-  res.redirect('/courses');
+  try {
+    const { id } = req.body;
+    delete req.body.id;
+    const course = await Course.findById(id);
+    if (!isOwner(course, req)) {
+      return res.redirect('courses');
+    }
+    Object.assign(course, req.body);
+    await course.save();
+    res.redirect('/courses');
+  } catch (e) {
+    console.log(e);
+  }
 });
 
 router.post('/remove', auth, async (req, res) => {
