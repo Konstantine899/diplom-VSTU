@@ -2,6 +2,7 @@
 const { Router } = require('express');
 const bcrypt = require('bcryptjs');
 const crypto = require('crypto');
+const { body, validationResult } = require('express-validator');
 const nodemailer = require('nodemailer');
 const sendgrid = require('nodemailer-sendgrid-transport');
 const User = require('../models/user');
@@ -61,10 +62,16 @@ router.post('/login', async (req, res) => {
   }
 });
 
-router.post('/register', async (req, res) => {
+router.post('/register', body('email').isEmail(), async (req, res) => {
   try {
-    const { email, password, repeat, name } = req.body;
+    const { email, password, confirm, name } = req.body;
     const candidate = await User.findOne({ email });
+
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      req.flash('registerError', errors.array()[0].msg);
+      return res.status(422).redirect('/auth/login#register');
+    }
 
     if (candidate) {
       req.flash('registerError', 'Пользователь с таким email уже существует');
