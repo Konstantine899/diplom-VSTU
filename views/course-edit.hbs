@@ -1,7 +1,7 @@
 {{! courses-edit.hbs  }}
 <div class="row">
   <h1>Редактировать{{course.title}}</h1>
-  <form action="/courses/edit" method="POST" class="course-form">
+  <form action="/courses/edit" method="POST" class="course-form" novalidate>
     <div class="input-field">
       <input id="title" name="title" type="text" class="validate" required value="{{course.title}}" />
       <label for="title">Название курса</label>
@@ -17,10 +17,11 @@
       <label for="img">URL картинки</label>
       <span class="helper-text" data-error="Введите url картинки"></span>
     </div>
-     <div class="input-field">
-      <textarea id="description" name="description" class="materialize-textarea"></textarea>
-      <label for="description">Введите описание курса</label>
-      <span class="helper-text" data-error="Введите описание курса"></span>
+     <div class="description">   
+      <label for="description" class="description-textarea-label">Введите HTML описание курса</label>
+      <textarea class="description-textarea" name="description"  value="{{{data.description}}}" required></textarea>
+      
+      <span class="helper-text" data-error="Введите html описание курса"></span>
     </div>
 
     <input type="hidden" name="id" value="{{course.id}}" />

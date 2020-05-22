@@ -12,7 +12,10 @@ const courseSchema = new Schema({
     required: true,
   },
   img: String,
-  description: [],
+  description: {
+    type: Object,
+    required: true,
+  },
   userId: {
     type: Schema.Types.ObjectId,
     ref: 'User',

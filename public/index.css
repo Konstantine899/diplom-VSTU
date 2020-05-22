@@ -146,3 +146,20 @@ nav ul a:hover {
   margin-bottom: 1rem;
   width: 390px;
 } 
+.description{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.description-textarea{
+  width: 390px;
+  height: 150px;
+  margin-bottom: 40px;
+  resize: none; /*запретил пользователю изменять размеры текстового поля*/
+}
+.description-textarea-label{
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
