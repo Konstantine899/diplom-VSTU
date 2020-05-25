@@ -8,6 +8,13 @@ body {
 #register {
   margin-top: 50px;
 }
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
 .conteiner {
   display: flex;
   flex-direction: row;
@@ -161,5 +168,19 @@ nav ul a:hover {
 .description-textarea-label{
   font-size: 1rem;
   margin-bottom: 10px;
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+}
+.profile h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 110%;
+  margin: 0;
+}
+.profile__avatar{
+  max-width: 300px;
+  height: auto;
 }
 

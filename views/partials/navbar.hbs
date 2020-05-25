@@ -23,6 +23,7 @@
             <li><a href="/add">Добавить курс</a></li>
             {{/if}}
 
+
             {{#if isCard}}
             <li class="active"><a href="/card">Корзина</a></li>
             {{else}}
@@ -34,6 +35,13 @@
             {{else}}
             <li><a href="/orders">Заказы</a></li>
             {{/if}}
+
+            {{#if isProfile}}
+            <li class="active"><a href="/profile">Профиль</a></li>
+            {{else}}
+            <li><a href="/profile">Профиль</a></li>
+            {{/if}}
+
             <li><a href="/auth/logout">Выйти</a></li>
             {{else}}
             {{#if isLogin}}

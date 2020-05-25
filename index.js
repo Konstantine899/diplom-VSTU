@@ -19,6 +19,7 @@ const addRouters = require('./routes/add');
 const ordersRoutes = require('./routes/orders');
 const coursesRotes = require('./routes/courses');
 const authRoutes = require('./routes/auth');
+const profileRoutes = require('./routes/profile');
 const warMiddleware = require('./middleware/variables');
 const userMiddleware = require('./middleware/user');
 const errorHandler = require('./middleware/error');
@@ -64,6 +65,7 @@ app.use('/courses', coursesRotes); // использую импортирова�
 app.use('/card', cardRoutes); // регистрирую корзину
 app.use('/orders', ordersRoutes);
 app.use('/auth', authRoutes);
+app.use('/profile', profileRoutes);
 
 app.use(errorHandler);
 
