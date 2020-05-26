@@ -179,7 +179,7 @@ nav ul a:hover {
   line-height: 110%;
   margin: 0;
 }
-.profile__avatar{
+.avatar{
   max-width: 300px;
   height: auto;
 }
