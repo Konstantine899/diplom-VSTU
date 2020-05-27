@@ -3,4 +3,5 @@ node_modules
 /.eslintignore
 /.eslintrc.json
 /.prettierrc
+keys/keys.dev.js
 
