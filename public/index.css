@@ -8,7 +8,7 @@ body {
 #register {
   margin-top: 50px;
 }
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +31,8 @@ nav .nav-wrapper {
   position: relative;
   height: 100%;
   padding: 0 50px;
-  background-image: linear-gradient(-60deg, #8b67b1 0%, #027b7d 100%);
+  /* background-image: linear-gradient(-60deg, #8b67b1 0%, #027b7d 100%); */
+  background-color: red;
 }
 nav ul a {
   -webkit-transition: background-color 0.3s;
@@ -152,24 +153,23 @@ nav ul a:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 390px;
-} 
-.description{
+}
+.description {
   display: flex;
   flex-direction: column;
 }
 
-
-.description-textarea{
+.description-textarea {
   width: 390px;
   height: 150px;
   margin-bottom: 40px;
   resize: none; /*запретил пользователю изменять размеры текстового поля*/
 }
-.description-textarea-label{
+.description-textarea-label {
   font-size: 1rem;
   margin-bottom: 10px;
 }
-.profile{
+.profile {
   display: flex;
   flex-direction: column;
 }
@@ -179,8 +179,7 @@ nav ul a:hover {
   line-height: 110%;
   margin: 0;
 }
-.avatar{
+.avatar {
   max-width: 300px;
   height: auto;
 }
-
