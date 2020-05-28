@@ -1,0 +1,192 @@
+$body__color: #f9fafc;
+$nav__color__gradient-one: #8b67b1;
+$nav__color__gradient-two: #027b7d;
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: $body__color;
+}
+
+#login {
+  margin-top: 50px;
+}
+#register {
+  margin-top: 50px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+h1 {
+  font-size: 2.2rem;
+  line-height: 110%;
+  margin: 0;
+}
+nav .nav-wrapper {
+  position: relative;
+  height: 100%;
+  padding: 0 50px;
+  background-image: linear-gradient(-60deg, $nav__color__gradient-one 0%, $nav__color__gradient-two 100%);
+}
+nav ul a {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  font-size: 24px;
+  color: #fff;
+  display: block;
+  padding: 0 15px;
+  cursor: pointer;
+}
+nav ul a:hover {
+  color: yellow;
+}
+.tabs .tab a {
+  color: #027b7d;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-transition: color 0.28s ease, background-color 0.28s ease;
+  transition: color 0.28s ease, background-color 0.28s ease;
+}
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  background-color: transparent;
+  color: #8b67b1;
+  font-weight: 600;
+}
+
+.row {
+  width: 750px;
+}
+.row__column {
+  width: 58.3333333333%;
+  left: auto;
+  right: auto;
+}
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.course {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course h1 {
+  margin-bottom: 2rem;
+}
+
+.course img {
+  max-width: 600px;
+  height: auto;
+}
+
+.course .price.big {
+  font-size: 2.5em;
+}
+.card-action.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 10px;
+}
+
+.course-form {
+  margin-bottom: 2rem;
+}
+
+.auth {
+  padding-top: 1rem;
+}
+
+.alert {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 5rem;
+  /* background: rgba(255,0,0, .3); */
+  background: #8b67b1;
+  /* color: red; */
+  color: white;
+}
+.course__description {
+  margin-bottom: 500px;
+  max-width: 1100px;
+}
+
+.course__description p {
+  font-family: Proxima Nova Rg;
+  color: gray;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.materialize-textarea {
+  color: #9e9e9e;
+}
+.input-field {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 390px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-textarea {
+  width: 390px;
+  height: 150px;
+  margin-bottom: 40px;
+  resize: none; /*запретил пользователю изменять размеры текстового поля*/
+}
+.description-textarea-label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+.profile h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 110%;
+  margin: 0;
+}
+.avatar {
+  max-width: 300px;
+  height: auto;
+}
