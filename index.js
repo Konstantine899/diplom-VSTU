@@ -67,6 +67,8 @@ app.set('views', 'views'); // первый параметр заношу пер�
 
 app.use(express.static(path.join(__dirname, 'public'))); // делаю папку public публичной а не динамической для того что бы express ее не обрабатывал
 app.use('/images', express.static(path.join(__dirname, 'images')));
+app.use('/img', express.static(path.join(__dirname, 'img')));
+app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
 app.use(express.urlencoded({ extended: true })); // данный метод использую при обработке POST запроса формы добавления курса
 app.use(
   session({

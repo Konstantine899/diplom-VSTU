@@ -2,12 +2,20 @@ $body__color: #f9fafc;
 $nav__color__gradient-one: #8b67b1;
 $nav__color__gradient-two: #027b7d;
 
+@font-face {
+  font-family: 'Verdana';
+  src: url(/fonts/Verdana.bin);
+}
+
 html {
   font-size: 10px;
 }
 
 body {
-  background-color: $body__color;
+  // background-color: red;
+  opacity: 0.9;
+  margin: 0;
+  max-width: 100%;
 }
 
 #login {
@@ -16,43 +24,107 @@ body {
 #register {
   margin-top: 50px;
 }
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-}
+
 .conteiner {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.block {
+  background: url(../img/main-bg.jpg) no-repeat;
+  background-size: 100%;
+}
+.main__img {
+  margin-top: -63px;
+  height: 555px;
+}
+
+.nav,
+.main__img {
+  background: url(../img/main-bg.jpg) no-repeat;
+  background-size: 100%;
+  z-index: -1;
+}
+.main__img {
+  padding-top: 70px;
+}
+
+main .main__img-bg {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  flex-direction: column;
+  background-color: black;
+  height: 560px;
+  margin-top: -7px;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.main__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -500px;
+  width: 100%;
+}
+.main__content p {
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 1;
+  z-index: 999;
 }
 h1 {
   font-size: 2.2rem;
   line-height: 110%;
   margin: 0;
 }
+
 nav .nav-wrapper {
-  position: relative;
-  height: 100%;
-  padding: 0 50px;
-  background-image: linear-gradient(-60deg, $nav__color__gradient-one 0%, $nav__color__gradient-two 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(32, 36, 35, 0.8);
+  opacity: 0.9;
 }
-nav ul a {
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+.nav__wrapper-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px 10px;
+}
+.nav-wrapper-a {
   font-size: 24px;
   color: #fff;
   display: block;
   padding: 0 15px;
-  cursor: pointer;
+  text-decoration: none;
+}
+nav ul a {
+  font-size: 24px;
+  color: #fff;
+  display: block;
+  padding: 0 15px;
+  text-decoration: none;
 }
 nav ul a:hover {
   color: yellow;
+  cursor: pointer;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .tabs .tab a {
   color: #027b7d;
   display: block;
