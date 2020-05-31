@@ -1,7 +1,6 @@
 // routes card.js
 // в 011 корзина работает. Ищи проблему в CSRF защите херня какая -то!!!
 const { Router } = require('express');
-
 const Course = require('../models/course');
 const auth = require('../middleware/auth');
 const router = Router();
@@ -21,9 +20,13 @@ function computePrice(courses) {
 }
 
 router.post('/add', auth, async (req, res) => {
-  const course = await Course.findById(req.body.id);
-  await req.user.addToCart(course);
-  res.redirect('/card');
+  try {
+    const course = await Course.findById(req.body.id);
+    await req.user.addToCart(course);
+    res.redirect('/card');
+  } catch (e) {
+    console.log(e);
+  }
 });
 
 router.delete('/remove/:id', auth, async (req, res) => {

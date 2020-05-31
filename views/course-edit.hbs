@@ -1,37 +1,38 @@
 {{! courses-edit.hbs  }}
-<div class="row">
-  <h1>Редактировать{{course.title}}</h1>
-  <form action="/courses/edit" method="POST" class="course-form" novalidate>
-    <div class="input-field">
-      <input id="title" name="title" type="text" class="validate" required value="{{course.title}}" />
-      <label for="title">Название курса</label>
-      <span class="helper-text" data-error="Введите название курса"></span>
-    </div>
-    <div class="input-field">
-      <input id="price" name="price" type="number" class="validate" required min="1" value="{{course.price}}" />
-      <label for="price">Цена курса</label>
-      <span class="helper-text" data-error="Введите цену"></span>
-    </div>
-    <div class="input-field">
-      <input id="img" name="img" type="text" class="validate" required value="{{course.img}}" />
-      <label for="img">URL картинки</label>
-      <span class="helper-text" data-error="Введите url картинки"></span>
-    </div>
-     <div class="description">   
-      <label for="description" class="description-textarea-label">Введите HTML описание курса</label>
-      <textarea class="description-textarea" name="description"  value="{{{data.description}}}" required></textarea>
-      
-      <span class="helper-text" data-error="Введите html описание курса"></span>
-    </div>
+<div class="course-form">
+{{#if error}}
+<p class="alert">{{error}}</p>
+{{/if}}
+<form action="/courses/edit" method="POST"  novalidate>
+  <div class="input-field">
+    <input id="title" name="title" type="text" class="validate" required value="{{course.title}}" />
+    <label for="title">Название курса</label>
+    <span class="helper-text" data-error="Введите название курса"></span>
+  </div>
+  <div class="input-field">
+    <input id="price" name="price" type="number" class="validate" required min="1" value="{{course.price}}" />
+    <label for="price">Цена курса</label>
+    <span class="helper-text" data-error="Введите цену"></span>
+  </div>
+  <div class="input-field">
+    <input id="img" name="img" type="text" class="validate" required value="{{course.img}}" />
+    <label for="img">URL картинки</label>
+    <span class="helper-text" data-error="Введите url картинки"></span>
+  </div>
+  <div class="description">
+    <label for="description" class="description-textarea-label">Введите HTML описание курса</label>
+    <textarea class="description-textarea" name="description" value="{{{course.description}}}" required></textarea>
 
-    <input type="hidden" name="id" value="{{course.id}}" />
-    <input type="hidden" name="_csrf" value="{{csrf}}">
-    <button type="submit" class="btn btn-primary">Редактировать курс</button>
-  </form>
-  <form action="/courses/remove" method="POST">
-    <input type="hidden" name="id" value="{{course.id}}" />
-    <input type="hidden" name="_csrf" value="{{csrf}}">
-    <button class="btn red">Удалить курс</button>
-  </form>
+    <span class="helper-text" data-error="Введите html описание курса"></span>
+  </div>
+
+  <input type="hidden" name="id" value="{{course.id}}" />
+  <input type="hidden" name="_csrf" value="{{csrf}}">
+  <button type="submit" class="btn btn-primary">Редактировать курс</button>
+</form>
+<form action="/courses/remove" method="POST">
+  <input type="hidden" name="id" value="{{course.id}}" />
+  <input type="hidden" name="_csrf" value="{{csrf}}">
+  <button class="btn red">Удалить курс</button>
+</form>
 </div>
-

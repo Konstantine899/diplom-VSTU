@@ -1,39 +1,39 @@
 {{!  views card.hbs }}
-<div class="row">
 <div id="card">
-  {{#if courses.length}}
+{{#if courses.length}}
   <table>
     <thead>
       <tr>
-        <th>Название курса</th>
+        <th>Название</th>
         <th>Количество</th>
         <th>Действия</th>
       </tr>
     </thead>
-
-    <body>
+    <tbody>
+      
       {{#each courses}}
       <tr>
         <td>{{title}}</td>
         <td>{{count}}</td>
         <td>
-          <button class="btn btn-small js-remove" data-id="{{id}}" data-csrf="{{@root.csrf}}">Удалить</button>
+          <button 
+            class="btn btm-small js-remove" 
+            data-id="{{id}}"
+            data-csrf="{{@root.csrf}}"
+          >Удалить</button>
         </td>
       </tr>
       {{/each}}
-    </body>
+    </tbody>
   </table>
-  <p>
-    <strong>Цена:</strong><span class="price">{{price}}</span>
-  </p>
+
+  <p><strong>Цена:</strong> <span class="price">{{price}}</span></p>
 
   <form action="/orders" method="POST">
-  <input type="hidden" name="_csrf" value="{{csrf}}">
+    <input type="hidden" name="_csrf" value="{{csrf}}">
     <button type="submit" class="btn">Сделать заказ</button>
   </form>
-
-  {{else}}
+{{else}}
   <p>Корзина пуста</p>
-  {{/if}}
-</div>
+{{/if}}
 </div>

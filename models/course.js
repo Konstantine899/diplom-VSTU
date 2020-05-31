@@ -22,7 +22,6 @@ const courseSchema = new Schema({
   },
 });
 
-// const description = document.getElementById('course__description').innerHTML;
 
 courseSchema.method('toClient', function () {
   const course = this.toObject();

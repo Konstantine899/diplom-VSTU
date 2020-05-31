@@ -7,6 +7,10 @@ html {
   font-size: 10px; }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
   opacity: 0.9;
   margin: 0;
   max-width: 100%; }
@@ -17,11 +21,17 @@ body {
 #register {
   margin-top: 50px; }
 
+.conteiner-lines {
+  background: url(../img/lines.png) no-repeat;
+  background-size: cover; }
+
 .conteiner-bg {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-color: gray;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
   margin-top: -67px; }
 
 .block {
@@ -37,7 +47,7 @@ body {
 
 main .main__img-bg {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   background-color: black;
@@ -127,12 +137,14 @@ main {
 
 .row {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center; }
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px; }
 
 .row__column {
   width: 300px;
+  margin: 0px 50px;
   height: auto;
   left: auto;
   right: auto; }
@@ -140,15 +152,12 @@ main {
 .card {
   margin-top: 200px;
   outline: 2px solid red;
-  width: 300px;
-  height: 427px; }
-
-.card .card-image img {
-  width: 300px;
+  width: 350px;
   height: 100%; }
 
-.card-image-wrapper {
-  height: 300px; }
+.card .card-image img {
+  width: 350px;
+  height: 100%; }
 
 .card-content {
   display: flex;
@@ -156,8 +165,17 @@ main {
   align-items: flex-start;
   justify-content: flex-start; }
 
+.card-content span {
+  color: white; }
+
+.card-action a {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 700; }
+
 .price {
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: white; }
 
 .course {
   width: 100%;
@@ -181,21 +199,25 @@ main {
   justify-content: space-between;
   padding: 16px 10px; }
 
-.course-form {
-  margin-bottom: 2rem; }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 100px; }
 
 .auth {
   padding-top: 1rem; }
 
+p .alert {
+  margin: 0; }
+
 .alert {
-  padding: 0.5rem 1rem;
   border-radius: 10px;
   text-align: center;
-  margin-bottom: 5rem;
-  /* background: rgba(255,0,0, .3); */
   background: #8b67b1;
-  /* color: red; */
-  color: white; }
+  color: white;
+  font-size: 2rem; }
 
 .course__description {
   margin-bottom: 500px;
@@ -207,8 +229,8 @@ main {
   font-weight: 700;
   font-size: 26px; }
 
-.materialize-textarea {
-  color: #9e9e9e; }
+.course-form {
+  padding-top: 100px; }
 
 .input-field {
   position: relative;
