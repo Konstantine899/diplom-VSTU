@@ -21,6 +21,9 @@ body {
 #register {
   margin-top: 50px; }
 
+.conteiner {
+  height: 100%; }
+
 .conteiner-lines {
   background: url(../img/lines.png) no-repeat;
   background-size: cover; }
@@ -39,7 +42,6 @@ body {
   background-size: 100%; }
 
 .main__img {
-  margin-top: 4px;
   height: 555px; }
 
 .main__img {
@@ -52,7 +54,7 @@ main .main__img-bg {
   flex-direction: column;
   background-color: black;
   height: 100%;
-  margin-top: -7px;
+  margin-top: -3px;
   opacity: 0.5;
   z-index: 2; }
 
@@ -71,6 +73,28 @@ main .main__img-bg {
   line-height: 1.5;
   margin: 0;
   z-index: 999; }
+
+.line,
+.main__parallelogram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to right, #4d9799, #71c4c6, #4d9799);
+  clip-path: polygon(8% 12%, 82% 11%, 82% 60%, 7% 60%);
+  outline: 2px solid red;
+  margin-top: -135px; }
+
+.main__parallelogram-line {
+  background: url(../img/lines1.png); }
+
+.line,
+.main__parallelogram,
+p {
+  font-size: 3rem;
+  color: red; }
 
 h1 {
   font-size: 2.2rem;
