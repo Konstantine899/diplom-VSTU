@@ -45,7 +45,7 @@ body {
   height: 555px; }
 
 .main__img {
-  padding-top: 70px; }
+  padding-top: 67px; }
 
 main .main__img-bg {
   display: flex;
@@ -54,7 +54,6 @@ main .main__img-bg {
   flex-direction: column;
   background-color: black;
   height: 100%;
-  margin-top: -3px;
   opacity: 0.5;
   z-index: 2; }
 
@@ -74,6 +73,10 @@ main .main__img-bg {
   margin: 0;
   z-index: 999; }
 
+.main__parallelogram {
+  margin-bottom: 700px;
+  margin-top: -115px; }
+
 .line,
 .main__parallelogram {
   display: flex;
@@ -83,9 +86,8 @@ main .main__img-bg {
   width: 100%;
   height: 600px;
   background: linear-gradient(to right, #4d9799, #71c4c6, #4d9799);
-  clip-path: polygon(8% 12%, 82% 11%, 82% 60%, 7% 60%);
-  outline: 2px solid red;
-  margin-top: -135px; }
+  clip-path: polygon(6% 0%, 140% 25%, 94% 100%, -20% 85%);
+  outline: 2px solid red; }
 
 .main__parallelogram-line {
   background: url(../img/lines1.png); }
