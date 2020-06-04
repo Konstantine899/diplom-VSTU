@@ -15,11 +15,21 @@ body {
   margin: 0;
   max-width: 100%; }
 
+h1 {
+  font-size: 2.2rem;
+  line-height: 110%;
+  margin: 0; }
+
 #login {
   margin-top: 50px; }
 
 #register {
   margin-top: 50px; }
+
+#card {
+  padding-top: 200px;
+  color: white;
+  font-size: 3rem; }
 
 .conteiner {
   height: 100%; }
@@ -35,7 +45,9 @@ body {
   align-items: center;
   flex-wrap: wrap;
   background-color: black;
-  margin-top: -67px; }
+  margin-top: -167px;
+  padding-top: 100px;
+  padding-bottom: 400px; }
 
 .block {
   background: url(../img/main-bg.jpg) no-repeat;
@@ -84,7 +96,7 @@ main .main__img-bg {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 600px;
+  height: 700px;
   background: linear-gradient(to right, #4d9799, #71c4c6, #4d9799);
   clip-path: polygon(6% 0%, 140% 25%, 94% 100%, -20% 85%);
   outline: 2px solid red; }
@@ -92,16 +104,15 @@ main .main__img-bg {
 .main__parallelogram-line {
   background: url(../img/lines1.png); }
 
-.line,
-.main__parallelogram,
-p {
-  font-size: 3rem;
-  color: red; }
-
+.main__parallelogram-content,
 h1 {
-  font-size: 2.2rem;
-  line-height: 110%;
-  margin: 0; }
+  font-size: 7rem;
+  color: white;
+  outline: 2px solid red; }
+
+.main__parallelogram-content,
+p {
+  font-size: 3rem; }
 
 nav .nav-wrapper {
   display: flex;
@@ -166,42 +177,74 @@ main {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding-top: 200px; }
+  margin-top: 167px; }
 
 .row__column {
-  width: 300px;
   margin: 0px 50px;
-  height: auto;
+  height: 600px;
   left: auto;
-  right: auto; }
+  right: auto;
+  margin-top: 200px; }
 
 .card {
-  margin-top: 200px;
-  outline: 2px solid red;
-  width: 350px;
+  border: 2px solid red;
+  border-radius: 20px;
+  width: 120%;
   height: 100%; }
 
+.card,
+p,
+strong {
+  color: white;
+  font-size: 2rem; }
+
+.card-image-wrapper {
+  width: 350px; }
+
 .card .card-image img {
-  width: 350px;
-  height: 100%; }
+  width: 420px;
+  height: 420px;
+  border-radius: 20px; }
 
 .card-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start; }
 
 .card-content span {
+  font-size: 4rem;
   color: white; }
 
 .card-action a {
   color: white;
+  text-decoration: none;
   font-size: 1.7rem;
   font-weight: 700; }
+
+.card-action a:hover {
+  color: yellow;
+  cursor: pointer; }
 
 .price {
   font-size: 2rem;
   color: white; }
+
+.btn,
+.btn-primary {
+  font-size: 2rem;
+  padding: 2px 15px;
+  border-radius: 10px;
+  background-color: #71c4c6;
+  color: black;
+  font-weight: 700; }
+
+.btn-primary:hover {
+  border-radius: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  color: yellow;
+  background-color: black; }
 
 .course {
   width: 100%;
@@ -230,7 +273,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
-  margin-top: 100px; }
+  margin-top: 250px; }
 
 .auth {
   padding-top: 1rem; }
