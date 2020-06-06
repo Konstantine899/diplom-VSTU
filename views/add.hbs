@@ -1,5 +1,4 @@
 <div class="row">
-  <h1>Добавить новый курс</h1>
 
   {{#if error}}
   <p class="alert">{{error}}</p>
@@ -7,30 +6,23 @@
 
   <form class="form" action="/add" method="POST" novalidate>
     <div class="input-field">
-      <input id="title" name="title" type="text" class="validate" required  value="{{data.title}}"/>
-      <label for="title">
-        Название курса
-      </label>
+      <input id="title" name="title" type="text" class="validate" required  value="{{data.title}}" placeholder="Введите название курса"/>
+    
       <span class="helper-text" data-error="Введите название курса"></span>
     </div>
     <div class="input-field">
-      <input id="price" name="price" type="number" class="validate" required min="1" value="{{data.price}}"/>
-      <label for="price">
-        Цена курса
-      </label>
+      <input id="price" name="price" type="number" class="validate" required min="1" value="{{data.price}}" placeholder="Введите цену курса"/>
+  
       <span class="helper-text" data-error="Введите цену"></span>
     </div>
     <div class="input-field">
-      <input id="img" name="img" type="text" class="validate" required value="{{data.img}}"/>
-      <label for="img">
-        URL картинки
-      </label>
+      <input id="img" name="img" type="text" class="validate" required value="{{data.img}}" placeholder="Введите url картинки"/>
+     
       <span class="helper-text" data-error="Введите url картинки"></span>
     </div>
 
     <div class="description">   
-      <label for="description" class="description-textarea-label">Введите HTML описание курса</label>
-      <textarea class="description-textarea" name="description"  value="{{{data.description}}}" required></textarea>
+      <textarea class="description-textarea" name="description"  value="{{{data.description}}}" required placeholder="Вставте html шаблон описания курса"></textarea>
       
       <span class="helper-text" data-error="Введите html описание курса"></span>
     </div>

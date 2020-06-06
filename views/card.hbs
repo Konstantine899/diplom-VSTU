@@ -1,12 +1,13 @@
 {{!  views card.hbs }}
-<div id="card">
+<div id="cart">
+  <div class="cart__list">
   {{#if courses.length}}
-  <table>
+  <table cellspacing="0">
     <thead>
       <tr>
         <th>Название курса</th>
         <th>Количество</th>
-        <th>Действия</th>
+        <th>Действие</th>
       </tr>
     </thead>
 
@@ -23,7 +24,7 @@
     </body>
   </table>
   <p>
-    <strong>Цена:</strong><span class="price">{{price}}</span>
+    <strong class="cart__list-total-price">Общая стоимость:&nbsp;&nbsp;</strong><span class="price cart__list-price">{{price}}</span>
   </p>
 
   <form action="/orders" method="POST">
@@ -32,6 +33,7 @@
   </form>
 
   {{else}}
-  <p>Корзина пуста</p>
+  <p class="cart-empty">Корзина пуста</p>
   {{/if}}
+  </div>
 </div>
