@@ -109,7 +109,7 @@ h1 {
   cursor: pointer; }
 
 .cart__wrappers {
-  padding: 200px 0px;
+  padding: 300px 0px;
   color: white;
   font-size: 3rem; }
 
@@ -405,9 +405,14 @@ li {
 .orders-none {
   margin: 200px 0px 420px 0px; }
 
-.profile {
+.profile__wrapper {
   display: flex;
-  flex-direction: column; }
+  padding: 200px 0px; }
+
+.profile__row {
+  display: flex;
+  flex-direction: row;
+  width: max-content; }
 
 .profile h1 {
   font-size: 2.2rem;
@@ -415,6 +420,94 @@ li {
   line-height: 110%;
   margin: 0; }
 
+.profile__avatar {
+  margin: 20px 50px 0px 0px; }
+
 .avatar {
-  max-width: 300px;
+  width: 300px;
   height: auto; }
+
+.profile__avatar {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0rem -0.1rem 5.2rem 1.2rem rgba(2, 66, 164, 0.5); }
+
+.profile__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.profile__form,
+label,
+span,
+.file-field-input {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 10px; }
+
+.file-field-input {
+  width: 100%;
+  height: auto; }
+
+.validate {
+  width: 100%;
+  height: 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: inset 4px -4px 10px grey;
+  border-radius: 20px;
+  margin-bottom: 15px; }
+
+.validate:hover {
+  box-shadow: 0rem 0.9rem 1.2rem 1.2rem rgba(2, 66, 164, 0.5); }
+
+.input-field {
+  display: flex;
+  flex-direction: column; }
+
+.file-field-name {
+  display: flex;
+  flex-direction: column-reverse; }
+
+.file-field {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 310px; }
+
+.file-field-input-hidden {
+  opacity: 0;
+  width: 100px;
+  overflow: hidden;
+  z-index: -1; }
+
+.file-field-label strong {
+  display: block;
+  position: absolute;
+  width: 120px;
+  margin: -30px 0px 0px 160px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: #1adcff;
+  padding: 2px 15px; }
+
+.file-field-label strong:hover {
+  color: yellow;
+  background-color: rgba(26, 220, 255, 0.1);
+  cursor: pointer; }
+
+.btn__change {
+  margin-top: -40px;
+  z-index: 999; }
+
+.btn__change:hover {
+  color: yellow;
+  background-color: rgba(26, 220, 255, 0.1);
+  cursor: pointer; }
