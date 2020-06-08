@@ -73,10 +73,6 @@ h1 {
 .card {
   font-size: 2rem; }
 
-.cart__list-total-price {
-  color: white;
-  font-size: 3.5rem; }
-
 .card-image-wrapper {
   width: 350px; }
 
@@ -112,37 +108,34 @@ h1 {
   color: yellow;
   cursor: pointer; }
 
-#cart {
-  padding-top: 200px;
+.cart__wrappers {
+  padding: 200px 0px;
   color: white;
   font-size: 3rem; }
 
-.cart__list {
+#card {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-.cart__list table {
-  margin-bottom: 100px; }
+#card table {
+  margin-bottom: 50px;
+  border-spacing: 0px; }
 
-.cart__list,
+#card,
 table,
 td,
 th {
-  padding: 20px 20px; }
+  padding: 10px 25px; }
 
-.cart__list td {
+#card td {
   border-bottom: 1px solid white; }
 
-.cart__list .btn:hover {
+#card .btn:hover {
   background-color: blue;
   color: yellow;
   background-color: rgba(26, 220, 255, 0.1);
   cursor: pointer; }
-
-.cart-empty {
-  height: auto;
-  margin-bottom: 420px; }
 
 .conteiner {
   height: 100%; }
