@@ -80,12 +80,14 @@ h1 {
   font-size: 2rem;
 }
 
-.card-image-wrapper {
-  width: 350px;
+.card-image {
+  width: 314px;
+  height: 314px;
+  overflow: hidden;
 }
 .card .card-image img {
   width: 314px;
-  height: 314px;
+  height: auto;
   border-radius: 20px;
 }
 
@@ -321,14 +323,16 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
+.add__wrapper{
+  padding-top: 200px;
+}
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
-  margin-top: 180px;
 }
+
 
 .input-field {
   width: 250px;
@@ -549,4 +553,42 @@ span,
   color: yellow;
   background-color: rgba(26, 220, 255, 0.1);
   cursor: pointer;
+}
+
+.registration__authorization-wrapper {
+  margin-top: 200px;
+}
+// .helper-text {
+//   width: 200px;
+//   height: 50px;
+//   outline: 1px solid white;
+// }
+// span.helper-text,
+// [data-error] {
+//   font-size: 2rem;
+//   color: white;
+// }
+.course{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.description__wrapper p{
+  color: white;
+  font-size: 2rem;
+}
+.description__wrapper h1{
+  color: white;
+  font-size: 4rem;
+}
+.description__wrapper h2{
+  color: white;
+  font-size: 4rem;
+}
+.description__wrapper ul li{
+  color: white;
+  font-size: 2rem;
 }

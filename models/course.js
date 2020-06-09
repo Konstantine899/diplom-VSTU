@@ -14,7 +14,6 @@ const courseSchema = new Schema({
   img: String,
   description: {
     type: Object,
-    required: true,
   },
   userId: {
     type: Schema.Types.ObjectId,
