@@ -65,7 +65,14 @@ h1 {
 #register {
   margin-top: 50px;
 }
-
+.courses__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 200px 50px 500px 50px;
+}
 .card {
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0rem 0.9rem 1.2rem 1.2rem rgba(2, 66, 164, 0.1);
@@ -214,6 +221,7 @@ main .main__img-bg {
 .main__parallelogram {
   margin-bottom: 700px;
   margin-top: -190px;
+  padding: 50px;
 }
 
 .line,
@@ -226,7 +234,6 @@ main .main__img-bg {
   height: 700px;
   background: linear-gradient(20deg, #4d9799, #71c4c6, #4d9799);
   clip-path: polygon(6% 0%, 140% 25%, 94% 100%, -20% 85%);
-  outline: 2px solid red;
 }
 .main__parallelogram-line {
   background: url(../img/lines1.png);
@@ -239,16 +246,17 @@ h1 {
 }
 .main__parallelogram-content,
 p {
+  margin: 10px;
   font-size: 3rem;
 }
-.diplom__svg{
+.diplom__svg {
   fill: white;
   width: 500px;
   height: 300px;
 }
-.diplom__svg:hover{
-fill: #202423;
-cursor: pointer;
+.diplom__svg:hover {
+  fill: #202423;
+  cursor: pointer;
 }
 
 main {
@@ -270,7 +278,6 @@ main {
   height: 600px;
   left: auto;
   right: auto;
-  margin-top: 200px;
 }
 
 .price {
@@ -332,7 +339,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.add__wrapper{
+.add__wrapper {
   padding-top: 200px;
 }
 .form {
@@ -341,7 +348,6 @@ main {
   align-items: center;
   margin-bottom: 100px;
 }
-
 
 .input-field {
   width: 250px;
@@ -554,67 +560,56 @@ span,
   cursor: pointer;
 }
 
-
-// .helper-text {
-//   width: 200px;
-//   height: 50px;
-//   outline: 1px solid white;
-// }
-// span.helper-text,
-// [data-error] {
-//   font-size: 2rem;
-//   color: white;
-// }
-.course{
+.course {
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
 }
-.description__wrapper p{
+.description__wrapper p {
   color: white;
   font-size: 2rem;
 }
-.description__wrapper h1{
+.description__wrapper h1 {
   color: white;
   font-size: 4rem;
 }
-.description__wrapper h2{
+.description__wrapper h2 {
   color: white;
   font-size: 4rem;
 }
-.description__wrapper ul li{
+.description__wrapper ul li {
   color: white;
   font-size: 2rem;
 }
 
-.tabs{
+.tabs {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  // outline: 1px solid white;
   width: 800px;
 }
-.tab{
+.tab {
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0rem 0.9rem 1.2rem 1.2rem rgba(2, 66, 164, 0.1);
   padding: 5px 20px;
   border-radius: 20px;
   background-color: #1adcff;
 }
-.tab, a{
+.tab,
+a {
   color: #1a1a1a;
   font-weight: 700;
   list-style: none;
   text-decoration: none;
 }
 
-.tab a:hover{
+.tab a:hover {
   color: yellow;
 }
-.tab:hover{
+.tab:hover {
   border: 1px solid white;
   background-color: rgba(26, 220, 255, 0.1);
   box-shadow: 0rem 0rem 2.2rem 1.2rem rgba(2, 66, 164, 0.8);
@@ -626,24 +621,24 @@ span,
   align-items: center;
   margin-top: 200px;
 }
-.registration__authorization-wrapper form p a{
+.registration__authorization-wrapper form p a {
   color: white;
   text-decoration: none;
 }
-.registration__authorization-wrapper form p a:hover{
+.registration__authorization-wrapper form p a:hover {
   color: yellow;
   cursor: pointer;
 }
-.input__field-reverse{
+.input__field-reverse {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.reset__wrapper{
+.reset__wrapper {
   height: 700px;
   padding-top: 200px;
 }
-.reset__reverse{
+.reset__reverse {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -660,9 +655,16 @@ p .alert {
   font-size: 2rem;
 }
 
-.footer__wrapper{
+.footer__wrapper {
   height: 100px;
   width: 100%;
   background-color: #202423;
 }
 
+@media screen and (max-width: 1024px) {
+  .main__parallelogram-content,
+  h1 {
+    font-size: 7rem;
+    color: red;
+  }
+}
