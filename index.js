@@ -9,6 +9,7 @@ const mongoose = require('mongoose');
 const helmet = require('helmet');
 const compression = require('compression');
 const exphbs = require('express-handlebars');
+const svgFallback = require('express-svg-fallback');
 const {
   allowInsecurePrototypeAccess,
 } = require('@handlebars/allow-prototype-access');
@@ -69,6 +70,7 @@ app.use(express.static(path.join(__dirname, 'public'))); // делаю папк�
 app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use('/img', express.static(path.join(__dirname, 'img')));
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
+app.use('/svg', express.static(path.join(__dirname, 'svg')));
 app.use(express.urlencoded({ extended: true })); // данный метод использую при обработке POST запроса формы добавления курса
 app.use(
   session({
@@ -83,6 +85,11 @@ app.use(csrf());
 app.use(flash());
 app.use(helmet());
 app.use(compression());
+app.use(
+  svgFallback({
+    fallbackPath: '/svg/',
+  })
+);
 app.use(warMiddleware);
 app.use(userMiddleware);
 

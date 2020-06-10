@@ -219,7 +219,7 @@ main .main__img-bg {
 .line,
 .main__parallelogram {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -240,6 +240,15 @@ h1 {
 .main__parallelogram-content,
 p {
   font-size: 3rem;
+}
+.diplom__svg{
+  fill: white;
+  width: 500px;
+  height: 300px;
+}
+.diplom__svg:hover{
+fill: #202423;
+cursor: pointer;
 }
 
 main {
@@ -391,8 +400,8 @@ textarea::placeholder {
 }
 
 .course__description {
-  margin-bottom: 500px;
   max-width: 1100px;
+  margin: 50px 100px 500px 100px;
 }
 
 .description {
@@ -464,7 +473,6 @@ li {
   overflow: hidden;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0rem -0.1rem 5.2rem 1.2rem rgba(2, 66, 164, 0.5);
 }
 .profile__form {
   display: flex;
@@ -651,3 +659,10 @@ p .alert {
   width: 100%;
   font-size: 2rem;
 }
+
+.footer__wrapper{
+  height: 100px;
+  width: 100%;
+  background-color: #202423;
+}
+
