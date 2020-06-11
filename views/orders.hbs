@@ -1,21 +1,22 @@
 {{!-- orders.hbs --}}
-
+<div class="orders__wrapper">
   {{#if orders.length}}
   {{#each orders}}
   <div class="orders">
-  <span class="orders-title">Заказ:&nbsp;<small>{{_id}}</small></span>
-  <p class="orders-date">{{date}}</p>
-  <p><em>{{user.userId.name}}</em>&nbsp;&nbsp;({{user.userId.email}})</p>
-  <ol>
-    {{#each courses}}
-    <li>
-      {{course.title}}(x<strong>{{count}}</strong>)
-    </li>
-    {{/each}}
-  </ol>
-  <p>Цена:&nbsp;&nbsp;<span class="price">{{price}}</span></p>
+    <span class="orders-title">Заказ:&nbsp;<small>{{_id}}</small></span>
+    <p class="orders-date">{{date}}</p>
+    <p><em>{{user.userId.name}}</em>&nbsp;&nbsp;({{user.userId.email}})</p>
+    <ol>
+      {{#each courses}}
+      <li>
+        {{course.title}}(x<strong>{{count}}</strong>)
+      </li>
+      {{/each}}
+    </ol>
+    <p>Цена:&nbsp;&nbsp;<span class="price">{{price}}</span></p>
   </div>
   {{/each}}
   {{else}}
   <p class="orders-none">Заказов нет</p>
   {{/if}}
+</div>

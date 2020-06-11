@@ -101,6 +101,7 @@ app.use('/orders', ordersRoutes);
 app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
 
+
 app.use(errorHandler);
 
 async function start() {

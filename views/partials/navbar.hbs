@@ -2,55 +2,61 @@
 <nav class="block nav">
    
     <div class="nav-wrapper">
+        <input type="checkbox" id="check-menu">
+        <label class="check-menu-label" for="check-menu"></label>
+        <div class="burger-line first"></div>
+        <div class="burger-line second"></div>
+        <div class="burger-line third"></div>
+        <div class="burger-line forth"></div>
         <a href="/" class="nav-wrapper-a">Магазин курсов</a>
         <ul class="nav__wrapper-ul">
-
             {{#if isHome}}
             <li class="active"><a href="/">Главная</a></li>
             {{else}}
-            <li><a href="/">Главная</a></li>
+            <li class="burger__a"><a href="/">Главная</a></li>
             {{/if}}
 
             {{#if isCourses}}
             <li class="active"><a href="/courses">Курсы</a></li>
             {{else}}
-            <li><a href="/courses">Курсы</a></li>
+            <li class="burger__a"><a href="/courses">Курсы</a></li>
             {{/if}}
 
             {{#if isAuth}}
             {{#if isAdd}}
             <li class="active"><a href="/add">Добавить курс</a></li>
             {{else}}
-            <li><a href="/add">Добавить курс</a></li>
+            <li class="burger__a"><a href="/add">Добавить курс</a></li>
             {{/if}}
 
 
             {{#if isCard}}
             <li class="active"><a href="/card">Корзина</a></li>
             {{else}}
-            <li><a href="/card">Корзина</a></li>
+            <li class="burger__a"><a href="/card">Корзина</a></li>
             {{/if}}
 
             {{#if isOrder}}
             <li class="active"><a href="/orders">Заказы</a></li>
             {{else}}
-            <li><a href="/orders">Заказы</a></li>
+            <li class="burger__a"><a href="/orders">Заказы</a></li>
             {{/if}}
 
             {{#if isProfile}}
             <li class="active"><a href="/profile">Профиль</a></li>
             {{else}}
-            <li><a href="/profile">Профиль</a></li>
+            <li class="burger__a"><a href="/profile">Профиль</a></li>
             {{/if}}
 
-            <li><a href="/auth/logout">Выйти</a></li>
+            <li class="burger__a"><a href="/auth/logout">Выйти</a></li>
             {{else}}
             {{#if isLogin}}
             <li class="active"><a href="/auth/login#login">Войти</a></li>
             {{else}}
-            <li><a href="/auth/login#login">Войти</a></li>
+            <li class="burger__a"><a href="/auth/login#login">Войти</a></li>
             {{/if}}
             {{/if}}
+
         </ul>
     </div>
 </nav>
