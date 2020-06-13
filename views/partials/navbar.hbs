@@ -1,13 +1,8 @@
 {{!-- partials navbar.hbs --}}
-<nav class="block nav">
-   
+<nav class="block background-nav">
+{{!-- <div class="nav__main-bg"></div> --}}
     <div class="nav-wrapper">
-        <input type="checkbox" id="check-menu">
-        <label class="check-menu-label" for="check-menu"></label>
-        <div class="burger-line first"></div>
-        <div class="burger-line second"></div>
-        <div class="burger-line third"></div>
-        <div class="burger-line forth"></div>
+
         <a href="/" class="nav-wrapper-a">Магазин курсов</a>
         <ul class="nav__wrapper-ul">
             {{#if isHome}}
@@ -56,7 +51,12 @@
             <li class="burger__a"><a href="/auth/login#login">Войти</a></li>
             {{/if}}
             {{/if}}
-
+            <input type="checkbox" id="check-menu">
+            <label class="check-menu-label" for="check-menu"></label>
+            <div class="burger-line first"></div>
+            <div class="burger-line second"></div>
+            <div class="burger-line third"></div>
+            <div class="burger-line forth"></div>
         </ul>
     </div>
 </nav>
