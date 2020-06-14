@@ -323,9 +323,6 @@ h1 {
     background: none;
   }
 
-  .main__content {
-    margin-bottom: 340px;
-  }
   .line,
   .main__parallelogram {
     display: flex;
@@ -346,8 +343,32 @@ h1 {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 812px) {
+@media screen and (min-width: 411px) and (max-width: 823px) {
+  nav .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 500px;
+    width: 100%;
+  }
+  .main__content {
+    margin-bottom: 300px;
+  }
+}
+@media screen and (min-width: 411px) and (max-width: 731px) {
+  nav .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 900px;
+    width: 100%;
+  }
+  .main__content {
+    margin-bottom: 50px;
+  }
+}
 
+@media screen and (min-width: 375px) and (max-width: 812px) {
   nav .nav-wrapper-a,
   .nav__wrapper-ul,
   .active,
@@ -358,7 +379,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 180px;
+    height: 400px;
     width: 100%;
   }
 
@@ -458,7 +479,8 @@ h1 {
     font-weight: 700;
   }
 
-  .line, .main__parallelogram {
+  .line,
+  .main__parallelogram {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -469,30 +491,30 @@ h1 {
     margin-bottom: 100px;
     background: linear-gradient(20deg, #4d9799, #71c4c6, #4d9799);
     clip-path: polygon(4% 0%, 160% 25%, 94% 100%, -20% 84%);
-}
+  }
   .main__parallelogram-content {
     padding: 1% 4% 4% 4%;
   }
   .main__parallelogram-content {
     margin-top: 300px;
   }
-  .main__parallelogram-content, h1 {
+  .main__parallelogram-content,
+  h1 {
     font-size: 3rem;
     color: white;
-}
-.main__parallelogram-content p {
-  margin: 0;
-  font-size: 1.5rem;
-}
-.diplom__svg {
-  fill: white;
-  width: 200px;
-  height: 120px;
-  margin-bottom: 200px;
-}
+  }
+  .main__parallelogram-content p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .diplom__svg {
+    fill: white;
+    width: 200px;
+    height: 120px;
+    margin-bottom: 200px;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 568px) {
-
   nav .nav-wrapper-a,
   .nav__wrapper-ul,
   .active,
@@ -503,7 +525,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 280px;
+    height: 400px;
     width: 100%;
   }
 
@@ -603,7 +625,8 @@ h1 {
     font-weight: 700;
   }
 
-  .line, .main__parallelogram {
+  .line,
+  .main__parallelogram {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -614,25 +637,26 @@ h1 {
     margin-bottom: 100px;
     background: linear-gradient(20deg, #4d9799, #71c4c6, #4d9799);
     clip-path: polygon(4% 0%, 160% 25%, 94% 100%, -20% 84%);
-}
+  }
   .main__parallelogram-content {
     padding: 1% 4% 4% 4%;
   }
   .main__parallelogram-content {
     margin-top: 300px;
   }
-  .main__parallelogram-content, h1 {
+  .main__parallelogram-content,
+  h1 {
     font-size: 3rem;
     color: white;
-}
-.main__parallelogram-content p {
-  margin: 0;
-  font-size: 1.5rem;
-}
-.diplom__svg {
-  fill: white;
-  width: 200px;
-  height: 120px;
-  margin-bottom: 200px;
-}
+  }
+  .main__parallelogram-content p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .diplom__svg {
+    fill: white;
+    width: 200px;
+    height: 120px;
+    margin-bottom: 200px;
+  }
 }
