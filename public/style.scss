@@ -252,7 +252,6 @@ h1 {
     width: 100%;
     height: 8%;
     cursor: pointer;
-    // outline: 1px solid red;
     z-index: 999;
   }
   .burger-line {
@@ -263,7 +262,6 @@ h1 {
     height: 2px;
     transition: 0.5s all;
     background-color: white;
-    // outline: 1px solid red;
     z-index: 1000;
   }
   .second,
@@ -292,13 +290,15 @@ h1 {
     padding: 10px;
     border-bottom: 1px solid white;
   }
-  nav, ul, a {
+  nav,
+  ul,
+  a {
     font-size: 2.2rem;
     color: white;
     margin: 10px 20px;
     text-decoration: none;
     list-style: none;
-}
+  }
 
   #check-menu:checked ~ .nav__wrapper-ul {
     max-height: 500px;
@@ -318,15 +318,16 @@ h1 {
   #check-menu:checked ~ .forth {
     display: none;
   }
-  .block{
+  .block {
     margin: 0;
     background: none;
   }
 
-  .main__content{
+  .main__content {
     margin-bottom: 340px;
   }
-  .line, .main__parallelogram {
+  .line,
+  .main__parallelogram {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -336,11 +337,158 @@ h1 {
     margin-top: -220px;
     background: linear-gradient(20deg, #4d9799, #71c4c6, #4d9799);
     clip-path: polygon(4% 0%, 160% 25%, 94% 100%, -20% 85%);
+  }
+  .main__parallelogram-content {
+    padding: 1% 4% 4% 4%;
+  }
+  .main__parallelogram-content {
+    margin-top: 300px;
+  }
 }
-.main__parallelogram-content {
-  padding: 1% 4% 20% 4%;
+
+@media screen and (min-width: 375px) and (max-width: 812px) {
+  nav .nav-wrapper-a,
+  .nav__wrapper-ul,
+  .active,
+  .burger__a {
+    display: none;
+  }
+  nav .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 400px;
+    width: 100%;
+  }
+
+  #check-menu {
+    float: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid white;
+  }
+  #check-menu {
+    display: none;
+  }
+  .check-menu-label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8%;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .burger-line {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    width: 40px;
+    height: 2px;
+    transition: 0.5s all;
+    background-color: white;
+    z-index: 1000;
+  }
+  .second,
+  .third {
+    top: 28px;
+  }
+  .forth {
+    top: 38px;
+  }
+  .nav__wrapper-ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: translateY(100%);
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: 0.5s all;
+  }
+
+  .burger__a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid white;
+  }
+  nav,
+  ul,
+  a {
+    font-size: 2.2rem;
+    color: white;
+    margin: 10px 20px;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  #check-menu:checked ~ .nav__wrapper-ul {
+    max-height: 500px;
+    font-size: 1.6rem;
+    margin: -175px 0px 0px 0px;
+    padding: 0;
+  }
+  #check-menu:checked ~ .first {
+    display: none;
+  }
+  #check-menu:checked ~ .second {
+    transform: rotate(45deg);
+  }
+  #check-menu:checked ~ .third {
+    transform: rotate(-45deg);
+  }
+  #check-menu:checked ~ .forth {
+    display: none;
+  }
+  .block {
+    margin: 0;
+    background: none;
+  }
+  .main__content p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  .main__content {
+    margin-bottom: 340px;
+  }
+  .line, .main__parallelogram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 110vh;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    background: linear-gradient(20deg, #4d9799, #71c4c6, #4d9799);
+    clip-path: polygon(4% 0%, 160% 25%, 94% 100%, -20% 84%);
 }
-.main__parallelogram-content{
-  margin-top: 300px;
+  .main__parallelogram-content {
+    padding: 1% 4% 4% 4%;
+  }
+  .main__parallelogram-content {
+    margin-top: 300px;
+  }
+  .main__parallelogram-content, h1 {
+    font-size: 3rem;
+    color: white;
+}
+.main__parallelogram-content p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.diplom__svg {
+  fill: white;
+  width: 200px;
+  height: 120px;
+  margin-bottom: 200px;
 }
 }
