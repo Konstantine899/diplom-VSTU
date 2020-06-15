@@ -91,7 +91,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 500px;
   margin-top: -140px;
   background: linear-gradient(20deg, #4d9799, #71c4c6, #4d9799);
   clip-path: polygon(4% 0%, 160% 25%, 94% 100%, -20% 85%); }
@@ -199,6 +199,7 @@ h1 {
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0rem 0.9rem 1.2rem 1.2rem rgba(2, 66, 164, 0.1);
   padding: 5px 20px;
+  margin: 0px 0px 50px 0px;
   border-radius: 20px;
   background-color: #1adcff; }
 
@@ -238,10 +239,15 @@ h1 {
   display: flex;
   flex-direction: column-reverse; }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .validate {
   width: 100%;
   height: 30px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
   box-shadow: inset 4px -4px 10px grey;
@@ -253,12 +259,13 @@ h1 {
 
 .btn,
 .btn-primary {
-  font-size: 1.5rem;
-  padding: 2px 15px;
-  border-radius: 10px;
-  background-color: #1adcff;
+  font-size: 2rem;
   color: #1a1a1a;
-  font-weight: 700; }
+  font-weight: 700;
+  background-color: #1adcff;
+  border-radius: 10px;
+  padding: 2px 15px;
+  margin: 20px 0px 0px 0px; }
 
 .btn-primary:hover {
   border-radius: 10px;
@@ -283,7 +290,7 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 900px;
     margin-top: -220px;
     background: linear-gradient(20deg, #4d9799, #71c4c6, #4d9799);
     clip-path: polygon(4% 0%, 160% 25%, 94% 100%, -20% 85%); }
@@ -390,17 +397,18 @@ h1 {
   .block {
     margin: 0;
     background: none; }
-  .line,
-  .main__parallelogram {
+  .main__content {
+    margin-top: 100px; }
+  .line, .main__parallelogram {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 170vh;
+    min-height: 1130px;
     margin-top: -220px;
     background: linear-gradient(20deg, #4d9799, #71c4c6, #4d9799);
-    clip-path: polygon(4% 0%, 160% 25%, 94% 100%, -20% 85%); }
+    clip-path: polygon(4% 14%, 160% 25%, 94% 100%, -20% 85%); }
   .main__parallelogram-content {
     padding: 1% 4% 4% 4%; }
   .main__parallelogram-content {
@@ -574,9 +582,7 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     height: 900px;
-    width: 100%; }
-  .main__content {
-    margin-bottom: 50px; } }
+    width: 100%; } }
 
 @media screen and (min-width: 375px) and (max-width: 812px) {
   nav .nav-wrapper-a {
@@ -636,7 +642,7 @@ h1 {
   nav,
   ul,
   a {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     color: white;
     margin: 10px 20px;
     text-decoration: none;
@@ -662,29 +668,24 @@ h1 {
     align-items: center;
     font-size: 1.8rem;
     font-weight: 700; }
-  .line,
-  .main__parallelogram {
+  .line, .main__parallelogram {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
-    min-height: 550vh;
-    margin-top: -100px;
-    margin-bottom: 100px;
+    min-height: 1000px;
     background: linear-gradient(20deg, #4d9799, #71c4c6, #4d9799);
-    clip-path: polygon(4% 30%, 120% 35%, 94% 58%, -20% 50%); }
+    clip-path: polygon(4% 41%, 232% 67%, 76% 85%, -20% 80%); }
   .main__parallelogram-content {
     padding: 1% 4% 4% 4%; }
-  .main__content {
-    margin-bottom: -200px; }
   .main__parallelogram-content,
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white; }
   .main__parallelogram-content p {
     margin: 0;
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
   .diplom__svg {
     fill: white;
     width: 200px;
@@ -810,7 +811,7 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 110vh;
+    min-height: 500px;
     margin-top: -100px;
     margin-bottom: 100px;
     background: linear-gradient(20deg, #4d9799, #71c4c6, #4d9799);
