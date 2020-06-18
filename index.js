@@ -15,8 +15,6 @@ const {
 } = require('@handlebars/allow-prototype-access');
 const session = require('express-session');
 const MongoStore = require('connect-mongodb-session')(session);
-const sassMiddleware = require('node-sass-middleware');
-const winston = require('winston');
 
 const homeRoutes = require('./routes/home');
 const cardRoutes = require('./routes/card');
@@ -34,21 +32,6 @@ const keys = require('./keys');
 const PORT = process.env.PORT || 3000;
 
 const app = express();
-winston.level = 'debug';
-app.use(
-  sassMiddleware({
-    /* Options */
-    src: path.join(__dirname, 'public'),
-    dest: path.join(__dirname, 'public'),
-    debug: true,
-    log: function (severity, key, value) {
-      winston.log(severity, 'node-sass-middleware   %s : %s', key, value);
-    },
-  })
-);
-// Note: you must place sass-middleware *before* `express.static` or else it will
-// not work.
-app.use(express.static(path.join(__dirname, 'public')));
 
 const hbs = exphbs.create({
   defaultLayout: 'main',
@@ -100,7 +83,6 @@ app.use('/card', cardRoutes); // регистрирую корзину
 app.use('/orders', ordersRoutes);
 app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
-
 
 app.use(errorHandler);
 

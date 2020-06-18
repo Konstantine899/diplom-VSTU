@@ -1,8 +1,16 @@
 node_modules
+src/main.js
+public/main.js
+public/main.css.map
+public/main.js.map
 /.vscode/
 /.eslintignore
 /.eslintrc.json
 /.prettierrc
+/.babelrc
+postcss.config.js
+webpack.config.js
 keys/keys.dev.js
+*.scss
 
 
