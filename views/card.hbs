@@ -17,23 +17,23 @@
         <td>{{title}}</td>
         <td>{{count}}</td>
         <td>
-          <button class="btn btn-small js-remove" data-id="{{id}}" data-csrf="{{@root.csrf}}">Удалить</button>
+          <button class="btn btn-small btn-primary-delete js-remove" data-id="{{id}}" data-csrf="{{@root.csrf}}">Удалить</button>
         </td>
       </tr>
       {{/each}}
     </body>
   </table>
-  <p>
+  <p class="cart__count-price">
     <strong>Цена:</strong><span class="price">{{price}}</span>
   </p>
 
   <form action="/orders" method="POST">
   <input type="hidden" name="_csrf" value="{{csrf}}">
-    <button type="submit" class="btn">Сделать заказ</button>
+    <button type="submit" class="btn btn-primary-make-an-order">Сделать заказ</button>
   </form>
 
   {{else}}
-  <p>Корзина пуста</p>
+  <p class="basket__empty">Корзина пуста</p>
   {{/if}}
 </div>
 </div>

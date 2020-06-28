@@ -3,6 +3,7 @@
   {{#if orders.length}}
   {{#each orders}}
   <div class="orders">
+    <div class="order__conteiner">
     <span class="orders-title">Заказ:&nbsp;<small>{{_id}}</small></span>
     <p class="orders-date">{{date}}</p>
     <p><em>{{user.userId.name}}</em>&nbsp;&nbsp;({{user.userId.email}})</p>
@@ -14,6 +15,7 @@
       {{/each}}
     </ol>
     <p>Цена:&nbsp;&nbsp;<span class="price">{{price}}</span></p>
+  </div>
   </div>
   {{/each}}
   {{else}}

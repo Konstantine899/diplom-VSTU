@@ -28,7 +28,7 @@
         <form action="/card/add" method="POST">
           <input type="hidden" name="_csrf" value="{{@root.csrf}}">
           <input type="hidden" name="id" value="{{id}}" />
-          <button type="submit" class="btn btn-primary btn-primary-course">Купить</button>
+          <button type="submit" class="btn btn-primary btn-primary-buy-course">Купить</button>
         </form>
         {{/if}}
       </div>
@@ -38,6 +38,6 @@
 </div>
 {{/each}}
 {{else}}
-<p>Курсы пока не добавлены</p>
+<p class="courses__not-added">Курсы пока не добавлены</p>
 {{/if}}
 </div>

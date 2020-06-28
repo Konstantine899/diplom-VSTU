@@ -1,11 +1,15 @@
 {{! course.hbs }}
-<div class="course conteiner-lines">
-  <h1>
-    {{course.title}}
-  </h1>
-  <img src="{{course.img}}" alt="{{course.title}}" />
-  <p class="price big">
-    {{course.price}}
-  </p>
-  <div class="course__description">{{{course.description}}}</div>
+<div class="course__wrapper">
+  <div class="course conteiner-lines">
+    <h1>
+      {{course.title}}
+    </h1>
+    <img src="{{course.img}}" alt="{{course.title}}" />
+    <p class="price big">
+      {{course.price}}
+    </p>
+    <div class="description__wrapper">
+    <div class="course__description">{{{course.description}}}</div>
+    </div>
+  </div>
 </div>
