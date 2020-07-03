@@ -45,6 +45,6 @@ exports.courseValidators = [
   body('price').isNumeric().withMessage('Введите корректную цену'),
   body('img', 'Введите корректный url картинки').isURL(),
   body('description')
-    .isLength({ min: 10 })
+    .isLength({ min: 0 })
     .withMessage('Введите минимальное HTML описание курса'),
 ];

@@ -1,7 +1,7 @@
 {{! courses-edit.hbs  }}
 <div class="course__edit-wrapper background-nav">
   <div class="course__edit">
-  <h1>Редактировать&nbsp;&nbsp;&nbsp;{{course.title}}</h1>
+  {{!-- <h1>Редактировать&nbsp;&nbsp;&nbsp;{{course.title}}</h1> --}}
 
    {{#if error}}
   <p class="alert">{{error}}</p>
@@ -9,7 +9,7 @@
   
   <form action="/courses/edit" method="POST" class="course-form" novalidate>
     <div class="input-field">
-      <input id="title" name="title" type="text" class="validate" required value="{{course.title}}" placeholder="Введите название курса"/>
+      <input id="title" name="title" type="text" class="validate course__edit__form-validate" required value="{{course.title}}" placeholder="Введите название курса"/>
       <span class="helper-text" data-error="Введите название курса"></span>
     </div>
     <div class="input-field">

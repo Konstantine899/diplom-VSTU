@@ -8,7 +8,6 @@ public/main.js.map
 /.eslintrc.json
 /.prettierrc
 /.babelrc
-/.browserslistrc
 postcss.config.js
 webpack.config.js
 keys/keys.dev.js

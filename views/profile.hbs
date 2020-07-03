@@ -19,17 +19,17 @@
         <p>Ваш email: <strong>{{user.email}}</strong></p>
 
         <div class="input-field file-field-name">
-          <input id="name" name="name" type="text" class="validate" required value="{{user.name}}">
+          <input id="name" name="name" type="text" class="profile__validate validate" required value="{{user.name}}">
           <label for="name">Ваше имя</label>
           <span class="helper-text" data-error="Имя не может быть пустым"></span>
         </div>
 
-        <div class="file-field  input-field">
+        <div class="file-field profile__file-field input-field">
           <div class="file-field-avatar">
             {{!-- <span>Аватар</span> --}}
             <div class="file-field-input">
               <input id="avatar" name="avatar" type="file" class="file-field-input-hidden" >
-              <label for="avatar" class=" file-field-label"><strong>Загрузить аватар</strong></label>
+              <label for="avatar" class=" file-field-label"></label>
             </div>
           </div>
           <div class="file-path-wrapper">
