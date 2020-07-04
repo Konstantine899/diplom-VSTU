@@ -9,13 +9,13 @@
         <form class="form" action="/auth/reset" method="POST">
             <div class="input-field reset__reverse">
                 <input id="email" name="email" type="email" class="validate" required />
-                <label for="email">Email:</label>
+                <label class="email" for="email">Email:</label>
                 <span class="helper-text" data-error="Введите email"></span>
             </div>
 
             <input type="hidden" name="_csrf" value="{{csrf}}">
 
-            <button class="btn btn-primary" type="submit">Сбросить</button>
+            <button class="btn btn-primary btn-primary-reset" type="submit">Сбросить</button>
         </form>
     
 </div>
