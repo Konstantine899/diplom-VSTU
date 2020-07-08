@@ -1,4 +1,3 @@
-//emails reset.js
 const keys = require('../keys');
 
 module.exports = function (email, token) {
