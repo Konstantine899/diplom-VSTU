@@ -1,0 +1,48 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+}
+
+skinparam usecase{
+    FontColor<< Ссылка >> yellow
+    FontColor<< Страница >> white
+}
+
+actor "Не зарегистрированный пользователь" as UC3
+
+usecase "Навигация" as navbar
+usecase "Магазин курсов" as shop__courses << Ссылка >>
+usecase "Главная" as main << Ссылка >>
+usecase "Курсы" as courses << Ссылка >>
+usecase "Войти" as enter << Ссылка >>
+
+
+usecase "Главная" as main_page << Страница >>
+usecase "Курсы" as courses_page << Страница >>
+usecase "Регистрации и авторизации" as registration << Страница >>
+
+
+UC3 --> navbar
+navbar --> shop__courses
+navbar --> main
+navbar --> courses
+navbar --> enter
+
+shop__courses --> main_page
+main --> main_page
+courses --> courses_page
+enter --> registration
+
+
+
+@enduml

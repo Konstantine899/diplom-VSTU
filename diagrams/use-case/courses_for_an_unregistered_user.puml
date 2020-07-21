@@ -1,0 +1,44 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+}
+ actor "Не зарегестрированный пользователь" as UC4
+
+skinparam usecase{
+    FontColor<< Карточка товара >> white
+    FontColor<< Атрибуты >> #3568b6
+    FontColor<< Ссылка >> yellow
+}
+
+ usecase "Страница курсов" as courses 
+ usecase "Карточка товара" as card << Карточка товара >>
+
+ usecase "img" as img << Атрибуты >>
+ usecase "Название" as title << Атрибуты >>
+ usecase "Цена" as price << Атрибуты >>
+ usecase "Открыть" as open << Ссылка >>
+
+
+ UC4 --> courses
+ courses --> card
+
+ card --> img
+ card --> title
+ card --> price
+ card --> open
+
+
+
+
+@enduml

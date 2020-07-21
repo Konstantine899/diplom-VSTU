@@ -1,0 +1,35 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+}
+
+skinparam usecase{
+    FontColor<< link >> yellow
+     FontColor<< form >> Aqua
+}
+
+actor "Пользователь" as UC10
+
+usecase "Выйти" as exit << link >> 
+usecase "Регистрации и авторизации" as form << form >> 
+
+
+UC10 --> exit
+exit --> form
+
+
+
+
+
+@enduml

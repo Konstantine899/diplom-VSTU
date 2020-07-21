@@ -1,0 +1,122 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+}
+
+package "routes" #gray{
+    class courses{
+        ..libraries..
+        const { Router } = require('express');
+        const { validationResult } = require('express-validator');
+        ..models..
+        const Course = require('../models/course');
+        ..middleware..
+        const auth = require('../middleware/auth');
+        ....
+        const { courseValidators } = require('../utils/validators');
+        ..functions..
+        isOwner(course, req):
+        return course.userId.toString() === req.user._id.toString();
+
+        router.get('/'):
+        await Course.find()
+        .populate('userId', 'email name')
+        .select('price title img');
+        res.render('courses')
+
+        router.get('/:id/edit'):
+        !req.query.allow
+        return res.redirect('/');
+        Course.findById(req.params.id):
+        !isOwner(course, req)
+        return res.redirect('/courses')
+        res.render('course-edit')
+
+        router.post('/edit')
+        const errors = validationResult(req);
+        const { id } = req.body;
+        !errors.isEmpty()
+        return res.status(422).redirect(`/courses/${id}/edit?allow=true`);
+        delete req.body.id;
+        const course = await Course.findById(id);
+        if (!isOwner(course, req))
+            return res.redirect('/courses');
+            Object.assign(course, req.body);
+            await course.save();
+            res.redirect('/courses');
+
+            router.post('/remove')
+            Course.deleteOne()
+            res.redirect('/courses');
+
+            router.get('/:id')
+            Course.findById(req.params.id)
+            res.render('course')
+        }
+    }
+
+
+    package "models" #gray{
+
+        class modelCourse{
+            ..libraries..
+            const { Schema, model } = require('mongoose')
+            ..function..
+            const courseSchema = new Schema({})
+            title: string
+            price: number
+            img: string
+            description: object
+            userId: Schema.Types.ObjectId
+            ref: User
+
+            courseSchema.method('toClient')
+            const course = this.toObject();
+            course.id = course._id;
+            delete course._id;
+            return course;
+        }
+    }
+
+    package "middleware" #gray{
+
+        class auth{
+            ..module..
+            module.exports = function (req, res, next)
+            if (!req.session.isAuthenticated)
+                return res.redirect('/auth/login');
+                next();
+            }
+        }
+
+        package "validators" #gray{
+
+            class courseValidators{
+                body('title')
+                .isLength({ min: 3 })
+                .withMessage('Минимальная длинна названия 3 символа')
+                .trim(),
+                body('price').isNumeric().withMessage('Введите корректную цену'),
+                body('img', 'Введите корректный url картинки').isURL(),
+                body('description')
+                .isLength({ min: 0 })
+                .withMessage('Введите минимальное HTML описание курса')
+            }
+        }
+
+
+        modelCourse --> courses
+        auth --> courses
+        courseValidators --> courses
+    
+        @enduml

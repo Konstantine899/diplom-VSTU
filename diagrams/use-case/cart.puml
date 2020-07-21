@@ -1,0 +1,66 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+}
+
+skinparam usecase{
+    FontColor<< UC5 >> green
+    FontColor<< th >> Aqua
+    FontColor<< tabel >> Aqua
+    FontColor<< action__td >> #3568b6
+    FontColor<< button >> #3568b6
+    FontColor<< count__price >> #9370DB
+    BackgroundColor<< validation >> red
+}
+
+actor "Пользователь" as UC8
+
+
+usecase "Навигация" as navbar << UC5 >>
+usecase "Корзина" as cart
+usecase "Подвал сайта" as footer__information << UC5 >>
+
+usecase "Таблица" as tabel << tabel >>
+usecase "Название курса" as name__course << th >>
+usecase "Количество" as count << th >>
+usecase "Действие" as action << th >>
+
+usecase "Название курса" as name__course__td << td >>
+usecase "Счетчик" as count__td << td >>
+usecase "Удалить" as action__td << action__td >>
+
+usecase "Цена" as count__price << count__price >>
+
+usecase "Сделать заказ" as order<< button >>
+
+UC8 --> cart
+cart -left-> navbar
+cart -right-> footer__information
+
+cart --> tabel
+tabel --> name__course
+tabel --> count
+tabel --> action
+
+name__course --> name__course__td
+count --> count__td
+action --> action__td
+
+name__course__td --> count__price
+count__td --> count__price
+action__td --> count__price
+
+count__price --> order
+
+@enduml

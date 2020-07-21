@@ -1,0 +1,61 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+}
+
+skinparam usecase{
+    BackgroundColor<< validator >> Red
+    ' BorderColor<< Red >> Red
+}
+
+actor "Не зарегистрированный пользователь" as actor
+usecase "Войти в магазин" as UC1
+("input email") as email
+("Введите корректный email") as correct__email << validator >>
+("Такой email уже занят") as email__to__take << validator >>
+("input пароль") as password 
+("Пароль должен быть не менее 6 символов") as min__six << validator >>
+("Введите верный пароль") as correct__password << validator >>
+("Ссылка: Забыли пароль?") as reset__password
+usecase "Регистрация" as UC2
+("input Имя") as name
+("Имя должно быть минимум 3 символа") as validation__name << validator >>
+("input email") as email
+("Введите корректный email") as correct__email << validator >>
+("Такой email уже занят") as email__to__take << validator >>
+("input пароль") as password
+("Пароль должен быть не менее 6 символов") as min__six << validator >>
+("Введите верный пароль") as correct__password << validator >>
+("input повторите пароль") as repeat__password
+("Пароли должны совпадать") as passwords__mast__mach << validator >>
+
+
+actor --> UC1
+UC1 --> email
+email --> correct__email
+UC1 --> password
+password --> correct__password
+UC1 --> reset__password
+actor --> UC2
+UC2 --> name
+name --> validation__name
+UC2 ---> email
+email --> email__to__take
+UC2 ---> password
+password --> min__six
+UC2 --> repeat__password
+repeat__password --> passwords__mast__mach
+
+
+@enduml

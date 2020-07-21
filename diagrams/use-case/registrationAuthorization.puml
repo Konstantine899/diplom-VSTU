@@ -1,0 +1,39 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+}
+
+actor "Не зарегистрированный пользователь" as actor
+usecase "Войти в магазин" as UC1
+("input email")
+("input пароль")
+("Ссылка: Забыли пароль?")
+usecase "Регистрация" as UC2
+("input Имя")
+("input email")
+("input пароль")
+("input повторите пароль")
+
+
+actor --> UC1
+UC1 --> ("input email")
+UC1 --> ("input пароль")
+UC1 --> ("Ссылка: Забыли пароль?")
+actor --> UC2
+UC2 --> ("input Имя")
+UC2 ---> ("input email")
+UC2 ---> ("input пароль")
+UC2 --> ("input повторите пароль")
+
+
+@enduml
