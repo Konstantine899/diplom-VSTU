@@ -1,35 +1,69 @@
-
-  <div class="add__wrapper background-nav">
+<div class="add__wrapper background-nav">
 
   {{#if error}}
-  <p class="alert">{{error}}</p>
+    <p class="alert">
+      {{error}}
+    </p>
   {{/if}}
 
   <form class="form" action="/add" method="POST" novalidate>
+  
     <div class="input-field">
-      <input id="title" name="title" type="text" class="validate" required  value="{{data.title}}" placeholder="Введите название курса"/>
+      <input
+        id="title"
+        name="title"
+        type="text"
+        class="validate"
+        required
+        value="{{data.title}}"
+        placeholder="Введите название курса"
+      />
       <span class="helper-text" data-error="Введите название курса"></span>
     </div>
+
     <div class="input-field">
-      <input id="price" name="price" type="number" class="validate" required min="1" value="{{data.price}}" placeholder="Введите цену курса"/>
-  
+      <input
+        id="price"
+        name="price"
+        type="number"
+        class="validate"
+        required
+        min="1"
+        value="{{data.price}}"
+        placeholder="Введите цену курса"
+      />
       <span class="helper-text" data-error="Введите цену"></span>
     </div>
+
     <div class="input-field">
-      <input id="img" name="img" type="text" class="validate" required value="{{data.img}}" placeholder="Введите url картинки"/>
-     
+      <input
+        id="img"
+        name="img"
+        type="text"
+        class="validate"
+        required
+        value="{{data.img}}"
+        placeholder="Введите url картинки"
+      />
       <span class="helper-text" data-error="Введите url картинки"></span>
     </div>
 
-    <div class="description">   
-      <textarea class="description-textarea" name="description"  value="{{{data.description}}}" required placeholder="Вставьте html шаблон описания курса"></textarea>
-      
+    <div class="description">
+      <textarea
+        class="description-textarea"
+        name="description"
+        value="{{{data.description}}}"
+        required
+        placeholder="Вставьте html шаблон описания курса"
+      ></textarea>
       <span class="helper-text" data-error="Введите html описание курса"></span>
     </div>
 
-    <input type="hidden" name="_csrf" value="{{csrf}}">
+    <input type="hidden" name="_csrf" value="{{csrf}}" />
 
-    <button class="btn btn-primary btn-primary-add-course">Добавить курс</button>
+    <button class="btn btn-primary btn-primary-add-course">
+      Добавить курс
+    </button>
+    
   </form>
-  
 </div>

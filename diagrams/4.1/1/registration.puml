@@ -1,0 +1,165 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+    ComponentBackgroundColor DarkSlateGrey
+}
+
+package views{
+    package auth{
+        component login.hbs{
+
+        }
+    }
+}
+
+package routes{
+   component auth.js{
+class registration{
+    const bcrypt = require('bcryptjs');
+    const nodemailer = require('nodemailer');
+    const sendgrid = require('nodemailer-sendgrid-transport');
+    const { registerValidators } = require('../utils/validators');
+    const User = require('../models/user');
+    ....
+    router.get('/login', async (req, res) => {
+  res.render('auth/login', {
+    title: 'Авторизация',
+    isLogin: true,
+    loginError: req.flash('loginError'),
+    registerError: req.flash('registerError'),
+  });
+});
+router.post('/register', registerValidators, async (req, res) => {
+  try {
+    const { email, password, name } = req.body;
+
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      req.flash('registerError', errors.array()[0].msg);
+      return res.status(422).redirect('/auth/login#register');}
+
+    const hashPassword = await bcrypt.hash(password, 10);
+    const user = new User({
+      email,
+      name,
+      password: hashPassword,
+      cart: { items: [] },
+    });
+    await user.save();
+    await transporter.sendMail(regEmail(email));
+    res.redirect('/auth/login#login');
+  } catch (e) {
+    console.log(e);}
+});
+}
+    }
+}
+
+package utils{
+    component validators.js{
+class registerValidators{
+    const { body } = require('express-validator');
+    const User = require('../models/user');
+    ....
+    exports.registerValidators = [
+  body('email')
+    .isEmail()
+    .withMessage('Введите корректный email')
+    .custom(async (value, { req }) => {
+      try {
+        const user = await User.findOne({ email: value });
+        if (user) {
+          return Promise.reject('Такой email уже занят'); }
+      } catch (e) {
+        console.log(e); }
+    })
+    .normalizeEmail(),
+  body('password', 'Пароль должен быть не менее 6 символов')
+    .isLength({ min: 6, max: 70 })
+    .isAlphanumeric()
+    .trim(),
+
+  body('confirm')
+    .custom((value, { req }) => {
+      if (value !== req.body.password) {
+        throw new Error('Пароли должны совпадать');}
+      return true;
+    })
+    .trim(),
+  body('name')
+    .isLength({ min: 3 })
+    .withMessage('Имя должно быти минимум 3 символа')
+    .trim(),
+];
+}
+    }
+}
+package models{
+    component user.js{
+        class userSchema{
+            const userSchema = new Schema({
+  email: {
+    type: String,
+    required: true,
+  },
+  name: String,
+  password: {
+    type: String,
+    required: true,
+  },
+  avatarUrl: String,
+  resetToken: String,
+  resetTokenExp: Date,
+  cart: {
+    items: [
+      {
+        count: {
+          type: Number,
+          required: true,
+          default: 1,
+        },
+        courseId: {
+          type: Schema.Types.ObjectId,
+          ref: 'Course',
+          required: true,
+        },
+      },
+    ],
+  },
+});
+        }
+
+    }
+}
+
+component index.js{
+                class entry{
+                    const authRoutes = require('./routes/auth');
+                }
+            }
+
+
+database MongoDB{
+
+}
+
+entry <-up-> registration
+login.hbs <-up-> registration
+
+registration <-right-> registerValidators
+registerValidators <-down-> userSchema
+userSchema <-right-> MongoDB
+
+
+
+            @enduml

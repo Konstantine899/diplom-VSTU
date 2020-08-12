@@ -1,0 +1,193 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+    ComponentBackgroundColor DarkSlateGrey
+}
+
+package views #gray{
+    component course_edit.hbs {
+
+    }
+    component courses.hbs{
+
+    }
+}
+
+package routes #gray{
+    component courses.js {
+    class edit{
+      const { Router } = require('express');
+const { validationResult } = require('express-validator');
+const { courseValidators } = require('../utils/validators');
+const Course = require('../models/course');
+const auth = require('../middleware/auth');
+....
+        router.get('/', async (req, res) => {
+  try {
+    const courses = await Course.find()
+      .populate('userId', 'email name')
+      .select('price title img');
+
+    res.render('courses', {
+      title: 'Курсы',
+      isCourses: true,
+      userId: req.user ? req.user._id.toString() : null,
+      courses,
+    });
+  } catch (e) {
+    console.log(e);}
+});
+        ....
+        router.get('/:id/edit', auth, async (req, res) => {
+  if (!req.query.allow) {
+    return res.redirect('/');}
+
+  try {
+    const course = await Course.findById(req.params.id);
+    if (!isOwner(course, req)) {
+      return res.redirect('/courses');}
+
+    res.render('course-edit', {
+      title: `Редактировать ${course.title}`,
+      course,
+    });
+  } catch (e) {
+    console.log(e);}
+});
+
+router.post('/edit', auth, courseValidators, async (req, res) => {
+  const errors = validationResult(req);
+  const { id } = req.body;
+
+  if (!errors.isEmpty()) {
+    return res.status(422).redirect(`/courses/${id}/edit?allow=true`);}
+
+  try {
+    delete req.body.id;
+    const course = await Course.findById(id);
+    if (!isOwner(course, req)) {
+      return res.redirect('/courses');}
+    Object.assign(course, req.body);
+    await course.save();
+    res.redirect('/courses');
+  } catch (e) {
+    console.log(e);}
+});
+       
+}
+    }
+}
+
+
+
+package models #gray{
+    component course.js {
+class courseSchema{
+const { Schema, model } = require('mongoose');
+
+const courseSchema = new Schema({
+  title: {
+type: String,
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  img: String,
+  description: {
+    type: Object,
+  },
+  userId: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+  },
+});
+
+courseSchema.method('toClient', function () {
+  const course = this.toObject();
+  course.id = course._id;
+  delete course._id;
+  return course;
+});
+
+module.exports = model('Course', courseSchema);
+}
+    }
+
+}
+
+package utils{
+  component validators.js{
+    class courseValidators{
+      exports.courseValidators = [
+  body('title')
+    .isLength({ min: 3 })
+    .withMessage('Минимальная длинна названия 3 символа')
+    .trim(),
+  body('price').isNumeric().withMessage('Введите корректную цену'),
+  body('img', 'Введите корректный url картинки').isURL(),
+  body('description')
+    .isLength({ min: 0 })
+    .withMessage('Введите минимальное HTML описание курса'),
+];
+    }
+  }
+}
+
+package middleware{
+  component auth.js{
+    class isAuthenticated{
+      // middleware auth.js
+module.exports = function (req, res, next) {
+  if (!req.session.isAuthenticated) {
+    return res.redirect('/auth/login');}
+  next();
+};
+
+    }
+  }
+}
+
+' package public{
+'   component app.js{
+'     class toCurrency{
+'       const toCurrency = (price) => {
+'   return new Intl.NumberFormat('ru-RU', {
+'     currency: 'BYN',
+'     style: 'currency',
+'   }).format(price);
+' };
+
+'     }
+'   }
+' }
+
+
+
+database MongoDB{
+
+}
+
+course_edit.hbs <--> edit
+edit -up-> courses.hbs
+' toCurrency -left-> courses.hbs
+edit <-right-> courseSchema
+courseSchema <-> MongoDB
+
+
+courseValidators <-down-> edit
+isAuthenticated <-down-> edit
+
+
+@enduml

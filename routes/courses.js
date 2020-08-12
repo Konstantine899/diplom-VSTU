@@ -2,9 +2,10 @@
 
 const { Router } = require('express');
 const { validationResult } = require('express-validator');
+const { courseValidators } = require('../utils/validators');
 const Course = require('../models/course');
 const auth = require('../middleware/auth');
-const { courseValidators } = require('../utils/validators');
+
 const router = Router();
 
 function isOwner(course, req) {

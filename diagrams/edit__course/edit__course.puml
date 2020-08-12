@@ -1,0 +1,133 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+}
+
+
+package "models/course" #gray{
+
+        class courseSchema{
+const courseSchema = new Schema({
+  title: {
+type: String,
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  img: String,
+  description: {
+    type: Object,
+  },
+  userId: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+  },
+}); 
+        }
+    }
+
+ package "routes/courses(controller)" #gray{
+
+     class routerGetFindCourseDBoutput{
+         router.get('/', async (req, res) => {
+  try {
+    const courses = await Course.find()
+      .populate('userId', 'email name')
+      .select('price title img');
+
+    res.render('courses', {
+      title: 'Курсы',
+      isCourses: true,
+      userId: req.user ? req.user._id.toString() : null,
+      courses,
+    });
+  } catch (e) {
+    console.log(e);}
+});
+     }
+
+     class routerGetEdit{
+         router.get('/:id/edit', auth, async (req, res) => {
+  if (!req.query.allow) {
+    return res.redirect('/');}
+  try {
+    const course = await Course.findById(req.params.id);
+    if (!isOwner(course, req)) {
+      return res.redirect('/courses');}
+    res.render('course-edit', {
+      title: `Редактировать ${course.title}`,
+      course,
+    });
+  } catch (e) {
+    console.log(e);}
+});
+     }
+
+
+
+     class routerPostEdit{
+         router.post('/edit', auth, courseValidators, async (req, res) => {
+  const errors = validationResult(req);
+  const { id } = req.body;
+
+  if (!errors.isEmpty()) {
+    return res.status(422).redirect(`/courses/${id}/edit?allow=true`);}
+  try {
+    delete req.body.id;
+    const course = await Course.findById(id);
+    if (!isOwner(course, req)) {
+      return res.redirect('/courses');}
+    Object.assign(course, req.body);
+    await course.save();
+    res.redirect('/courses');
+  } catch (e) {
+    console.log(e);}
+});
+     }
+
+ }  
+ package "utils(Утилиты)" #gray{
+class courseValidators{
+  exports.courseValidators = [
+  body('title')
+    .isLength({ min: 3 })
+    .withMessage('Минимальная длинна названия 3 символа')
+    .trim(),
+  body('price').isNumeric().withMessage('Введите корректную цену'),
+  body('img', 'Введите корректный url картинки').isURL(),
+  body('description')
+    .isLength({ min: 0 })
+    .withMessage('Введите минимальное HTML описание курса'),
+];
+}
+}
+
+package "middleware(Промежуточное програмное обеспечение)" #gray{
+  class auth{
+    module.exports = function (req, res, next) {
+  if (!req.session.isAuthenticated) {
+    return res.redirect('/auth/login');}
+  next();
+};
+  }
+}
+   
+routerGetEdit --> routerPostEdit
+routerPostEdit <--> courseSchema
+routerPostEdit <-left-> courseValidators
+routerPostEdit <-right-> auth
+routerPostEdit <--> routerGetFindCourseDBoutput
+
+@enduml

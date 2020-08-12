@@ -1,0 +1,99 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+    ComponentBackgroundColor DarkSlateGrey
+    ' ArrowColor red
+}
+
+package views{
+
+    component course_edit.hbs{
+
+    }
+    component courses.hbs{
+
+    }
+}
+
+package routes{
+    component courses.js{
+        class deleteOne{
+ const { Router } = require('express');
+const { validationResult } = require('express-validator');
+const { courseValidators } = require('../utils/validators');
+const Course = require('../models/course');
+const auth = require('../middleware/auth');
+            router.post('/remove', auth, async (req, res) => {
+                try {
+                    await Course.deleteOne({
+                        _id: req.body.id,
+                        userId: req.user._id,}
+                    );
+                    res.redirect('/courses');}
+                catch (e) {
+                    console.log(e);}}
+            );
+       }
+    }
+}
+
+package models{
+    component course.js{
+        class courseSchema{
+            const courseSchema = new Schema({
+                title: {
+                    type: String,
+                    required: true,}
+                ,
+                price: {
+                    type: Number,
+                    required: true,}
+                ,
+                img: String,
+                description: {
+                    type: Object,}
+                ,
+                userId: {
+                    type: Schema.Types.ObjectId,
+                    ref: 'User',}
+                ,}
+            );
+        }
+
+    }
+}
+
+package middleware{
+  component auth.js{
+    class isAuthenticated{
+      // middleware auth.js
+module.exports = function (req, res, next) {
+  if (!req.session.isAuthenticated) {
+    return res.redirect('/auth/login');}
+  next();
+};
+
+    }
+  }
+}
+
+
+database MongoDB{
+
+}
+
+course_edit.hbs --> deleteOne
+deleteOne -up-> courses.hbs
+deleteOne <-down-> isAuthenticated
+deleteOne <-right-> courseSchema
+courseSchema <--> MongoDB
+
+
+
+
+
+@enduml

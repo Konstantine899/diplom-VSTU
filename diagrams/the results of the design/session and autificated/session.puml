@@ -1,0 +1,109 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+}
+
+package middleware #gray{
+    component variables.js{
+        class isAuth{
+            module.exports = function (req, res, next) {
+  res.locals.isAuth = req.session.isAuthenticated;
+  next();
+};
+        }
+    }
+}
+
+component index.js{
+    class session{
+        const session = require('express-session');
+        middleware const warMiddleware = require('./middleware/variables'); 
+        ....
+        app.use(
+  session({
+    secret: keys.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    store,
+  })
+);
+....
+app.use(warMiddleware);
+    }
+}
+
+package keys{
+    component index{
+
+    }
+    component keys.dev.js{
+
+    }
+    component keys.prod.js{
+
+    }
+}
+
+package view #gray{
+    package auth #gray{
+        component login.hbs{
+
+        }
+    }
+
+    package partials #gray{
+        component navbar.hbs{
+
+        }
+    }
+}
+
+package routes #gray{
+    component auth.js{
+        class login{
+router.get('/login', async (req, res) => {
+  res.render('auth/login', {
+    title: 'Авторизация',
+    isLogin: true,
+  });
+});
+....
+router.post('/login', async (req, res) => {
+  req.session.isAuthenticated = true;
+  res.redirect('/');
+});
+        }
+        class logout{
+            router.get('/logout', async (req, res) => {
+  req.session.destroy(() => {
+    res.redirect('/auth/login#login');
+  });
+});
+        }
+    }
+}
+
+session -left-> login
+login --> isAuth
+isAuth -left-> session
+login -up-> navbar.hbs
+session -up-> logout
+navbar.hbs -[hidden]- login.hbs
+logout --> login.hbs
+
+keys.prod.js -[hidden]- keys.dev.js
+keys.prod.js --> index
+keys.dev.js -left-> index
+index -up-> session
+
+@enduml

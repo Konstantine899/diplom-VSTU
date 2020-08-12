@@ -1,0 +1,81 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+}
+
+class users{
+    {"_id":{"$oid":"5f1c920aed776e00171aef7e"},
+    "email":"kostya375298918971@gmail.com",
+    "name":"Константин",
+    "password":"$2a$10$SQ.tExuytRDT.MU2vg8ww.EUeety1Mh3S2yVAM9882mWKCyEWq5Ay",
+    "cart":
+    {"items":
+    [
+        {"count":{"$numberInt":"1"},
+    "_id":{"$oid":"5f1c934bed776e00171aef83"},
+    "courseId":{"$oid":"5f1c92abed776e00171aef7f"}}
+    ]},
+    "__v":{"$numberInt":"0"}}
+}
+
+
+class courses{
+{"_id":{"$oid":"5f1c92abed776e00171aef7f"},
+"title":"Курсы Английского языка",
+"price":{"$numberInt":"300"},
+"img":"https://proexpress.com.ua/wp-content/uploads/2018/07/pasted-image-0.png",
+"description":"описание куса",
+"userId":{"$oid":"5f1c920aed776e00171aef7e"},
+"__v":{"$numberInt":"0"}}
+}
+
+class orders{
+    {"_id":{"$oid":"5f1c9345ed776e00171aef81"},
+    "user":{"name":"Константин","userId":{"$oid":"5f1c920aed776e00171aef7e"}},
+    "courses":[{"_id":{"$oid":"5f1c9345ed776e00171aef82"},
+    "count":{"$numberInt":"1"},
+    "course":{"_id":{"$oid":"5f1c92abed776e00171aef7f"},
+    "title":"Курсы Английского языка",
+    "price":{"$numberInt":"300"},
+    "img":"https://proexpress.com.ua/wp-content/uploads/2018/07/pasted-image-0.png",
+    "description":"",
+    "userId":{"$oid":"5f1c920aed776e00171aef7e"},
+    "__v":{"$numberInt":"0"}}}],
+    "date":{"$date":{"$numberLong":"1595708229150"}},
+    "__v":{"$numberInt":"0"}}
+}
+
+class session{
+    {"_id":"4vb-1hREF3OiRLf517CrTxDa-MphU650",
+    "expires":{"$date":{"$numberLong":"1595883522709"}},
+    "session":{"cookie":
+    {"originalMaxAge":null,
+    "expires":null,
+    "secure":null,
+    "httpOnly":true,
+    "domain":null,
+    "path":"/",
+    "sameSite":null},
+    "csrfSecret":"6KPK2i2tzcZm6x-P0gI5rjpt"}}
+}
+
+' users <--> orders
+' users <--> courses
+' users <--> session
+' orders <--> session
+' courses <--> session
+' courses <--> orders
+
+
+
+                                        @enduml

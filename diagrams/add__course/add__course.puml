@@ -1,0 +1,118 @@
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+    Shadowing false
+    Dpi 300
+    ' classFontSize 40
+    ' classAttributeFontSize 35
+    ' PackageFontSize 50
+    ' classAttributeFontStyle "Regular"
+    ' classAttributeFontName  "Gill Sans"
+    ' ClassAttributeFontColor red
+}
+
+
+package "models/course" #gray{
+
+        class courseSchema{
+const courseSchema = new Schema({
+  title: {
+type: String,
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  img: String,
+  description: {
+    type: Object,
+  },
+  userId: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+  },
+}); 
+        }
+    }
+
+ 
+       
+package "routes/add(controller)" #gray{
+
+     class routerGet{
+       router.get('/', auth, (req, res) => {
+  res.render('add', {
+    title: 'Добавить курс',
+    isAdd: true,
+  });
+});
+    }  
+
+    class routerPost{
+        router.post('/', auth, courseValidators, async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).render('add', {
+      title: 'Добавить курс',
+      isAdd: true,
+      error: errors.array()[0].msg,
+      data: {
+        title: req.body.title,
+        price: req.body.price,
+        img: req.body.img,
+        description: req.body.description,
+      },
+    });}
+
+  const course = new Course({
+    title: req.body.title,
+    price: req.body.price,
+    img: req.body.img,
+    description: req.body.description,
+    userId: req.user,
+  });
+
+  try {
+    await course.save();
+    res.redirect('/courses');
+  } catch (e) {
+    console.log(e);}
+});}
+}
+}
+package "utils(Утилиты)" #gray{
+class courseValidators{
+  exports.courseValidators = [
+  body('title')
+    .isLength({ min: 3 })
+    .withMessage('Минимальная длинна названия 3 символа')
+    .trim(),
+  body('price').isNumeric().withMessage('Введите корректную цену'),
+  body('img', 'Введите корректный url картинки').isURL(),
+  body('description')
+    .isLength({ min: 0 })
+    .withMessage('Введите минимальное HTML описание курса'),
+];
+}
+}
+
+package "middleware(Промежуточное програмное обеспечение)" #gray{
+  class auth{
+    module.exports = function (req, res, next) {
+  if (!req.session.isAuthenticated) {
+    return res.redirect('/auth/login');}
+  next();
+};
+  }
+}
+
+courseSchema <-right-> routerPost
+routerGet --> routerPost
+courseValidators <-left-> routerPost
+auth <-up-> routerPost
+       
+
+@enduml
