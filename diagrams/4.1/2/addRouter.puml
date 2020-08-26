@@ -5,13 +5,13 @@
 skinparam {
     Shadowing false
     Dpi 300
-    ' classFontSize 40
-    ' classAttributeFontSize 35
-    ' PackageFontSize 50
-    ' classAttributeFontStyle "Regular"
-    ' classAttributeFontName  "Gill Sans"
-    ' ClassAttributeFontColor red
-    ComponentBackgroundColor DarkSlateGrey
+  ClassAttributeFontSize 20
+  ClassFontSize 20
+  ComponentFontSize 20
+  PackageFontSize 20
+  DatabaseFontSize 20
+  ComponentBackgroundColor DarkSlateGrey
+  ArrowColor red
 }
 
 
@@ -26,7 +26,7 @@ package views #gray{
 
 package routes #gray{
     component add.js {
-    class add{
+    class add{ 
       onst { Router } = require('express');
 const { validationResult } = require('express-validator');
 const { courseValidators } = require('../utils/validators');
@@ -93,23 +93,23 @@ class Course__find{
     }
 }
 
-package utils #gray{
-    component validator.js {
-class courseValidators{
-    exports.courseValidators = [
-  body('title')
-    .isLength({ min: 3 })
-    .withMessage('Минимальная длинна названия 3 символа')
-    .trim(),
-  body('price').isNumeric().withMessage('Введите корректную цену'),
-  body('img', 'Введите корректный url картинки').isURL(),
-  body('description')
-    .isLength({ min: 0 })
-    .withMessage('Введите минимальное HTML описание курса'),
-];
-}
-    }
-}
+' package utils #gray{
+'     component validator.js {
+' class courseValidators{
+'     exports.courseValidators = [
+'   body('title')
+'     .isLength({ min: 3 })
+'     .withMessage('Минимальная длинна названия 3 символа')
+'     .trim(),
+'   body('price').isNumeric().withMessage('Введите корректную цену'),
+'   body('img', 'Введите корректный url картинки').isURL(),
+'   body('description')
+'     .isLength({ min: 0 })
+'     .withMessage('Введите минимальное HTML описание курса'),
+' ];
+' }
+'     }
+' }
 
 package models #gray{
     component course.js {
@@ -135,31 +135,24 @@ type: String,
   },
 });
 
-courseSchema.method('toClient', function () {
-  const course = this.toObject();
-  course.id = course._id;
-  delete course._id;
-  return course;
-});
-
 module.exports = model('Course', courseSchema);
 }
     }
 
 }
 
-package middleware #gray{
-    component auth.js {
-class isAuthenticated{
-    // middleware auth.js
-module.exports = function (req, res, next) {
-  if (!req.session.isAuthenticated) {
-    return res.redirect('/auth/login');}
-  next();
-};
-}
-    }
-}
+' package middleware #gray{
+'     component auth.js {
+' class isAuthenticated{
+'     // middleware auth.js
+' module.exports = function (req, res, next) {
+'   if (!req.session.isAuthenticated) {
+'     return res.redirect('/auth/login');}
+'   next();
+' };
+' }
+'     }
+' }
 
 ' package public{
 '   component app.js{
@@ -180,8 +173,8 @@ database MongoDB{
 }
 
 add.hbs -right-> add
-add <--> courseValidators
-add <--> isAuthenticated
+' add <--> courseValidators
+' add <--> isAuthenticated
 add <-right-> courseSchema
 add -left-> Course__find
 

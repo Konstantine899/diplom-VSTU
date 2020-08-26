@@ -5,13 +5,12 @@
 skinparam {
     Shadowing false
     Dpi 300
-    ' classFontSize 40
-    ' classAttributeFontSize 35
-    ' PackageFontSize 50
-    ' classAttributeFontStyle "Regular"
-    ' classAttributeFontName  "Gill Sans"
-    ' ClassAttributeFontColor red
-    ComponentBackgroundColor DarkSlateGrey
+  ClassAttributeFontSize 30
+  ClassFontSize 30
+  ComponentFontSize 30
+  PackageFontSize 30
+  DatabaseFontSize 30
+  ComponentBackgroundColor DarkSlateGrey
 }
 
 package views #gray{

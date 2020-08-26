@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="8356.25px" preserveAspectRatio="none" style="width:5712px;height:8356px;background:#777777;" version="1.1" viewBox="0 0 5712 8356" width="5712.5px" zoomAndPan="magnify"><defs/><g><!--MD5=[e2a75efa8a0f57c2afae8bf75386f79c]
+cluster views--><polygon fill="#777777" points="1368.75,75,1650,75,1671.875,211.6699,2100,211.6699,2100,506.25,1368.75,506.25,1368.75,75" style="stroke: #000000; stroke-width: 4.6875;"/><line style="stroke: #000000; stroke-width: 4.6875;" x1="1368.75" x2="1671.875" y1="211.6699" y2="211.6699"/><text fill="#000000" font-family="sans-serif" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="262.5" x="1381.25" y="178.5706">views</text><!--MD5=[aee47e4adc368b23a2c75b05fcb7ca1e]
+cluster routes--><polygon fill="#777777" points="68.75,581.25,375,581.25,396.875,717.9199,3400,717.9199,3400,6696.875,68.75,6696.875,68.75,581.25" style="stroke: #000000; stroke-width: 4.6875;"/><line style="stroke: #000000; stroke-width: 4.6875;" x1="68.75" x2="396.875" y1="717.9199" y2="717.9199"/><text fill="#000000" font-family="sans-serif" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="287.5" x="81.25" y="684.8206">routes</text><!--MD5=[8db12d8d94dc49c6b5ec26f995e55cdb]
+cluster orders.js--><rect fill="#2F4F4F" height="5840.625" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="3181.25" x="143.75" y="781.25"/><rect fill="#2F4F4F" height="31.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="46.875" x="3262.5" y="796.875"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="3256.25" y="803.125"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="3256.25" y="815.625"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="471.875" x="1498.4375" y="916.1285">orders.js</text><!--MD5=[a60570e4b426f702ccbb0d459e3b9417]
+cluster models--><polygon fill="#777777" points="3475,1759.375,3818.75,1759.375,3840.625,1896.0449,5643.75,1896.0449,5643.75,7993.75,3475,7993.75,3475,1759.375" style="stroke: #000000; stroke-width: 4.6875;"/><line style="stroke: #000000; stroke-width: 4.6875;" x1="3475" x2="3840.625" y1="1896.0449" y2="1896.0449"/><text fill="#000000" font-family="sans-serif" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="325" x="3487.5" y="1862.9456">models</text><!--MD5=[46c7db887a545b4bef395518af4144f0]
+cluster model__orders--><rect fill="#2F4F4F" height="3484.375" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="1643.75" x="3643.75" y="1959.375"/><rect fill="#2F4F4F" height="31.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="46.875" x="5225" y="1975"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="5218.75" y="1981.25"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="5218.75" y="1993.75"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="800" x="4065.625" y="2094.2535">model__orders</text><!--MD5=[a01365a80097baccedfc2f1852929a97]
+cluster user.js--><rect fill="#2F4F4F" height="887.5" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="2018.75" x="3550" y="7031.25"/><rect fill="#2F4F4F" height="31.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="46.875" x="5506.25" y="7046.875"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="5500" y="7053.125"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="5500" y="7065.625"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="359.375" x="4379.6875" y="7166.1285">user.js</text><!--MD5=[24e2ffe3fe14b147bf8fee69b9d55bef]
+cluster middleware--><polygon fill="#777777" points="718.75,6771.875,1256.25,6771.875,1278.125,6908.5449,2750,6908.5449,2750,8053.125,718.75,8053.125,718.75,6771.875" style="stroke: #000000; stroke-width: 4.6875;"/><line style="stroke: #000000; stroke-width: 4.6875;" x1="718.75" x2="1278.125" y1="6908.5449" y2="6908.5449"/><text fill="#000000" font-family="sans-serif" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="518.75" x="731.25" y="6875.4456">middleware</text><!--MD5=[c53328ea4eaa0e42595c7b2d43f9ecd2]
+cluster auth.js--><rect fill="#2F4F4F" height="1006.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="1881.25" x="793.75" y="6971.875"/><rect fill="#2F4F4F" height="31.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="46.875" x="2612.5" y="6987.5"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="2606.25" y="6993.75"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="2606.25" y="7006.25"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="365.625" x="1551.5625" y="7106.7535">auth.js</text><!--MD5=[2759ed4cb2d88ab18cb609029009834f]
+entity orders.hbs--><rect fill="#2F4F4F" height="207.6874" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="631.25" x="1418.75" y="250"/><rect fill="#2F4F4F" height="31.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="46.875" x="1987.5" y="265.625"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="1981.25" y="271.875"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="1981.25" y="284.375"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="506.25" x="1465.625" y="406.7535">orders.hbs</text><!--MD5=[f64d788c7bb8eecaa3c054be973a0c32]
+class controller__orders--><rect fill="#2E2E2E" height="5619.5038" id="controller__orders" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="3078.125" x="195.3125" y="953.125"/><ellipse cx="1285.9375" cy="1025.7187" fill="#228811" rx="25" ry="25" style="stroke: #1B1B1B; stroke-width: 3.125;"/><path d="M1287.9395,1038.707 Q1285.1563,1038.707 1282.7881,1037.8769 Q1280.4199,1037.0468 1278.7109,1035.4355 Q1277.0508,1033.8242 1276.0986,1031.3828 Q1275.1465,1028.9413 1275.1465,1025.7675 Q1275.1465,1022.789 1276.0498,1020.372 Q1276.9531,1017.955 1278.6621,1016.1972 Q1280.2734,1014.537 1282.6904,1013.6337 Q1285.1074,1012.7304 1287.9395,1012.7304 Q1289.502,1012.7304 1290.7715,1012.9013 Q1292.041,1013.0722 1293.1152,1013.3652 Q1294.2383,1013.707 1295.166,1014.0976 Q1296.0938,1014.4882 1296.7773,1014.83 L1296.7773,1020.8847 L1296.0449,1020.8847 Q1295.5566,1020.4941 1294.8486,1019.9326 Q1294.1406,1019.371 1293.2129,1018.8339 Q1292.2852,1018.2968 1291.2109,1017.9306 Q1290.1367,1017.5644 1288.916,1017.5644 Q1287.5488,1017.5644 1286.3281,1017.9794 Q1285.1074,1018.3945 1284.082,1019.4199 Q1283.1055,1020.3476 1282.4951,1021.9345 Q1281.8848,1023.5214 1281.8848,1025.7675 Q1281.8848,1028.1113 1282.5439,1029.6982 Q1283.2031,1031.2851 1284.1797,1032.164 Q1285.2051,1033.0917 1286.4746,1033.4824 Q1287.7441,1033.873 1288.9648,1033.873 Q1290.1367,1033.873 1291.2842,1033.5312 Q1292.4316,1033.1894 1293.4082,1032.5546 Q1294.2383,1032.1152 1294.9463,1031.5536 Q1295.6543,1030.9921 1296.0938,1030.6015 L1296.7773,1030.6015 L1296.7773,1036.5585 Q1295.8496,1036.998 1294.9951,1037.3642 Q1294.1406,1037.7304 1293.1641,1037.9745 Q1291.9434,1038.3163 1290.8691,1038.5117 Q1289.7949,1038.707 1287.9395,1038.707 Z "/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="875" x="1335.9375" y="1063.0035">controller__orders</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="198.4375" x2="3270.3125" y1="1098.3124" y2="1098.3124"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="159.375" x="214.0625" y="1208.1329">try {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="1326.0529"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="540.625" x="214.0625" y="1443.9728">isOrder: true,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="565.625" x="214.0625" y="1561.8927">title: 'Заказы',</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="300" x="214.0625" y="1679.8126">return {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="378.125" x="214.0625" y="1797.7325">...o._doc,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="214.0625" y="1915.6525">};</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="2033.5724"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="815.625" x="214.0625" y="2151.4923">// создание ордера</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="159.375" x="214.0625" y="2269.4122">try {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="578.125" x="214.0625" y="2387.3322">count: i.count,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1168.75" x="214.0625" y="2505.2521">course: { ...i.courseId._doc },</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="2623.172"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="262.5" x="214.0625" y="2741.0919">user: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="903.125" x="214.0625" y="2859.0118">name: req.user.name,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="671.875" x="214.0625" y="2976.9318">userId: req.user,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="214.0625" y="3094.8517">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="725" x="214.0625" y="3212.7716">courses: courses,</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="198.4375" x2="3270.3125" y1="3245.871" y2="3245.871"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1606.25" x="214.0625" y="3355.6915">router.get('/', auth, async (req, res) =&gt; {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="2900" x="214.0625" y="3473.6115">const orders = await Order.find({ 'user.userId': req.user._id }).populate(</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="214.0625" y="3591.5314">);</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="3709.4513"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="834.375" x="214.0625" y="3827.3712">res.render('orders', {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1118.75" x="214.0625" y="3945.2911">orders: orders.map((o) =&gt; {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1518.75" x="214.0625" y="4063.2111">price: o.courses.reduce((total, c) =&gt; {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1656.25" x="214.0625" y="4181.131">return (total += c.count * c.course.price);</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="190.625" x="214.0625" y="4299.0509">}, 0),</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="214.0625" y="4416.9708">}),</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="214.0625" y="4534.8907">});</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="471.875" x="214.0625" y="4652.8107">} catch (e) {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="637.5" x="214.0625" y="4770.7306">console.log(e);}</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="214.0625" y="4888.6505">});</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1653.125" x="214.0625" y="5006.5704">router.post('/', auth, async (req, res) =&gt; {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="3040.625" x="214.0625" y="5124.4904">const user = await req.user.populate('cart.items.courseId').execPopulate();</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1831.25" x="214.0625" y="5242.4103">const courses = user.cart.items.map((i) =&gt; ({</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="118.75" x="214.0625" y="5360.3302">}));</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="5478.2501"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1062.5" x="214.0625" y="5596.17">const order = new Order({</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="214.0625" y="5714.09">});</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="759.375" x="214.0625" y="5832.0099">await order.save();</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1065.625" x="214.0625" y="5949.9298">await req.user.clearCart();</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="6067.8497"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="875" x="214.0625" y="6185.7697">res.redirect('/orders');</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="471.875" x="214.0625" y="6303.6896">} catch (e) {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="637.5" x="214.0625" y="6421.6095">console.log(e);}</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="214.0625" y="6539.5294">});</text><!--MD5=[cf4d6237fcae255cd2e1656cf84a30e2]
+class Order--><rect fill="#2E2E2E" height="3261.1053" id="Order" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="1543.75" x="3693.75" y="2131.25"/><ellipse cx="4318.75" cy="2203.8437" fill="#228811" rx="25" ry="25" style="stroke: #1B1B1B; stroke-width: 3.125;"/><path d="M4320.752,2216.832 Q4317.9688,2216.832 4315.6006,2216.0019 Q4313.2324,2215.1718 4311.5234,2213.5605 Q4309.8633,2211.9492 4308.9111,2209.5078 Q4307.959,2207.0663 4307.959,2203.8925 Q4307.959,2200.914 4308.8623,2198.497 Q4309.7656,2196.08 4311.4746,2194.3222 Q4313.0859,2192.662 4315.5029,2191.7587 Q4317.9199,2190.8554 4320.752,2190.8554 Q4322.3145,2190.8554 4323.584,2191.0263 Q4324.8535,2191.1972 4325.9277,2191.4902 Q4327.0508,2191.832 4327.9785,2192.2226 Q4328.9063,2192.6132 4329.5898,2192.955 L4329.5898,2199.0097 L4328.8574,2199.0097 Q4328.3691,2198.6191 4327.6611,2198.0576 Q4326.9531,2197.496 4326.0254,2196.9589 Q4325.0977,2196.4218 4324.0234,2196.0556 Q4322.9492,2195.6894 4321.7285,2195.6894 Q4320.3613,2195.6894 4319.1406,2196.1044 Q4317.9199,2196.5195 4316.8945,2197.5449 Q4315.918,2198.4726 4315.3076,2200.0595 Q4314.6973,2201.6464 4314.6973,2203.8925 Q4314.6973,2206.2363 4315.3564,2207.8232 Q4316.0156,2209.4101 4316.9922,2210.289 Q4318.0176,2211.2167 4319.2871,2211.6074 Q4320.5566,2211.998 4321.7773,2211.998 Q4322.9492,2211.998 4324.0967,2211.6562 Q4325.2441,2211.3144 4326.2207,2210.6796 Q4327.0508,2210.2402 4327.7588,2209.6786 Q4328.4668,2209.1171 4328.9063,2208.7265 L4329.5898,2208.7265 L4329.5898,2214.6835 Q4328.6621,2215.123 4327.8076,2215.4892 Q4326.9531,2215.8554 4325.9766,2216.0995 Q4324.7559,2216.4413 4323.6816,2216.6367 Q4322.6074,2216.832 4320.752,2216.832 Z "/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="271.875" x="4368.75" y="2241.1285">Order</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="3696.875" x2="5234.375" y1="2276.4374" y2="2276.4374"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="400" x="3712.5" y="2386.2579">courses: [</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="31.25" x="3712.5" y="2504.1779">{</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="359.375" x="3712.5" y="2622.0978">course: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="518.75" x="3712.5" y="2740.0177">type: Object,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="578.125" x="3712.5" y="2857.9376">required: true,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3712.5" y="2975.8575">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="309.375" x="3712.5" y="3093.7775">count: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="584.375" x="3712.5" y="3211.6974">type: Number,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="578.125" x="3712.5" y="3329.6173">required: true,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3712.5" y="3447.5372">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3712.5" y="3565.4572">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="50" x="3712.5" y="3683.3771">],</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="262.5" x="3712.5" y="3801.297">user: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="553.125" x="3712.5" y="3919.2169">name: String,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="337.5" x="3712.5" y="4037.1368">userId: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1240.625" x="3712.5" y="4155.0568">type: Schema.Types.ObjectId,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="415.625" x="3712.5" y="4272.9767">ref: 'User',</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="578.125" x="3712.5" y="4390.8966">required: true,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3712.5" y="4508.8165">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3712.5" y="4626.7365">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="259.375" x="3712.5" y="4744.6564">date: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="443.75" x="3712.5" y="4862.5763">type: Date,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="740.625" x="3712.5" y="4980.4962">default: Date.now,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3712.5" y="5098.4161">},</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="3696.875" x2="5234.375" y1="5131.5155" y2="5131.5155"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1506.25" x="3712.5" y="5241.3361">const orderSchema = new Schema({</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="3712.5" y="5359.256">});</text><!--MD5=[a1ecdf4e1f2b2220a2dbedecce504d00]
+class clearCart--><rect fill="#2E2E2E" height="666.8671" id="clearCart" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="1918.75" x="3600" y="7203.125"/><ellipse cx="4332.8125" cy="7275.7187" fill="#228811" rx="25" ry="25" style="stroke: #1B1B1B; stroke-width: 3.125;"/><path d="M4334.8145,7288.707 Q4332.0313,7288.707 4329.6631,7287.8769 Q4327.2949,7287.0468 4325.5859,7285.4355 Q4323.9258,7283.8242 4322.9736,7281.3828 Q4322.0215,7278.9413 4322.0215,7275.7675 Q4322.0215,7272.789 4322.9248,7270.372 Q4323.8281,7267.955 4325.5371,7266.1972 Q4327.1484,7264.537 4329.5654,7263.6337 Q4331.9824,7262.7304 4334.8145,7262.7304 Q4336.377,7262.7304 4337.6465,7262.9013 Q4338.916,7263.0722 4339.9902,7263.3652 Q4341.1133,7263.707 4342.041,7264.0976 Q4342.9688,7264.4882 4343.6523,7264.83 L4343.6523,7270.8847 L4342.9199,7270.8847 Q4342.4316,7270.4941 4341.7236,7269.9326 Q4341.0156,7269.371 4340.0879,7268.8339 Q4339.1602,7268.2968 4338.0859,7267.9306 Q4337.0117,7267.5644 4335.791,7267.5644 Q4334.4238,7267.5644 4333.2031,7267.9794 Q4331.9824,7268.3945 4330.957,7269.4199 Q4329.9805,7270.3476 4329.3701,7271.9345 Q4328.7598,7273.5214 4328.7598,7275.7675 Q4328.7598,7278.1113 4329.4189,7279.6982 Q4330.0781,7281.2851 4331.0547,7282.164 Q4332.0801,7283.0917 4333.3496,7283.4824 Q4334.6191,7283.873 4335.8398,7283.873 Q4337.0117,7283.873 4338.1592,7283.5312 Q4339.3066,7283.1894 4340.2832,7282.5546 Q4341.1133,7282.1152 4341.8213,7281.5536 Q4342.5293,7280.9921 4342.9688,7280.6015 L4343.6523,7280.6015 L4343.6523,7286.5585 Q4342.7246,7286.998 4341.8701,7287.3642 Q4341.0156,7287.7304 4340.0391,7287.9745 Q4338.8184,7288.3163 4337.7441,7288.5117 Q4336.6699,7288.707 4334.8145,7288.707 Z "/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="431.25" x="4382.8125" y="7313.0035">clearCart</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="3603.125" x2="5515.625" y1="7348.3124" y2="7348.3124"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="890.625" x="3618.75" y="7458.1329">this.cart = { items: [] };</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3618.75" y="7576.0529">};</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="3603.125" x2="5515.625" y1="7609.1522" y2="7609.1522"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1881.25" x="3618.75" y="7718.9728">userSchema.methods.clearCart = function () {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="721.875" x="3618.75" y="7836.8927">return this.save();</text><!--MD5=[bda47d503442ff4a0d0fa4aec41fe8fa]
+class isAuthenticated--><rect fill="#2E2E2E" height="784.787" id="isAuthenticated" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="1781.25" x="843.75" y="7143.75"/><ellipse cx="1353.125" cy="7216.3437" fill="#228811" rx="25" ry="25" style="stroke: #1B1B1B; stroke-width: 3.125;"/><path d="M1355.127,7229.332 Q1352.3438,7229.332 1349.9756,7228.5019 Q1347.6074,7227.6718 1345.8984,7226.0605 Q1344.2383,7224.4492 1343.2861,7222.0078 Q1342.334,7219.5663 1342.334,7216.3925 Q1342.334,7213.414 1343.2373,7210.997 Q1344.1406,7208.58 1345.8496,7206.8222 Q1347.4609,7205.162 1349.8779,7204.2587 Q1352.2949,7203.3554 1355.127,7203.3554 Q1356.6895,7203.3554 1357.959,7203.5263 Q1359.2285,7203.6972 1360.3027,7203.9902 Q1361.4258,7204.332 1362.3535,7204.7226 Q1363.2813,7205.1132 1363.9648,7205.455 L1363.9648,7211.5097 L1363.2324,7211.5097 Q1362.7441,7211.1191 1362.0361,7210.5576 Q1361.3281,7209.996 1360.4004,7209.4589 Q1359.4727,7208.9218 1358.3984,7208.5556 Q1357.3242,7208.1894 1356.1035,7208.1894 Q1354.7363,7208.1894 1353.5156,7208.6044 Q1352.2949,7209.0195 1351.2695,7210.0449 Q1350.293,7210.9726 1349.6826,7212.5595 Q1349.0723,7214.1464 1349.0723,7216.3925 Q1349.0723,7218.7363 1349.7314,7220.3232 Q1350.3906,7221.9101 1351.3672,7222.789 Q1352.3926,7223.7167 1353.6621,7224.1074 Q1354.9316,7224.498 1356.1523,7224.498 Q1357.3242,7224.498 1358.4717,7224.1562 Q1359.6191,7223.8144 1360.5957,7223.1796 Q1361.4258,7222.7402 1362.1338,7222.1786 Q1362.8418,7221.6171 1363.2813,7221.2265 L1363.9648,7221.2265 L1363.9648,7227.1835 Q1363.0371,7227.623 1362.1826,7227.9892 Q1361.3281,7228.3554 1360.3516,7228.5995 Q1359.1309,7228.9413 1358.0566,7229.1367 Q1356.9824,7229.332 1355.127,7229.332 Z "/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="740.625" x="1403.125" y="7253.6285">isAuthenticated</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="846.875" x2="2621.875" y1="7288.9374" y2="7288.9374"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="862.5" y="7398.7579">};</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="846.875" x2="2621.875" y1="7431.8573" y2="7431.8573"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1743.75" x="862.5" y="7541.6779">module.exports = function (req, res, next) {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1353.125" x="862.5" y="7659.5978">if (!req.session.isAuthenticated) {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1318.75" x="862.5" y="7777.5177">return res.redirect('/auth/login');}</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="259.375" x="862.5" y="7895.4376">next();</text><!--MD5=[ba72416187da2a396e219ea5b5d73a26]
+entity MongoDB--><path d="M4304.6875,8146.875 C4304.6875,8115.625 4559.375,8115.625 4559.375,8115.625 C4559.375,8115.625 4814.0625,8115.625 4814.0625,8146.875 L4814.0625,8288.9374 C4814.0625,8320.1874 4559.375,8320.1874 4559.375,8320.1874 C4559.375,8320.1874 4304.6875,8320.1874 4304.6875,8288.9374 L4304.6875,8146.875 " fill="#2E2E2E" style="stroke: #1B1B1B; stroke-width: 4.6875;"/><path d="M4304.6875,8146.875 C4304.6875,8178.125 4559.375,8178.125 4559.375,8178.125 C4559.375,8178.125 4814.0625,8178.125 4814.0625,8146.875 " fill="none" style="stroke: #1B1B1B; stroke-width: 4.6875;"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="446.875" x="4335.9375" y="8284.8785">MongoDB</text><!--MD5=[30a6d21edcddf45cb489ef27f1af2ae1]
+link orders.hbs to controller__orders--><path d="M1734.375,472.4688 C1734.375,574.3437 1734.375,737.25 1734.375,937.4062 " fill="none" id="orders.hbs-controller__orders" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="1734.375,953.125,1746.875,925,1734.375,937.5,1721.875,925,1734.375,953.125" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="1734.375,456.25,1721.875,484.375,1734.375,471.875,1746.875,484.375,1734.375,456.25" style="stroke: #FFFFFF; stroke-width: 3.125;"/><!--MD5=[8a140a9cb6a3ae591dfb8ca77e1b5efd]
+link controller__orders to Order--><path d="M3291.0625,3762.5 C3419.9375,3762.5 3548.8125,3762.5 3677.6562,3762.5 " fill="none" id="controller__orders-Order" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="3693.375,3762.5,3665.25,3750,3677.75,3762.5,3665.25,3775,3693.375,3762.5" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="3274.7188,3762.5,3302.8438,3775,3290.3438,3762.5,3302.8438,3750,3274.7188,3762.5" style="stroke: #FFFFFF; stroke-width: 3.125;"/><!--MD5=[c9313e84caa3927a475439a8768212f6]
+link Order to clearCart--><path d="M4506.5625,5410.5844 C4523.0938,6074.5906 4540.625,6778.8094 4550.75,7185.9656 " fill="none" id="Order-clearCart" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="4551.1563,7202.725,4562.9535,7174.2981,4550.768,7187.1048,4537.9612,7174.9193,4551.1563,7202.725" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="4506.1563,5394.6906,4494.359,5423.1176,4506.5445,5410.3108,4519.3513,5422.4963,4506.1563,5394.6906" style="stroke: #FFFFFF; stroke-width: 3.125;"/><!--MD5=[cd1901c0ff74eae719b0460bdf782d66]
+link clearCart to MongoDB--><path d="M4559.375,7885.3781 C4559.375,7962.4031 4559.375,8038.815 4559.375,8098.5522 " fill="none" id="clearCart-MongoDB" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="4559.375,8114.9456,4571.875,8086.8206,4559.375,8099.3206,4546.875,8086.8206,4559.375,8114.9456" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="4559.375,7869.6406,4546.875,7897.7656,4559.375,7885.2656,4571.875,7897.7656,4559.375,7869.6406" style="stroke: #FFFFFF; stroke-width: 3.125;"/><!--MD5=[b24812bf3733bcb411dc9b9e7f3dcab7]
+link controller__orders to isAuthenticated--><path d="M1734.375,6588.9688 C1734.375,6792.4437 1734.375,6976.2469 1734.375,7126.4406 " fill="none" id="controller__orders-isAuthenticated" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="1734.375,7142.725,1746.875,7114.6,1734.375,7127.1,1721.875,7114.6,1734.375,7142.725" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="1734.375,6572.4437,1721.875,6600.5687,1734.375,6588.0687,1746.875,6600.5687,1734.375,6572.4437" style="stroke: #FFFFFF; stroke-width: 3.125;"/><!--MD5=[58deb70fac04bde9ae3c065089506657]
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+  Shadowing false
+  Dpi 300
+  ClassAttributeFontSize 30
+  ClassFontSize 30
+  ComponentFontSize 30
+  PackageFontSize 30
+  DatabaseFontSize 30
+  ComponentBackgroundColor DarkSlateGrey
+}
+
+package views{
+    component orders.hbs{
+
+    }
+}
+
+package routes{
+    component orders.js{
+class controller__orders{
+    router.get('/', auth, async (req, res) => {
+  try {
+    const orders = await Order.find({ 'user.userId': req.user._id }).populate(
+      'user.userId'
+    );
+
+    res.render('orders', {
+      isOrder: true,
+      title: 'Заказы',
+      orders: orders.map((o) => {
+        return {
+          ...o._doc,
+          price: o.courses.reduce((total, c) => {
+            return (total += c.count * c.course.price);
+          }, 0),
+        };
+      }),
+    });
+  } catch (e) {
+    console.log(e);}
+});
+
+// создание ордера
+router.post('/', auth, async (req, res) => {
+  try {
+    const user = await req.user.populate('cart.items.courseId').execPopulate();
+    const courses = user.cart.items.map((i) => ({
+      count: i.count,
+      course: { ...i.courseId._doc },
+    }));
+
+    const order = new Order({
+      user: {
+        name: req.user.name,
+        userId: req.user,
+      },
+      courses: courses,
+    });
+    await order.save();
+    await req.user.clearCart();
+
+    res.redirect('/orders');
+  } catch (e) {
+    console.log(e);}
+});
+}
+    }
+}
+package models{
+    component model__orders{
+        class Order{
+            const orderSchema = new Schema({
+  courses: [
+    {
+      course: {
+        type: Object,
+        required: true,
+      },
+      count: {
+        type: Number,
+        required: true,
+      },
+    },
+  ],
+  user: {
+    name: String,
+    userId: {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+      required: true,
+    },
+  },
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+});
+        }
+    }
+    component user.js{
+        class clearCart{
+userSchema.methods.clearCart = function () {
+  this.cart = { items: [] };
+  return this.save();
+};
+        }
+    }
+}
+
+package middleware{
+    component auth.js{
+        class isAuthenticated{
+  module.exports = function (req, res, next) {
+  if (!req.session.isAuthenticated) {
+    return res.redirect('/auth/login');}
+  next();
+};
+        }
+    }
+}
+
+
+
+database MongoDB{
+
+}
+
+orders.hbs <- -> controller__orders
+controller__orders <-right-> Order
+Order <- -> clearCart
+clearCart <- -> MongoDB
+controller__orders <- -> isAuthenticated
+
+
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+skinparam stereotypeCBackgroundColor 228811
+
+
+
+
+
+skinparam backgroundColor 777
+
+
+
+
+
+
+
+skinparam circledCharacter {
+  radius 8
+  fontSize 11
+  fontName Verdana
+}
+
+skinparam class {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+
+  attributeFontColor aaa
+  attributeFontSize 11
+  attributeIconSize 11
+}
+
+
+skinparam actor {
+    backgroundColor 228811
+  borderColor 113300
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam participant {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam collections {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam SequenceBox{
+    backgroundColor 575757
+  borderColor 767676
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+
+skinparam interface {
+    backgroundColor 228811
+  borderColor 113300
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam component {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam node {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam database {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam queue {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+
+skinparam usecase {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+}
+
+skinparam activity {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+}
+
+skinparam sequence {
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+
+  lifeLineBorderColor 228811
+  lifeLineBackgroundColor 575757
+}
+
+skinparam boundary {
+    backgroundColor 228811
+  borderColor 113300
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam control {
+    backgroundColor 228811
+  borderColor 113300
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam entity {
+    backgroundColor 228811
+  borderColor 113300
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+
+skinparam state {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+  startColor 228811
+  endColor 113300
+}
+
+
+skinparam object {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+}
+
+
+skinparam note {
+    backgroundColor 228811
+  borderColor 113300
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam cloud {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+}
+
+skinparam rectangle {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam storage {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+
+skinparam {
+  Shadowing false
+  Dpi 300
+  ClassAttributeFontSize 30
+  ClassFontSize 30
+  ComponentFontSize 30
+  PackageFontSize 30
+  DatabaseFontSize 30
+  ComponentBackgroundColor DarkSlateGrey
+}
+
+package views{
+    component orders.hbs{
+
+    }
+}
+
+package routes{
+    component orders.js{
+class controller__orders{
+    router.get('/', auth, async (req, res) => {
+  try {
+    const orders = await Order.find({ 'user.userId': req.user._id }).populate(
+    );
+
+    res.render('orders', {
+      isOrder: true,
+      title: 'Заказы',
+      orders: orders.map((o) => {
+        return {
+          ...o._doc,
+          price: o.courses.reduce((total, c) => {
+            return (total += c.count * c.course.price);
+          }, 0),
+        };
+      }),
+    });
+  } catch (e) {
+    console.log(e);}
+});
+
+// создание ордера
+router.post('/', auth, async (req, res) => {
+  try {
+    const user = await req.user.populate('cart.items.courseId').execPopulate();
+    const courses = user.cart.items.map((i) => ({
+      count: i.count,
+      course: { ...i.courseId._doc },
+    }));
+
+    const order = new Order({
+      user: {
+        name: req.user.name,
+        userId: req.user,
+      },
+      courses: courses,
+    });
+    await order.save();
+    await req.user.clearCart();
+
+    res.redirect('/orders');
+  } catch (e) {
+    console.log(e);}
+});
+}
+    }
+}
+package models{
+    component model__orders{
+        class Order{
+            const orderSchema = new Schema({
+  courses: [
+    {
+      course: {
+        type: Object,
+        required: true,
+      },
+      count: {
+        type: Number,
+        required: true,
+      },
+    },
+  ],
+  user: {
+    name: String,
+    userId: {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+      required: true,
+    },
+  },
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+});
+        }
+    }
+    component user.js{
+        class clearCart{
+userSchema.methods.clearCart = function () {
+  this.cart = { items: [] };
+  return this.save();
+};
+        }
+    }
+}
+
+package middleware{
+    component auth.js{
+        class isAuthenticated{
+  module.exports = function (req, res, next) {
+  if (!req.session.isAuthenticated) {
+    return res.redirect('/auth/login');}
+  next();
+};
+        }
+    }
+}
+
+
+
+database MongoDB{
+
+}
+
+orders.hbs <- -> controller__orders
+controller__orders <-right-> Order
+Order <- -> clearCart
+clearCart <- -> MongoDB
+controller__orders <- -> isAuthenticated
+
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 12:35:57 MSK 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_241-b07
+Operating System: Windows 10
+Default Encoding: Cp1251
+Language: ru
+Country: RU
+--></g></svg>

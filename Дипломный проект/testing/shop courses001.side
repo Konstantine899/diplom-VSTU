@@ -1,0 +1,546 @@
+{
+  "id": "67ff5787-5da7-4042-8229-cc54df1bce0f",
+  "version": "2.0",
+  "name": "shop courses",
+  "url": "https://mysterious-sea-19637.herokuapp.com/auth/password/bcc46145b26dbfbaf85d06fbe977ed34b241eff2e8109924bb65e7675ab099c0",
+  "tests": [{
+    "id": "c1234f3b-19ac-4cff-a8fd-a8fef4272bab",
+    "name": "Login",
+    "commands": [{
+      "id": "afc814c8-a3dd-4fdf-a82a-33d24b9d9f55",
+      "comment": "",
+      "command": "open",
+      "target": "https://mysterious-sea-19637.herokuapp.com/auth/login#login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4f65ec2-7742-4f7a-ab59-3aa890e4c0cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "783x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eeed3fe7-8935-4272-a26a-5cfb952ce642",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary-come-in",
+      "targets": [
+        ["css=.btn-primary-come-in", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4936904c-010f-4bda-8a53-358d8973eb61",
+    "name": "validation_email_login",
+    "commands": [{
+      "id": "0d4b46a8-5874-4b7b-a0ca-b61ddba7adcc",
+      "comment": "",
+      "command": "open",
+      "target": "https://mysterious-sea-19637.herokuapp.com/auth/login#login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0d09d2d-8876-4b4b-aec3-ba6acd583234",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "783x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5ce1957-dc52-423a-acf0-37bda45814aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24a38ca5-8a08-4d28-829a-2d1d4273cfa8",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "kost375298918971@gmail.com"
+    }, {
+      "id": "f0778c15-a41f-4b52-8e40-7c63bcb9314f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary-come-in",
+      "targets": [
+        ["css=.btn-primary-come-in", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8beaeaa1-d43e-4d2e-a59a-74140616b3c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.registration__authorization-wrapper",
+      "targets": [
+        ["css=.registration__authorization-wrapper", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ce1a57c-f3d4-4ed7-9afd-66b13f58174e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='login']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Такого пользователя не существует')]", "xpath:innerText"]
+      ],
+      "value": "Такого пользователя не существует"
+    }]
+  }, {
+    "id": "1d4045d0-b364-41fc-a4dc-12024977e007",
+    "name": "validation_password_login",
+    "commands": [{
+      "id": "b4da9b8b-56d7-412c-a9b5-0ec30e9b1e8b",
+      "comment": "",
+      "command": "open",
+      "target": "https://mysterious-sea-19637.herokuapp.com/auth/login#login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00ea05a4-f82b-4881-bc90-4e48d169cdbf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9271799-c528-421b-97c3-8c09558bd8ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "073bbc9d-378a-447d-b4c1-6a941fbfd515",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "c3d490fe-2bbe-4546-b64e-5ea046a99993",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary-come-in",
+      "targets": [
+        ["css=.btn-primary-come-in", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ead632d4-8327-470c-a120-85fe832d83f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='login']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Неверный пароль')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f4c0b93-1b32-4062-9041-c1d7c62cad8c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='login']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Неверный пароль')]", "xpath:innerText"]
+      ],
+      "value": "Неверный пароль"
+    }]
+  }, {
+    "id": "0f2d314d-5e9e-4a9d-8848-79d3263fb77c",
+    "name": "validation_forget_pasword",
+    "commands": [{
+      "id": "c02e3166-d4a8-4206-b452-6b5cf8f5b666",
+      "comment": "",
+      "command": "open",
+      "target": "https://mysterious-sea-19637.herokuapp.com/auth/login#login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d45fd6f-cc25-4634-8442-cabfcc1849a9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "783x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b670b3c-3e26-4966-af78-93966f956c93",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "kostya375298918971@gmail.com"
+    }, {
+      "id": "5f86db7e-a906-49d2-a667-01e477d99d50",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "6d52f5fc-aa16-4691-b090-e5513e142053",
+      "comment": "",
+      "command": "type",
+      "target": "id=remail",
+      "targets": [
+        ["id=remail", "id"],
+        ["css=#remail", "css:finder"],
+        ["xpath=//input[@id='remail']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "kostya375298918971@gmail.com"
+    }, {
+      "id": "5cb823cf-a4eb-48f8-bfa1-5edfc744fc44",
+      "comment": "",
+      "command": "type",
+      "target": "id=rpassword",
+      "targets": [
+        ["id=rpassword", "id"],
+        ["css=#rpassword", "css:finder"],
+        ["xpath=//input[@id='rpassword']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "563b1e53-5d99-4f25-bc4c-9baefe13122d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Забыли пароль?",
+      "targets": [
+        ["linkText=Забыли пароль?", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Забыли пароль?')]", "xpath:link"],
+        ["xpath=//div[@id='login']/form/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/auth/reset')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Забыли пароль?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39d222a7-06c6-4740-b4db-fe99de0c06ae",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Забыли пароль?",
+      "targets": [
+        ["linkText=Забыли пароль?", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Забыли пароль?')]", "xpath:link"],
+        ["xpath=//div[@id='login']/form/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/auth/reset')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Забыли пароль?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "878ecaf6-3ba6-4213-85d8-ea110c276556",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e0011a6-df0d-475e-9fc9-0eab5b9c04a4",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "kostya375298918971@gmail.com"
+    }, {
+      "id": "eccf817e-4905-4ebd-99a1-4e75ef6e8542",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0166eca-4601-4126-8296-138056e38562",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "kostya35298918971@gmail.com"
+    }, {
+      "id": "2bd7eb89-5006-43db-82e8-565b7b7e1b6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Сбросить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "542b8807-6614-4050-bdcd-08086d3f66dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.reset__wrapper",
+      "targets": [
+        ["css=.reset__wrapper", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "765132bf-f24f-4491-a695-8a3432e2f590",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Такого email нет')]", "xpath:innerText"]
+      ],
+      "value": "Такого email нет"
+    }]
+  }, {
+    "id": "4c4c572d-9e2f-4156-8f7c-0d0fc985ed09",
+    "name": "recovery_password",
+    "commands": [{
+      "id": "088cbf57-f5fb-43a6-9689-d62ac9e8db37",
+      "comment": "",
+      "command": "open",
+      "target": "https://mysterious-sea-19637.herokuapp.com/auth/login#register",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af8791bc-393a-4e1a-88ec-c9763669782c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d29a31c-b021-4584-aa73-675cdc989ed5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary-register",
+      "targets": [
+        ["css=.btn-primary-register", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/button", "xpath:idRelative"],
+        ["xpath=//div[3]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b224b074-ebb6-4fa0-8a4b-4a529b8180f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.registration__authorization-wrapper",
+      "targets": [
+        ["css=.registration__authorization-wrapper", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96f1bd2a-95b6-4df3-9fff-314c7ee1e9cc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='register']/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Пароль должен быть не менее 6 символов')]", "xpath:innerText"]
+      ],
+      "value": "Пароль должен быть не менее 6 символов"
+    }, {
+      "id": "8b8e7be3-9f47-4daf-8ec2-f830825b83cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2606f403-ab0a-4a09-b2e4-8ad0e564c8bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "2cc377aa-8792-4f2b-b068-6129f64ff7a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Обновить пароль')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "42d695b5-fa83-4a55-ae24-65b8ec48c6f4",
+    "name": "new",
+    "commands": [{
+      "id": "4039482d-f1e3-454d-848c-43fb6f8a4bfe",
+      "comment": "",
+      "command": "open",
+      "target": "https://mysterious-sea-19637.herokuapp.com/auth/password/bcc46145b26dbfbaf85d06fbe977ed34b241eff2e8109924bb65e7675ab099c0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24e180b8-5e31-499f-a6cf-8888332b47f3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x865",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc257f42-e030-4947-b809-4a5345ebd46b",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a210579f-b352-4148-a62a-6a52eea500aa",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "6120a406-5bb8-4d1b-b22f-7f173a217e5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Обновить пароль')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6d03895f-8662-47bc-b5f0-71b192a86e5f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c1234f3b-19ac-4cff-a8fd-a8fef4272bab"]
+  }],
+  "urls": ["https://mysterious-sea-19637.herokuapp.com/auth/login#login", "https://mysterious-sea-19637.herokuapp.com/auth/password/fd1cd6816eb46220f395ffce68892e2bd26fd984417d41b65ccd5cc756b97942", "https://mysterious-sea-19637.herokuapp.com/auth/password/bcc46145b26dbfbaf85d06fbe977ed34b241eff2e8109924bb65e7675ab099c0"],
+  "plugins": []
+}

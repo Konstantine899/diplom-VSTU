@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="7937.5px" preserveAspectRatio="none" style="width:7837px;height:7937px;background:#777777;" version="1.1" viewBox="512 512" width="7837.5px" zoomAndPan="magnify"><defs/><g><!--MD5=[e2a75efa8a0f57c2afae8bf75386f79c]
+cluster views--><polygon fill="#777777" points="75,7164.0625,356.25,7164.0625,378.125,7300.7324,712.5,7300.7324,712.5,7595.3125,75,7595.3125,75,7164.0625" style="stroke: #000000; stroke-width: 4.6875;"/><line style="stroke: #000000; stroke-width: 4.6875;" x1="75" x2="378.125" y1="7300.7324" y2="7300.7324"/><text fill="#000000" font-family="sans-serif" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="262.5" x="87.5" y="7267.6331">views</text><!--MD5=[552ce9138bd867c1c2de49b3399138a9]
+cluster index.js--><rect fill="#2F4F4F" height="534.375" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="1893.75" x="787.5" y="7114.0625"/><rect fill="#2F4F4F" height="31.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="46.875" x="2618.75" y="7129.6875"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="2612.5" y="7135.9375"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="2612.5" y="7148.4375"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="415.625" x="1526.5625" y="7248.941">index.js</text><!--MD5=[aee47e4adc368b23a2c75b05fcb7ca1e]
+cluster routes--><polygon fill="#777777" points="68.75,295.3125,375,295.3125,396.875,431.9824,3400,431.9824,3400,6442.1875,68.75,6442.1875,68.75,295.3125" style="stroke: #000000; stroke-width: 4.6875;"/><line style="stroke: #000000; stroke-width: 4.6875;" x1="68.75" x2="396.875" y1="431.9824" y2="431.9824"/><text fill="#000000" font-family="sans-serif" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="287.5" x="81.25" y="398.8831">routes</text><!--MD5=[4a3ccfc974e672ae0e8d92f4973d30b9]
+cluster card.js--><rect fill="#2F4F4F" height="5871.875" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="3181.25" x="143.75" y="495.3125"/><rect fill="#2F4F4F" height="31.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="46.875" x="3262.5" y="510.9375"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="3256.25" y="517.1875"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="3256.25" y="529.6875"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="359.375" x="1554.6875" y="630.191">card.js</text><!--MD5=[a60570e4b426f702ccbb0d459e3b9417]
+cluster models--><polygon fill="#777777" points="3475,75,3818.75,75,3840.625,211.6699,7768.75,211.6699,7768.75,6662.5,3475,6662.5,3475,75" style="stroke: #000000; stroke-width: 4.6875;"/><line style="stroke: #000000; stroke-width: 4.6875;" x1="3475" x2="3840.625" y1="211.6699" y2="211.6699"/><text fill="#000000" font-family="sans-serif" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="325" x="3487.5" y="178.5706">models</text><!--MD5=[2dc90687bafe027e9cd205ba7247115e]
+cluster course.js--><rect fill="#2F4F4F" height="2540.625" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="1706.25" x="5987.5" y="2160.9375"/><rect fill="#2F4F4F" height="31.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="46.875" x="7631.25" y="2176.5625"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="7625" y="2182.8125"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="7625" y="2195.3125"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="481.25" x="6600" y="2295.816">course.js</text><!--MD5=[a01365a80097baccedfc2f1852929a97]
+cluster user.js--><rect fill="#2F4F4F" height="6312.5" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="2362.5" x="3550" y="275"/><rect fill="#2F4F4F" height="31.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="46.875" x="5850" y="290.625"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="5843.75" y="296.875"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="5843.75" y="309.375"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="359.375" x="4551.5625" y="409.8785">user.js</text><!--MD5=[24e2ffe3fe14b147bf8fee69b9d55bef]
+cluster middleware--><polygon fill="#777777" points="2756.25,6737.5,3293.75,6737.5,3315.625,6874.1699,4787.5,6874.1699,4787.5,7900,2756.25,7900,2756.25,6737.5" style="stroke: #000000; stroke-width: 4.6875;"/><line style="stroke: #000000; stroke-width: 4.6875;" x1="2756.25" x2="3315.625" y1="6874.1699" y2="6874.1699"/><text fill="#000000" font-family="sans-serif" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="518.75" x="2768.75" y="6841.0706">middleware</text><!--MD5=[c53328ea4eaa0e42595c7b2d43f9ecd2]
+cluster auth.js--><rect fill="#2F4F4F" height="887.5" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="1881.25" x="2831.25" y="6937.5"/><rect fill="#2F4F4F" height="31.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="46.875" x="4650" y="6953.125"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="4643.75" y="6959.375"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="4643.75" y="6971.875"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="365.625" x="3589.0625" y="7072.3785">auth.js</text><!--MD5=[187785f41a07d68efacd6bd60a429822]
+entity card.hbs--><rect fill="#2F4F4F" height="207.6874" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="534.375" x="126.5625" y="7339.0625"/><rect fill="#2F4F4F" height="31.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="46.875" x="598.4375" y="7354.6875"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="592.1875" y="7360.9375"/><rect fill="#2F4F4F" height="6.25" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="12.5" x="592.1875" y="7373.4375"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="409.375" x="173.4375" y="7495.816">card.hbs</text><!--MD5=[17fdf1625663ae1a707ad7064a5e93f5]
+class entry--><rect fill="#2E2E2E" height="313.1073" id="entry" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="1793.75" x="837.5" y="7285.9375"/><ellipse cx="1598.4375" cy="7358.5312" fill="#228811" rx="25" ry="25" style="stroke: #1B1B1B; stroke-width: 3.125;"/><path d="M1600.4395,7371.5195 Q1597.6563,7371.5195 1595.2881,7370.6894 Q1592.9199,7369.8593 1591.2109,7368.248 Q1589.5508,7366.6367 1588.5986,7364.1953 Q1587.6465,7361.7538 1587.6465,7358.58 Q1587.6465,7355.6015 1588.5498,7353.1845 Q1589.4531,7350.7675 1591.1621,7349.0097 Q1592.7734,7347.3495 1595.1904,7346.4462 Q1597.6074,7345.5429 1600.4395,7345.5429 Q1602.002,7345.5429 1603.2715,7345.7138 Q1604.541,7345.8847 1605.6152,7346.1777 Q1606.7383,7346.5195 1607.666,7346.9101 Q1608.5938,7347.3007 1609.2773,7347.6425 L1609.2773,7353.6972 L1608.5449,7353.6972 Q1608.0566,7353.3066 1607.3486,7352.7451 Q1606.6406,7352.1835 1605.7129,7351.6464 Q1604.7852,7351.1093 1603.7109,7350.7431 Q1602.6367,7350.3769 1601.416,7350.3769 Q1600.0488,7350.3769 1598.8281,7350.7919 Q1597.6074,7351.207 1596.582,7352.2324 Q1595.6055,7353.1601 1594.9951,7354.747 Q1594.3848,7356.3339 1594.3848,7358.58 Q1594.3848,7360.9238 1595.0439,7362.5107 Q1595.7031,7364.0976 1596.6797,7364.9765 Q1597.7051,7365.9042 1598.9746,7366.2949 Q1600.2441,7366.6855 1601.4648,7366.6855 Q1602.6367,7366.6855 1603.7842,7366.3437 Q1604.9316,7366.0019 1605.9082,7365.3671 Q1606.7383,7364.9277 1607.4463,7364.3661 Q1608.1543,7363.8046 1608.5938,7363.414 L1609.2773,7363.414 L1609.2773,7369.371 Q1608.3496,7369.8105 1607.4951,7370.1767 Q1606.6406,7370.5429 1605.6641,7370.787 Q1604.4434,7371.1288 1603.3691,7371.3242 Q1602.2949,7371.5195 1600.4395,7371.5195 Z "/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="250" x="1648.4375" y="7395.816">entry</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="840.625" x2="2628.125" y1="7431.1249" y2="7431.1249"/><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="840.625" x2="2628.125" y1="7456.1249" y2="7456.1249"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1756.25" x="856.25" y="7565.9454">const cardRoutes = require('./routes/card');</text><!--MD5=[78754972718f9fbc3f9a3c29e4f5d403]
+class card__add--><rect fill="#2E2E2E" height="5650.7538" id="card__add" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="3078.125" x="195.3125" y="667.1875"/><ellipse cx="1473.4375" cy="739.7812" fill="#228811" rx="25" ry="25" style="stroke: #1B1B1B; stroke-width: 3.125;"/><path d="M1475.4395,752.7695 Q1472.6563,752.7695 1470.2881,751.9394 Q1467.9199,751.1093 1466.2109,749.498 Q1464.5508,747.8867 1463.5986,745.4453 Q1462.6465,743.0038 1462.6465,739.83 Q1462.6465,736.8515 1463.5498,734.4345 Q1464.4531,732.0175 1466.1621,730.2597 Q1467.7734,728.5995 1470.1904,727.6962 Q1472.6074,726.7929 1475.4395,726.7929 Q1477.002,726.7929 1478.2715,726.9638 Q1479.541,727.1347 1480.6152,727.4277 Q1481.7383,727.7695 1482.666,728.1601 Q1483.5938,728.5507 1484.2773,728.8925 L1484.2773,734.9472 L1483.5449,734.9472 Q1483.0566,734.5566 1482.3486,733.9951 Q1481.6406,733.4335 1480.7129,732.8964 Q1479.7852,732.3593 1478.7109,731.9931 Q1477.6367,731.6269 1476.416,731.6269 Q1475.0488,731.6269 1473.8281,732.0419 Q1472.6074,732.457 1471.582,733.4824 Q1470.6055,734.4101 1469.9951,735.997 Q1469.3848,737.5839 1469.3848,739.83 Q1469.3848,742.1738 1470.0439,743.7607 Q1470.7031,745.3476 1471.6797,746.2265 Q1472.7051,747.1542 1473.9746,747.5449 Q1475.2441,747.9355 1476.4648,747.9355 Q1477.6367,747.9355 1478.7842,747.5937 Q1479.9316,747.2519 1480.9082,746.6171 Q1481.7383,746.1777 1482.4463,745.6161 Q1483.1543,745.0546 1483.5938,744.664 L1484.2773,744.664 L1484.2773,750.621 Q1483.3496,751.0605 1482.4951,751.4267 Q1481.6406,751.7929 1480.6641,752.037 Q1479.4434,752.3788 1478.3691,752.5742 Q1477.2949,752.7695 1475.4395,752.7695 Z "/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="500" x="1523.4375" y="777.066">card__add</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="198.4375" x2="3270.3125" y1="812.3749" y2="812.3749"/><line style="stroke: #1B1B1B; stroke-width: 3.125; stroke-dasharray: 1.0,2.0;" x1="214.0625" x2="245.3125" y1="840.4999" y2="840.4999"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="953.4454"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="753.125" x="214.0625" y="1071.3654">...c.courseId._doc,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="675" x="214.0625" y="1189.2853">id: c.courseId.id,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="603.125" x="214.0625" y="1307.2052">count: c.count,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="1425.1251"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="1543.045"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="1660.965"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="612.5" x="214.0625" y="1778.8849">title: 'Корзина',</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="506.25" x="214.0625" y="1896.8048">isCard: true,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="725" x="214.0625" y="2014.7247">courses: courses,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="159.375" x="214.0625" y="2132.6447">try {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="753.125" x="214.0625" y="2250.5646">...c.courseId._doc,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="675" x="214.0625" y="2368.4845">id: c.courseId.id,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="603.125" x="214.0625" y="2486.4044">count: c.count,</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="198.4375" x2="3270.3125" y1="2519.5038" y2="2519.5038"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1481.25" x="214.0625" y="2629.3243">const { Router } = require('express');</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1746.875" x="214.0625" y="2747.2443">const Course = require('../models/course');</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1706.25" x="214.0625" y="2865.1642">const auth = require('../middleware/auth');</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="959.375" x="214.0625" y="2983.0841">const router = Router();</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1203.125" x="214.0625" y="3101.004">function mapCartItems(cart) {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1240.625" x="214.0625" y="3218.924">return cart.items.map((c) =&gt; ({</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="150" x="214.0625" y="3336.8439">}));}</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="3454.7638"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1606.25" x="214.0625" y="3572.6837">router.get('/', auth, async (req, res) =&gt; {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="3040.625" x="214.0625" y="3690.6036">const user = await req.user.populate('cart.items.courseId').execPopulate();</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="3808.5236"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1703.125" x="214.0625" y="3926.4435">const courses = mapCartItems(user.cart);</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="4044.3634"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="753.125" x="214.0625" y="4162.2833">res.render('card', {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1234.375" x="214.0625" y="4280.2032">price: computePrice(courses),</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="214.0625" y="4398.1232">});</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="214.0625" y="4516.0431">});</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1809.375" x="214.0625" y="4633.963">router.post('/add', auth, async (req, res) =&gt; {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="2081.25" x="214.0625" y="4751.8829">const course = await Course.findById(req.body.id);</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1409.375" x="214.0625" y="4869.8029">await req.user.addToCart(course);</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="793.75" x="214.0625" y="4987.7228">res.redirect('/card');</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="471.875" x="214.0625" y="5105.6427">} catch (e) {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="637.5" x="214.0625" y="5223.5626">console.log(e);}</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="214.0625" y="5341.4825">});</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1203.125" x="214.0625" y="5459.4025">function mapCartItems(cart) {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1240.625" x="214.0625" y="5577.3224">return cart.items.map((c) =&gt; ({</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="150" x="214.0625" y="5695.2423">}));}</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="239.0625" y="5813.1622"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1365.625" x="214.0625" y="5931.0822">function computePrice(courses) {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1690.625" x="214.0625" y="6049.0021">return courses.reduce((total, course) =&gt; {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1815.625" x="214.0625" y="6166.922">return (total += course.price * course.count);</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="221.875" x="214.0625" y="6284.8419">}, 0);}</text><!--MD5=[3c8afb8c3a917f644ec1ad74ecd38fae]
+class courseSchema--><rect fill="#2E2E2E" height="2317.746" id="courseSchema" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="1606.25" x="6037.5" y="2332.8125"/><ellipse cx="6484.375" cy="2405.4062" fill="#228811" rx="25" ry="25" style="stroke: #1B1B1B; stroke-width: 3.125;"/><path d="M6486.377,2418.3945 Q6483.5938,2418.3945 6481.2256,2417.5644 Q6478.8574,2416.7343 6477.1484,2415.123 Q6475.4883,2413.5117 6474.5361,2411.0703 Q6473.584,2408.6288 6473.584,2405.455 Q6473.584,2402.4765 6474.4873,2400.0595 Q6475.3906,2397.6425 6477.0996,2395.8847 Q6478.7109,2394.2245 6481.1279,2393.3212 Q6483.5449,2392.4179 6486.377,2392.4179 Q6487.9395,2392.4179 6489.209,2392.5888 Q6490.4785,2392.7597 6491.5527,2393.0527 Q6492.6758,2393.3945 6493.6035,2393.7851 Q6494.5313,2394.1757 6495.2148,2394.5175 L6495.2148,2400.5722 L6494.4824,2400.5722 Q6493.9941,2400.1816 6493.2861,2399.6201 Q6492.5781,2399.0585 6491.6504,2398.5214 Q6490.7227,2397.9843 6489.6484,2397.6181 Q6488.5742,2397.2519 6487.3535,2397.2519 Q6485.9863,2397.2519 6484.7656,2397.6669 Q6483.5449,2398.082 6482.5195,2399.1074 Q6481.543,2400.0351 6480.9326,2401.622 Q6480.3223,2403.2089 6480.3223,2405.455 Q6480.3223,2407.7988 6480.9814,2409.3857 Q6481.6406,2410.9726 6482.6172,2411.8515 Q6483.6426,2412.7792 6484.9121,2413.1699 Q6486.1816,2413.5605 6487.4023,2413.5605 Q6488.5742,2413.5605 6489.7217,2413.2187 Q6490.8691,2412.8769 6491.8457,2412.2421 Q6492.6758,2411.8027 6493.3838,2411.2411 Q6494.0918,2410.6796 6494.5313,2410.289 L6495.2148,2410.289 L6495.2148,2416.246 Q6494.2871,2416.6855 6493.4326,2417.0517 Q6492.5781,2417.4179 6491.6016,2417.662 Q6490.3809,2418.0038 6489.3066,2418.1992 Q6488.2324,2418.3945 6486.377,2418.3945 Z "/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="690.625" x="6534.375" y="2442.691">courseSchema</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="6040.625" x2="7640.625" y1="2477.9999" y2="2477.9999"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="225" x="6056.25" y="2587.8204">title: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="496.875" x="6056.25" y="2705.7404">type: String,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="578.125" x="6056.25" y="2823.6603">required: true,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="6056.25" y="2941.5802">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="284.375" x="6056.25" y="3059.5001">price: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="584.375" x="6056.25" y="3177.42">type: Number,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="578.125" x="6056.25" y="3295.34">required: true,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="6056.25" y="3413.2599">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="475" x="6056.25" y="3531.1798">img: String,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="534.375" x="6056.25" y="3649.0997">description: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="518.75" x="6056.25" y="3767.0197">type: Object,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="6056.25" y="3884.9396">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="337.5" x="6056.25" y="4002.8595">userId: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1240.625" x="6056.25" y="4120.7794">type: Schema.Types.ObjectId,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="415.625" x="6056.25" y="4238.6993">ref: 'User',</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="6056.25" y="4356.6193">},</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="6040.625" x2="7640.625" y1="4389.7186" y2="4389.7186"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1568.75" x="6056.25" y="4499.5392">const courseSchema = new Schema({</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="6056.25" y="4617.4591">});</text><!--MD5=[9d6c39ddbca108552d939ba1ba5421d0]
+class addToCart--><rect fill="#2E2E2E" height="6091.1835" id="addToCart" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="2262.5" x="3600" y="446.875"/><ellipse cx="4476.5625" cy="519.4687" fill="#228811" rx="25" ry="25" style="stroke: #1B1B1B; stroke-width: 3.125;"/><path d="M4478.5645,532.457 Q4475.7813,532.457 4473.4131,531.6269 Q4471.0449,530.7968 4469.3359,529.1855 Q4467.6758,527.5742 4466.7236,525.1328 Q4465.7715,522.6913 4465.7715,519.5175 Q4465.7715,516.539 4466.6748,514.122 Q4467.5781,511.705 4469.2871,509.9472 Q4470.8984,508.287 4473.3154,507.3837 Q4475.7324,506.4804 4478.5645,506.4804 Q4480.127,506.4804 4481.3965,506.6513 Q4482.666,506.8222 4483.7402,507.1152 Q4484.8633,507.457 4485.791,507.8476 Q4486.7188,508.2382 4487.4023,508.58 L4487.4023,514.6347 L4486.6699,514.6347 Q4486.1816,514.2441 4485.4736,513.6826 Q4484.7656,513.121 4483.8379,512.5839 Q4482.9102,512.0468 4481.8359,511.6806 Q4480.7617,511.3144 4479.541,511.3144 Q4478.1738,511.3144 4476.9531,511.7294 Q4475.7324,512.1445 4474.707,513.1699 Q4473.7305,514.0976 4473.1201,515.6845 Q4472.5098,517.2714 4472.5098,519.5175 Q4472.5098,521.8613 4473.1689,523.4482 Q4473.8281,525.0351 4474.8047,525.914 Q4475.8301,526.8417 4477.0996,527.2324 Q4478.3691,527.623 4479.5898,527.623 Q4480.7617,527.623 4481.9092,527.2812 Q4483.0566,526.9394 4484.0332,526.3046 Q4484.8633,525.8652 4485.5713,525.3036 Q4486.2793,524.7421 4486.7188,524.3515 L4487.4023,524.3515 L4487.4023,530.3085 Q4486.4746,530.748 4485.6201,531.1142 Q4484.7656,531.4804 4483.7891,531.7245 Q4482.5684,532.0663 4481.4941,532.2617 Q4480.4199,532.457 4478.5645,532.457 Z "/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="487.5" x="4526.5625" y="556.7535">addToCart</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="3603.125" x2="5859.375" y1="592.0624" y2="592.0624"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="303.125" x="3618.75" y="701.8829">email: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="496.875" x="3618.75" y="819.8029">type: String,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="578.125" x="3618.75" y="937.7228">required: true,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3618.75" y="1055.6427">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="553.125" x="3618.75" y="1173.5626">name: String,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="478.125" x="3618.75" y="1291.4825">password: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="496.875" x="3618.75" y="1409.4025">type: String,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="578.125" x="3618.75" y="1527.3224">required: true,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3618.75" y="1645.2423">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="696.875" x="3618.75" y="1763.1622">avatarUrl: String,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="784.375" x="3618.75" y="1881.0822">resetToken: String,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="890.625" x="3618.75" y="1999.0021">resetTokenExp: Date,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="234.375" x="3618.75" y="2116.922">cart: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="296.875" x="3618.75" y="2234.8419">items: [</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="31.25" x="3618.75" y="2352.7618">{</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="309.375" x="3618.75" y="2470.6818">count: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="584.375" x="3618.75" y="2588.6017">type: Number,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="578.125" x="3618.75" y="2706.5216">required: true,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="406.25" x="3618.75" y="2824.4415">default: 1,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3618.75" y="2942.3615">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="434.375" x="3618.75" y="3060.2814">courseId: {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1240.625" x="3618.75" y="3178.2013">type: Schema.Types.ObjectId,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="518.75" x="3618.75" y="3296.1212">ref: 'Course',</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="578.125" x="3618.75" y="3414.0411">required: true,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3618.75" y="3531.9611">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3618.75" y="3649.881">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="50" x="3618.75" y="3767.8009">],</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3618.75" y="3885.7208">},</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="3643.75" y="4003.6407"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1296.875" x="3618.75" y="4121.5607">const items = [...this.cart.items];</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="3643.75" y="4239.4806"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1578.125" x="3618.75" y="4357.4005">items[idx].count = items[idx].count + 1;</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="281.25" x="3618.75" y="4475.3204">} else {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="859.375" x="3618.75" y="4593.2404">courseId: course._id,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="356.25" x="3618.75" y="4711.1603">count: 1,</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="3643.75" y="4829.0802"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="790.625" x="3618.75" y="4947.0001">this.cart = { items };</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="56.25" x="3618.75" y="5064.92">};</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="3603.125" x2="5859.375" y1="5098.0194" y2="5098.0194"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1471.875" x="3618.75" y="5207.84">const userSchema = new Schema({</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="3618.75" y="5325.7599">});</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="3643.75" y="5443.6798"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="2225" x="3618.75" y="5561.5997">userSchema.methods.addToCart = function (course) {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1428.125" x="3618.75" y="5679.5197">const idx = items.findIndex((c) =&gt; {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="2187.5" x="3618.75" y="5797.4396">return c.courseId.toString() === course._id.toString();</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="3618.75" y="5915.3595">});</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="0" x="3643.75" y="6033.2794"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="525" x="3618.75" y="6151.1993">if (idx &gt;= 0) {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="515.625" x="3618.75" y="6269.1193">items.push({</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="118.75" x="3618.75" y="6387.0392">});}</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="721.875" x="3618.75" y="6504.9591">return this.save();</text><!--MD5=[bda47d503442ff4a0d0fa4aec41fe8fa]
+class isAuthenticated--><rect fill="#2E2E2E" height="666.8671" id="isAuthenticated" style="stroke: #1B1B1B; stroke-width: 4.6875;" width="1781.25" x="2881.25" y="7109.375"/><ellipse cx="3390.625" cy="7181.9687" fill="#228811" rx="25" ry="25" style="stroke: #1B1B1B; stroke-width: 3.125;"/><path d="M3392.627,7194.957 Q3389.8438,7194.957 3387.4756,7194.1269 Q3385.1074,7193.2968 3383.3984,7191.6855 Q3381.7383,7190.0742 3380.7861,7187.6328 Q3379.834,7185.1913 3379.834,7182.0175 Q3379.834,7179.039 3380.7373,7176.622 Q3381.6406,7174.205 3383.3496,7172.4472 Q3384.9609,7170.787 3387.3779,7169.8837 Q3389.7949,7168.9804 3392.627,7168.9804 Q3394.1895,7168.9804 3395.459,7169.1513 Q3396.7285,7169.3222 3397.8027,7169.6152 Q3398.9258,7169.957 3399.8535,7170.3476 Q3400.7813,7170.7382 3401.4648,7171.08 L3401.4648,7177.1347 L3400.7324,7177.1347 Q3400.2441,7176.7441 3399.5361,7176.1826 Q3398.8281,7175.621 3397.9004,7175.0839 Q3396.9727,7174.5468 3395.8984,7174.1806 Q3394.8242,7173.8144 3393.6035,7173.8144 Q3392.2363,7173.8144 3391.0156,7174.2294 Q3389.7949,7174.6445 3388.7695,7175.6699 Q3387.793,7176.5976 3387.1826,7178.1845 Q3386.5723,7179.7714 3386.5723,7182.0175 Q3386.5723,7184.3613 3387.2314,7185.9482 Q3387.8906,7187.5351 3388.8672,7188.414 Q3389.8926,7189.3417 3391.1621,7189.7324 Q3392.4316,7190.123 3393.6523,7190.123 Q3394.8242,7190.123 3395.9717,7189.7812 Q3397.1191,7189.4394 3398.0957,7188.8046 Q3398.9258,7188.3652 3399.6338,7187.8036 Q3400.3418,7187.2421 3400.7813,7186.8515 L3401.4648,7186.8515 L3401.4648,7192.8085 Q3400.5371,7193.248 3399.6826,7193.6142 Q3398.8281,7193.9804 3397.8516,7194.2245 Q3396.6309,7194.5663 3395.5566,7194.7617 Q3394.4824,7194.957 3392.627,7194.957 Z "/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="740.625" x="3440.625" y="7219.2535">isAuthenticated</text><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="2884.375" x2="4659.375" y1="7254.5624" y2="7254.5624"/><line style="stroke: #1B1B1B; stroke-width: 4.6875;" x1="2884.375" x2="4659.375" y1="7279.5624" y2="7279.5624"/><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1743.75" x="2900" y="7389.3829">module.exports = function (req, res, next) {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1353.125" x="2900" y="7507.3029">if (!req.session.isAuthenticated) {</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="1318.75" x="2900" y="7625.2228">return res.redirect('/auth/login');}</text><text fill="#AAAAAA" font-family="sans-serif" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="315.625" x="2900" y="7743.1427">next();};</text><!--MD5=[ba72416187da2a396e219ea5b5d73a26]
+entity MongoDB--><path d="M6585.9375,7371.875 C6585.9375,7340.625 6840.625,7340.625 6840.625,7340.625 C6840.625,7340.625 7095.3125,7340.625 7095.3125,7371.875 L7095.3125,7513.9374 C7095.3125,7545.1874 6840.625,7545.1874 6840.625,7545.1874 C6840.625,7545.1874 6585.9375,7545.1874 6585.9375,7513.9374 L6585.9375,7371.875 " fill="#2E2E2E" style="stroke: #1B1B1B; stroke-width: 4.6875;"/><path d="M6585.9375,7371.875 C6585.9375,7403.125 6840.625,7403.125 6840.625,7403.125 C6840.625,7403.125 7095.3125,7403.125 7095.3125,7371.875 " fill="none" style="stroke: #1B1B1B; stroke-width: 4.6875;"/><text fill="#FFFFFF" font-family="Verdana" font-size="93.75" lengthAdjust="spacingAndGlyphs" textLength="446.875" x="6617.1875" y="7509.8785">MongoDB</text><!--MD5=[d83c615059d808db3caed2fb796ac0ed]
+link card__add to entry--><path d="M1734.375,6318.175 C1734.375,6725.6875 1734.375,7073.2 1734.375,7268.9781 " fill="none" id="card__add-&gt;entry" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="1734.375,7285.1281,1746.875,7257.0031,1734.375,7269.5031,1721.875,7257.0031,1734.375,7285.1281" style="stroke: #FFFFFF; stroke-width: 3.125;"/><!--MD5=[82081c4a057e3fab8950449c6f819b0a]
+link card__add to card.hbs--><path d="M774.7813,6318.175 C622.6656,6765.6563 495.1438,7140.7938 433.5031,7322.1219 " fill="none" id="card__add-&gt;card.hbs" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="428.1031,7338.0094,448.9928,7315.4065,433.1338,7323.2164,425.324,7307.3574,428.1031,7338.0094" style="stroke: #FFFFFF; stroke-width: 3.125;"/><!--MD5=[95a9e2811f91950423649a75a9ccf4b5]
+link card__add to isAuthenticated--><path d="M3192.7813,6318.175 C3350.5313,6623.5281 3490.875,6895.1938 3593.9063,7094.5781 " fill="none" id="card__add-&gt;isAuthenticated" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="3601.25,7108.8063,3599.4519,7078.0811,3594.0807,7094.9231,3577.2388,7089.5519,3601.25,7108.8063" style="stroke: #FFFFFF; stroke-width: 3.125;"/><!--MD5=[8e3407602af6efa264225e1e0d185af1]
+link card__add to addToCart--><path d="M3290.3438,3492.1875 C3388.2188,3492.1875 3486.125,3492.1875 3584,3492.1875 " fill="none" id="card__add-addToCart" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="3599.7188,3492.1875,3571.5938,3479.6875,3584.0938,3492.1875,3571.5938,3504.6875,3599.7188,3492.1875" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="3273.7812,3492.1875,3301.9062,3504.6875,3289.4062,3492.1875,3301.9062,3479.6875,3273.7812,3492.1875" style="stroke: #FFFFFF; stroke-width: 3.125;"/><!--MD5=[8eafb50b8fa1ce406c2f5299979ad44d]
+link courseSchema to addToCart--><path d="M6020.9063,3492.1875 C5973.7813,3492.1875 5926.625,3492.1875 5879.4688,3492.1875 " fill="none" id="courseSchema-addToCart" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="5863.1875,3492.1875,5891.3125,3504.6875,5878.8125,3492.1875,5891.3125,3479.6875,5863.1875,3492.1875" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="6036.9063,3492.1875,6008.7813,3479.6875,6021.2813,3492.1875,6008.7813,3504.6875,6036.9063,3492.1875" style="stroke: #FFFFFF; stroke-width: 3.125;"/><!--MD5=[15ab8eb559fe119814b44df5b29eb662]
+link courseSchema to MongoDB--><path d="M6840.625,4667.9375 C6840.625,5643.7219 6840.625,6933.825 6840.625,7323.0781 " fill="none" id="courseSchema-MongoDB" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="6840.625,7339.8375,6853.125,7311.7125,6840.625,7324.2125,6828.125,7311.7125,6840.625,7339.8375" style="stroke: #FFFFFF; stroke-width: 3.125;"/><polygon fill="#FFFFFF" points="6840.625,4651.9063,6828.125,4680.0313,6840.625,4667.5313,6853.125,4680.0313,6840.625,4651.9063" style="stroke: #FFFFFF; stroke-width: 3.125;"/><!--MD5=[b8474ada6ed97950a98b31a351492989]
+@startuml
+!define DARKGREEN
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+skinparam {
+   Shadowing false
+    Dpi 300
+  ClassAttributeFontSize 30
+  ClassFontSize 30
+  ComponentFontSize 30
+  PackageFontSize 30
+  DatabaseFontSize 30
+  ComponentBackgroundColor DarkSlateGrey
+}
+
+
+package views{
+component card.hbs{
+
+}
+}
+
+component index.js{
+    class entry{
+        const cardRoutes = require('./routes/card');
+    }
+}
+
+package routes{
+    component card.js{
+        class card__add{
+
+const { Router } = require('express');
+const Course = require('../models/course');
+const auth = require('../middleware/auth');
+const router = Router();
+            ....
+            
+function mapCartItems(cart) {
+  return cart.items.map((c) => ({
+    ...c.courseId._doc,
+    id: c.courseId.id,
+    count: c.count,
+  }));}
+
+router.get('/', auth, async (req, res) => {
+  const user = await req.user.populate('cart.items.courseId').execPopulate();
+
+  const courses = mapCartItems(user.cart);
+
+  res.render('card', {
+    title: 'Корзина',
+    isCard: true,
+    courses: courses,
+    price: computePrice(courses),
+  });
+});
+router.post('/add', auth, async (req, res) => {
+  try {
+    const course = await Course.findById(req.body.id);
+    await req.user.addToCart(course);
+    res.redirect('/card');
+  } catch (e) {
+    console.log(e);}
+});
+function mapCartItems(cart) {
+  return cart.items.map((c) => ({
+    ...c.courseId._doc,
+    id: c.courseId.id,
+    count: c.count,
+  }));}
+
+function computePrice(courses) {
+  return courses.reduce((total, course) => {
+    return (total += course.price * course.count);
+  }, 0);}
+        }
+
+    }
+}
+
+package models{
+    component course.js{
+        class courseSchema{
+const courseSchema = new Schema({
+  title: {
+type: String,
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  img: String,
+  description: {
+    type: Object,
+  },
+  userId: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+  },
+});
+        }
+
+    }
+
+    component user.js{
+    class addToCart{
+const userSchema = new Schema({
+  email: {
+    type: String,
+    required: true,
+  },
+  name: String,
+  password: {
+    type: String,
+    required: true,
+  },
+  avatarUrl: String,
+  resetToken: String,
+  resetTokenExp: Date,
+  cart: {
+    items: [
+      {
+        count: {
+          type: Number,
+          required: true,
+          default: 1,
+        },
+        courseId: {
+          type: Schema.Types.ObjectId,
+          ref: 'Course',
+          required: true,
+        },
+      },
+    ],
+  },
+});
+
+userSchema.methods.addToCart = function (course) {
+  const items = [...this.cart.items];
+  const idx = items.findIndex((c) => {
+    return c.courseId.toString() === course._id.toString();
+  });
+
+  if (idx >= 0) {
+    items[idx].count = items[idx].count + 1;
+  } else {
+    items.push({
+      courseId: course._id,
+      count: 1,
+    });}
+
+  this.cart = { items };
+  return this.save();
+}; 
+    }
+}
+}
+
+package middleware{
+    component auth.js{
+        class isAuthenticated{
+            
+ module.exports = function (req, res, next) {
+  if (!req.session.isAuthenticated) {
+    return res.redirect('/auth/login');}
+  next();};
+
+        }
+    }
+}
+
+' package public{
+'     component app.js{
+'         class toCurrency{
+'  const toCurrency = (price) => {
+'   return new Intl.NumberFormat('ru-RU', {
+'     currency: 'BYN',
+'     style: 'currency',
+'   }).format(price);
+' };
+
+' document.querySelectorAll('.price').forEach((node) => {
+'   node.textContent = toCurrency(node.textContent);
+' });
+'         }
+'     }
+' }
+
+database MongoDB{
+
+}
+
+card__add - -> entry
+card__add - -> card.hbs
+' toCurrency - -> card.hbs
+card__add - -> isAuthenticated
+addToCart <-left-> card__add
+courseSchema <-> addToCart
+courseSchema <-down-> MongoDB
+
+
+
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+skinparam stereotypeCBackgroundColor 228811
+
+
+
+
+
+skinparam backgroundColor 777
+
+
+
+
+
+
+
+skinparam circledCharacter {
+  radius 8
+  fontSize 11
+  fontName Verdana
+}
+
+skinparam class {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+
+  attributeFontColor aaa
+  attributeFontSize 11
+  attributeIconSize 11
+}
+
+
+skinparam actor {
+    backgroundColor 228811
+  borderColor 113300
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam participant {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam collections {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam SequenceBox{
+    backgroundColor 575757
+  borderColor 767676
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+
+skinparam interface {
+    backgroundColor 228811
+  borderColor 113300
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam component {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam node {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam database {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam queue {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+
+skinparam usecase {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+}
+
+skinparam activity {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+}
+
+skinparam sequence {
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+
+  lifeLineBorderColor 228811
+  lifeLineBackgroundColor 575757
+}
+
+skinparam boundary {
+    backgroundColor 228811
+  borderColor 113300
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam control {
+    backgroundColor 228811
+  borderColor 113300
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam entity {
+    backgroundColor 228811
+  borderColor 113300
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+
+skinparam state {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+  startColor 228811
+  endColor 113300
+}
+
+
+skinparam object {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+}
+
+
+skinparam note {
+    backgroundColor 228811
+  borderColor 113300
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam cloud {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+}
+
+skinparam rectangle {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam storage {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+
+skinparam {
+   Shadowing false
+    Dpi 300
+  ClassAttributeFontSize 30
+  ClassFontSize 30
+  ComponentFontSize 30
+  PackageFontSize 30
+  DatabaseFontSize 30
+  ComponentBackgroundColor DarkSlateGrey
+}
+
+
+package views{
+component card.hbs{
+
+}
+}
+
+component index.js{
+    class entry{
+        const cardRoutes = require('./routes/card');
+    }
+}
+
+package routes{
+    component card.js{
+        class card__add{
+
+const { Router } = require('express');
+const Course = require('../models/course');
+const auth = require('../middleware/auth');
+const router = Router();
+            ....
+            
+function mapCartItems(cart) {
+  return cart.items.map((c) => ({
+    ...c.courseId._doc,
+    id: c.courseId.id,
+    count: c.count,
+  }));}
+
+router.get('/', auth, async (req, res) => {
+  const user = await req.user.populate('cart.items.courseId').execPopulate();
+
+  const courses = mapCartItems(user.cart);
+
+  res.render('card', {
+    title: 'Корзина',
+    isCard: true,
+    courses: courses,
+    price: computePrice(courses),
+  });
+});
+router.post('/add', auth, async (req, res) => {
+  try {
+    const course = await Course.findById(req.body.id);
+    await req.user.addToCart(course);
+    res.redirect('/card');
+  } catch (e) {
+    console.log(e);}
+});
+function mapCartItems(cart) {
+  return cart.items.map((c) => ({
+    ...c.courseId._doc,
+    id: c.courseId.id,
+    count: c.count,
+  }));}
+
+function computePrice(courses) {
+  return courses.reduce((total, course) => {
+    return (total += course.price * course.count);
+  }, 0);}
+        }
+
+    }
+}
+
+package models{
+    component course.js{
+        class courseSchema{
+const courseSchema = new Schema({
+  title: {
+type: String,
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  img: String,
+  description: {
+    type: Object,
+  },
+  userId: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+  },
+});
+        }
+
+    }
+
+    component user.js{
+    class addToCart{
+const userSchema = new Schema({
+  email: {
+    type: String,
+    required: true,
+  },
+  name: String,
+  password: {
+    type: String,
+    required: true,
+  },
+  avatarUrl: String,
+  resetToken: String,
+  resetTokenExp: Date,
+  cart: {
+    items: [
+      {
+        count: {
+          type: Number,
+          required: true,
+          default: 1,
+        },
+        courseId: {
+          type: Schema.Types.ObjectId,
+          ref: 'Course',
+          required: true,
+        },
+      },
+    ],
+  },
+});
+
+userSchema.methods.addToCart = function (course) {
+  const items = [...this.cart.items];
+  const idx = items.findIndex((c) => {
+    return c.courseId.toString() === course._id.toString();
+  });
+
+  if (idx >= 0) {
+    items[idx].count = items[idx].count + 1;
+  } else {
+    items.push({
+      courseId: course._id,
+      count: 1,
+    });}
+
+  this.cart = { items };
+  return this.save();
+}; 
+    }
+}
+}
+
+package middleware{
+    component auth.js{
+        class isAuthenticated{
+            
+ module.exports = function (req, res, next) {
+  if (!req.session.isAuthenticated) {
+    return res.redirect('/auth/login');}
+  next();};
+
+        }
+    }
+}
+
+
+
+database MongoDB{
+
+}
+
+card__add - -> entry
+card__add - -> card.hbs
+card__add - -> isAuthenticated
+addToCart <-left-> card__add
+courseSchema <-> addToCart
+courseSchema <-down-> MongoDB
+
+
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 12:35:57 MSK 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_241-b07
+Operating System: Windows 10
+Default Encoding: Cp1251
+Language: ru
+Country: RU
+--></g></svg>

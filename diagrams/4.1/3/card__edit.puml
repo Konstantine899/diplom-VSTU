@@ -3,9 +3,14 @@
 !includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
 
 skinparam {
-    Shadowing false
+      Shadowing false
     Dpi 300
-    ComponentBackgroundColor DarkSlateGrey
+  ClassAttributeFontSize 30
+  ClassFontSize 30
+  ComponentFontSize 30
+  PackageFontSize 30
+  DatabaseFontSize 30
+  ComponentBackgroundColor DarkSlateGrey
 }
 
 package routes{
