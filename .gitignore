@@ -11,7 +11,7 @@ public/main.js.map
 /.babelrc
 postcss.config.js
 webpack.config.js
-keys/keys.dev.js
+# keys/keys.dev.js
 *.scss
 
 
